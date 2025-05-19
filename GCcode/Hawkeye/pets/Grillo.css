@@ -1,0 +1,370 @@
+@import url(https://fonts.googleapis.com/css2?family=Pirata+One&display=swap);
+/*nav positioning*/
+#nav {
+font-size: 12pt;
+position: absolute;
+top: -3em;
+height: fit-content;
+margin-top: 10px;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-self: center;
+gap: 1em
+}
+/*nav styling*/
+#nav a, #nav a:visited {
+background: #e6c800;
+padding-left: 4px;
+padding-right: 7px;
+padding-top: 2px;
+padding-bottom: 2px;
+border-radius: 10px;
+color: black;
+border-left: solid 3px #fe0;
+border-top: solid 3px #fe0
+}
+#nav a:hover {
+background: #e6c800;
+padding-left: 4px;
+padding-right: 7px;
+padding-top: 2px;
+padding-bottom: 2px;
+border-radius: 10px;
+color: black;
+border-left: solid 3px #ffff58;
+border-top: solid 3px #ffff58
+}
+/*hiding things*/
+hr, .pet--statsheader, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks {
+    display: none
+}
+/*background*/
+body {
+    background-image: url(https://i.postimg.cc/G2bgTbbt/bg2.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center
+}
+#pet_p2_6c0240ff .med-image {
+content: url(https://i.postimg.cc/BQRmJSFH/tongs.png)
+}
+#pet_p2_787e7c48 .med-image {
+content: url(https://i.postimg.cc/2y60S3TF/gills.png)
+}
+#pet_p2_eda88d84 .med-image {
+content: url(https://i.postimg.cc/FHcDRMbq/galleys.png)
+}
+#pet_p2_9b3f3e26 .med-image {
+content: url(https://i.postimg.cc/T27kHqYk/shanks.png)
+}
+#pet_p2_2ae4aea7 .med-image {
+content: url(https://i.postimg.cc/HsrSGcrT/skins.png)
+}
+#pet_p2_1adfed5c .med-image {
+content: url(https://i.postimg.cc/T14CLG48/hooks.png)
+}
+#pet_p2_9f3c1e77 .med-image {
+content: url(https://i.postimg.cc/SQMs8pcN/Ears.png)
+}
+/*centering*/
+#page_event {
+margin: 0
+}
+#container {
+margin: auto;
+display: flex;
+flex-direction: column;
+width: 100dvw;
+min-height: 100dvh;
+height: fit-content
+}
+#page_content {
+display: flex;
+margin: auto;
+width: 100vw;
+min-height: 100%;
+justify-content: center;
+align-items: center;
+height: fit-content
+}
+/*link colors*/
+/*title*/
+.pet--name {
+    display: block;
+    font-family: "pirata one";
+    font-size: 48pt;
+    font-weight: normal
+}
+.pet--header {
+    font-family: "pirata one";
+    font-weight: lighter
+}
+.pet--color:hover {
+    color: #d23300
+}
+/*container*/
+#petLookupContent {
+margin-top: 2em;
+max-width: 44em;
+position: relative;
+font-family: serif;
+color: black;
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas: "top top" "petpet petpet" "trophies trophies" "trade trade" "desc desc";
+width: 100%;
+gap: unset;
+justify-items: center;
+align-items: center;
+background-image: url(https://i.postimg.cc/SKR3gywP/52-cream-mulberry-paper-texture-seamless.jpg);
+background-size: 50%;
+border-radius: 25px;
+border-style: ridge;
+border-color: #73482c;
+border-width: 6px;
+padding: 10px;
+box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.75);
+margin-bottom: 25px
+}
+/*info*/
+#petTop {
+grid-area: top;
+width: 100%
+}
+#petInfo {
+display: grid;
+width: 100%;
+grid-template-columns: 50%;
+align-items: center
+}
+#petImage {
+grid-area: image;
+margin-top: -25px
+}
+.pet--image {
+    content: url(https://i.postimg.cc/yN1YxH4Y/GrilloHD.png);
+    height: 250px;
+    width: 250px
+}
+#petStats {
+grid-area: stats;
+background: none;
+font-size: 12pt
+}
+#petStats a {
+color: #4b616e
+}
+#petStats a:hover {
+color: #d23300
+}
+.pet--gendercolor {
+    color: black;
+    font-weight: normal
+}
+.pet--hpcolor {
+    color: black;
+    font-weight: normal
+}
+/*extras*/
+#petLinks {
+grid-area: links;
+padding-top: 1em;
+padding-bottom: 1em
+}
+#petTrophies {
+grid-area: trophies;
+padding-top: 1em;
+padding-bottom: 1em
+}
+.pet--no-trade-alert {
+    position: absolute;
+    background-color: transparent;
+    color: red;
+    bottom: -2.5em;
+    font-weight: bold;
+    text-shadow: -1px 1px 2px black;
+    left: 0;
+    width: 100%;
+    font-size: 14pt
+}
+.pet--no-trade-text {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 0.15em;
+    border-radius: 0.5em
+}
+.pet--no-trade-icon {
+    display: none
+}
+#petPetpet {
+grid-area: petpet;
+font-size: 8pt;
+justify-items: space-around
+}
+.pet_all_petpets {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto
+}
+#petPetpet::before {
+content: "- Me Crew- ";
+font-family: "pirata one";
+font-size: 24pt;
+font-weight: normal;
+line-height: 2em;
+padding-left: 10px;
+padding-right: 10px
+}
+.pet--petpetage, .pet--petpetheader {
+    display: none
+}
+.flex-2col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly
+}
+.pet--petpetdesc {
+    font-size: 9pt
+}
+.pet--petpetname {
+    display: block;
+    font-family: "pirata one";
+    font-size: 18pt;
+    font-weight: normal
+}
+/*custom content*/
+#petDescription {
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas: "bio bio";
+grid-area: desc;
+color: white;
+border-radius: 5px;
+color: black;
+width: 100%;
+padding-bottom: 7px
+}
+#bio {
+border-radius: 12px;
+width: 93%;
+grid-area: bio;
+justify-self: center;
+padding: 12px;
+border-style: double;
+text-align: left;
+font-size: 12pt
+}
+#bio h2 {
+text-align: center;
+font-family: "pirata one";
+font-weight: normal;
+font-size: 24pt;
+margin: 0
+}
+#gg {
+position: absolute;
+top: -10px;
+left: 0;
+transform: rotate(-15deg);
+width: 13em
+}
+/*HTML
+ d iv i*d="nav">
+ a href="/userlookup/?user=Hawkeye0021">BACK/a>
+ a href="/neomessages/sendmessage/?username=Hawkeye0021">CONTACT/a>
+ a href="/~PETNAME">PAGE/a>
+ a href="/explore/">EXIT/a>
+ /div>
+
+ div id="testimonials">
+ h2 style="text-align: center;">strong>-TESTIMONIALS-/strong>/h2>
+ /div>
+ div id="bio">
+ h2 style="text-align: center;">strong>-BIO-/strong>/h2>
+ /div>
+ */
+@media screen and (max-width: 959px) {
+    #nav {
+    display: none
+    }
+    #sb_top, #sb_side {
+    display: initial
+    }
+    #mobilenav {
+    display: flex;
+    top: initial;
+    top: -2.2em;
+    font-size: 36pt;
+    gap: 0;
+    width: 100%;
+    justify-content: center;
+    gap: 1em
+    }
+    #container {
+    min-height: fit-content
+    }
+    #page_content {
+    margin-bottom: 2em;
+    margin-top: 1.5em
+    }
+    #petLookupContent {
+    width: 90dvw;
+    height: fit-content;
+    font-size: 24pt;
+    padding-top: 1em
+    }
+    #petDescription {
+    grid-template-columns: initial;
+    grid-template-areas: "bio" "testimonials";
+    font-size: 28pt;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    margin-top: 1em
+    }
+    #bio {
+    grid-area: bio;
+    font-size: 24pt
+    }
+    #bio h2 {
+    font-size: 36pt
+    }
+    #petStats {
+    font-size: 24pt
+    }
+    #petPetpet {
+    top: 19em
+    }
+    .pet--name {
+        font-size: 90pt
+    }
+    .pet--header {
+        margin-top: -1em;
+        font-size: 32pt
+    }
+    #petImage {
+    margin-left: -2em
+    }
+    .pet--image {
+        width: 60dvw;
+        height: initial
+    }
+    .pet--no-trade-alert {
+        bottom: -2em;
+        font-size: 24pt
+    }
+    .pet--petpetheader, .pet--petpetdesc {
+        font-size: 20pt
+    }
+    .pet--petpetname {
+        font-size: 36pt
+    }
+    #petTraits {
+    font-size: 20pt
+    }
+    #petPetpet:before {
+    font-size: 36pt
+    }
+    #gg {
+    width: 8em
+    }
+}

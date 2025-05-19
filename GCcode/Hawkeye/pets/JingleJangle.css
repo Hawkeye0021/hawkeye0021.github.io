@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+.snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px #000
+}
+.snowflake, .snowflake .inner {
+    animation-iteration-count: infinite;
+    animation-play-state: running
+}
+@keyframes snowflakes-fall {
+    0% {
+        transform: translateY(0)
+    } 100% {
+        transform: translateY(110vh)
+    }
+}
+@keyframes snowflakes-shake {
+    0%, 100% {
+        transform: translateX(0)
+    } 50% {
+        transform: translateX(80px)
+    }
+}
+.snowflake {
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+    animation-name: snowflakes-shake;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out
+}
+.snowflake .inner {
+    animation-duration: 10s;
+    animation-name: snowflakes-fall;
+    animation-timing-function: linear
+}
+.snowflake:nth-of-type(0) {
+    left: 1%;
+    animation-delay: 0s
+}
+.snowflake:nth-of-type(0) .inner {
+    animation-delay: 0s
+}
+.snowflake:first-of-type {
+    left: 10%;
+    animation-delay: 1s
+}
+.snowflake:first-of-type .inner, .snowflake:nth-of-type(8) .inner {
+    animation-delay: 1s
+}
+.snowflake:nth-of-type(2) {
+    left: 20%;
+    animation-delay: 0.5s
+}
+.snowflake:nth-of-type(2) .inner, .snowflake:nth-of-type(6) .inner {
+    animation-delay: 6s
+}
+.snowflake:nth-of-type(3) {
+    left: 30%;
+    animation-delay: 2s
+}
+.snowflake:nth-of-type(11) .inner, .snowflake:nth-of-type(3) .inner {
+    animation-delay: 4s
+}
+.snowflake:nth-of-type(4) {
+    left: 40%;
+    animation-delay: 2s
+}
+.snowflake:nth-of-type(10) .inner, .snowflake:nth-of-type(4) .inner {
+    animation-delay: 2s
+}
+.snowflake:nth-of-type(5) {
+    left: 50%;
+    animation-delay: 3s
+}
+.snowflake:nth-of-type(5) .inner {
+    animation-delay: 8s
+}
+.snowflake:nth-of-type(6) {
+    left: 60%;
+    animation-delay: 2s
+}
+.snowflake:nth-of-type(7) {
+    left: 70%;
+    animation-delay: 1s
+}
+.snowflake:nth-of-type(7) .inner {
+    animation-delay: 2.5s
+}
+.snowflake:nth-of-type(8) {
+    left: 80%;
+    animation-delay: 0s
+}
+.snowflake:nth-of-type(9) {
+    left: 90%;
+    animation-delay: 1.5s
+}
+.snowflake:nth-of-type(9) .inner {
+    animation-delay: 3s
+}
+.snowflake:nth-of-type(10) {
+    left: 25%;
+    animation-delay: 0s
+}
+.snowflake:nth-of-type(11) {
+    left: 65%;
+    animation-delay: 2.5s
+}
+hr, .pet--statsheader, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks {
+    display: none
+}
+body {
+    background-image: url(https://i.postimg.cc/tRFGzFJ0/00054.png);
+    background-position: right;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    height: 1500px
+}
+#page_content {
+display: block;
+margin: auto;
+min-width: fit-content;
+height: fit-content
+}
+#container {
+margin: auto
+}
+#petLookupContent {
+position: relative;
+font-family: josefin slab;
+font-size: 12pt;
+color: black;
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas: "top top" "petpet placeholder" "trophies trophies" "trade trade" "desc desc";
+width: 100%;
+gap: unset;
+justify-items: center;
+align-items: center;
+background-color: white;
+border-radius: 10px;
+border-style: dashed;
+border-color: red;
+border-width: 4px;
+padding: 10px;
+box-shadow: 0 0 5px 5px white
+}
+#petTop {
+grid-area: top;
+width: 100%
+}
+#petInfo {
+display: grid;
+width: 100%;
+grid-template-columns: 50%;
+align-items: center
+}
+#petImage {
+grid-area: image;
+width: 50%;
+position: absolute;
+top: 6em
+}
+#petStats {
+grid-area: stats;
+background: none;
+text-align: left
+}
+#petPetpet {
+width: 49%;
+position: absolute;
+left: 0%;
+top: 260px;
+padding-left: 10px;
+font-size: 10pt
+}
+.pet--petpetname {
+    display: block;
+    font-size: 18pt;
+    font-family: berkshire swash;
+    color: #432
+}
+.pet--petpetage {
+    display: none
+}
+#petLinks {
+grid-area: links;
+padding-top: 1em;
+padding-bottom: 1em
+}
+#petTrophies {
+grid-area: trophies;
+padding-top: 1em;
+padding-bottom: 1em
+}
+#petDescription {
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas: "testimonials bio";
+grid-area: desc;
+color: white;
+border-radius: 5px;
+color: black;
+width: 100%;
+margin-top: 10px
+}
+#Testimonials {
+width: 95%;
+border-radius: 5px;
+justify-self: center;
+padding-bottom: 10px;
+background-color: #9cceff;
+border: dotted white
+}
+#bio {
+width: 95%;
+border-radius: 5px;
+justify-self: center;
+padding-bottom: 10px;
+background-color: #9cceff;
+border: dotted white
+}
+.pet--no-trade-alert {
+    grid-area: trade;
+    background-color: white
+}
+.pet--header {
+    font-size: 12pt
+}
+.pet--name {
+    display: block;
+    font-size: 30pt;
+    margin-top: -25px;
+    font-family: berkshire swash;
+    color: #946331;
+    text-shadow: 2px 1px 2px black
+}
+a.pet--color {
+    color: #00ce00
+}
+a.pet--color:hover {
+    color: #f00
+}
+a {
+    color: #f00
+}
+a:hover {
+    color: #00ce00
+}
+.testimonials {
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    font-style: italic;
+    line-height: 2em
+}
+#nav {
+font-size: 12pt;
+position: absolute;
+top: -3em;
+height: fit-content;
+margin-top: 10px;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-self: center;
+gap: 1em;
+line-height: 1.5em
+}
+#nav a, #nav a:visited {
+background: #fff;
+padding-left: 4px;
+padding-right: 4px;
+border-radius: 3px;
+color: black
+}
+#nav a:hover {
+background: red;
+padding-left: 4px;
+padding-right: 4px;
+border-radius: 3px;
+color: white;
+box-shadow: 0 0 3px 3px white
+}

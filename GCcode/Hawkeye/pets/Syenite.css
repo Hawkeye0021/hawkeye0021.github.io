@@ -1,0 +1,321 @@
+@import url(https://fonts.googleapis.com/css2?family=New+Rocker&display=swap);
+/*STYLE*/
+body {
+    backdrop-filter: brightness(0.75);
+    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/idols.jpg)
+}
+#nav a, #nav a:visited, #mobilenav a, #mobilenav a:visited {
+font-family: new rocker;
+background: #000;
+border: 3px solid black;
+font-size: 12pt
+}
+#nav > a:nth-child(1) {
+color: #e51c31
+}
+#nav > a:nth-child(2) {
+color: #71cb57
+}
+#nav > a:nth-child(3) {
+color: #0688ee
+}
+#nav > a:nth-child(4) {
+color: #8806ee
+}
+#petLookupContent {
+box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75)
+}
+.pet--name {
+    font-size: 48pt
+}
+.pet--color:before {
+    content: "the ";
+    margin-left: 0.5ch
+}
+.pet--color:after {
+    content: "Uni";
+    margin-left: 0.5ch
+}
+.pet--header {
+    font-style: italic;
+    font-size: 0;
+    margin-top: 0;
+    background-color: #121112;
+    color: white;
+    font-family: new rocker
+}
+.pet--color {
+    font-size: 24pt
+}
+.pet--name, .pet--color {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #e51c31, #e37324, #fbd93d, #71cb57, #0688ef, #8806f2)
+}
+.pet--petpetheader, .pet--petpetdesc {
+    font-size: 10pt
+}
+.pet--petpetname {
+    color: #bf1729;
+    text-shadow: 1px 1px 2px orange;
+    font-family: new rocker
+}
+.pet--statsheader strong, #bio h2 strong, #testimonials h2 strong {
+    font-family: new rocker;
+    font-size: 18pt;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #e51c31, #e37324, #fbd93d, #71cb57, #0688ef, #8806f2)
+}
+.pet--statsheader, #bio h2, #testimonials h2 {
+    background-color: #121112
+}
+.pet--statsheader:before {
+    color: red
+}
+.pet--statsheader:after {
+    color: #8806f2
+}
+.pet--petpetname {
+    font-size: 16pt
+}
+#petStats, #testimonials, #bio {
+font-size: 11pt
+}
+#petStats a {
+color: #025dac
+}
+#petStats a:hover {
+color: #0688ee
+}
+.pet--gendercolor {
+    color: #5a02a0
+}
+#petTraits {
+display: none
+}
+/*HIDE SHIT*/
+hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge {
+    display: none
+}
+.pet--no-trade-text {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: red
+}
+/*BREAK SHIT*/
+#petDescription, div#desc, main, #petTop, #petInfo, #petPetpet, .pet_all_petpets, .pet_petpet {
+display: contents
+}
+/*CENTERING*/
+#container {
+margin: auto;
+display: flex;
+flex-direction: column;
+width: 100dvw;
+min-height: 100dvh;
+height: fit-content;
+justify-content: center;
+align-items: center
+}
+/*NAVIGATION*/
+/*FORMATTING*/
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+.pet--image, .pet--petpetimg {
+    mix-blend-mode: darken;
+    transform: skew(0deg) !important
+}
+#petLookupContent {
+display: grid;
+grid-template-areas: "header header" "pet p2img" "p2header p2header" "p2desc p2desc" "stats  bio" "testimonials testimonials";
+grid-template-columns: 50%;
+grid-template-rows: auto auto auto auto auto auto auto;
+width: fit-content;
+max-width: 44em;
+margin: auto;
+position: relative;
+box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
+color: black;
+gap: 0;
+background: #eee;
+transform: skew(-2deg)
+}
+#nav, #mobilenav {
+position: absolute;
+top: -3em;
+height: fit-content;
+margin-top: 0.75em;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-self: center;
+gap: 1em
+}
+#nav a, #nav a:visited, #mobilenav a, #mobilenav a:visited {
+padding-left: 0.25em;
+padding-right: 0.25em
+}
+#nav a:hover, #mobilenav a:hover {
+scale: 0.9
+}
+.pet--header {
+    grid-area: header;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    padding-bottom: 10px
+}
+#petImage {
+grid-area: pet;
+margin-left: 60%
+}
+.pet--petpetimg {
+    grid-area: p2img;
+    align-self: end;
+    margin-left: 11%;
+    padding-right: auto;
+    background: white
+}
+.pet--petpetheader {
+    grid-area: p2header;
+    font-size: 0
+}
+.pet--petpetheader:after {
+    content: "and her petpet,";
+    font-size: 10pt
+}
+.pet--petpetdesc {
+    grid-area: p2desc;
+    margin-bottom: 0.25em
+}
+.pet--statsheader {
+    margin: 0;
+    margin-bottom: 0.8em;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75)
+}
+#petStats {
+grid-area: stats;
+background: none;
+border-radius: 0.35em;
+margin: 0.25em 0.25em 0.25em 0.5em;
+padding: 0 0.35em 0 0.35em
+}
+#desc {
+grid-area: desc;
+display: grid;
+grid-template-areas: "testimonials bio";
+grid-template-columns: 50% 50%;
+justify-content: center;
+margin-top: 1em
+}
+#bio {
+grid-area: bio;
+margin: 0.25em 0.5em 0.25em 0.25em;
+justify-content: center
+}
+#testimonials {
+grid-area: testimonials;
+margin: 0.25em 0.5em 0.5em 0.5em;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+column-gap: 1em;
+justify-content: center
+}
+#testimonials h2, #bio h2 {
+width: 100%;
+box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
+margin: 0
+}
+#testimonials p {
+width: 30%
+}
+#testimonials, #bio {
+border-radius: 0.35em;
+padding-left: 0.35em;
+padding-right: 0.35em
+}
+.pet--no-trade-alert {
+    position: absolute;
+    background-color: transparent;
+    bottom: -2.25em;
+    font-weight: bold;
+    text-shadow: -1px 1px 2px black;
+    left: 0;
+    width: 100%
+}
+.pet--no-trade-text {
+    padding: 0.25em;
+    border-radius: 0.5em
+}
+.pet--no-trade-icon {
+    display: none
+}
+@media screen and (max-width: 959px) {
+    #nav {
+    display: none
+    }
+    #sb_top, #sb_side {
+    display: initial
+    }
+    #mobilenav {
+    display: flex;
+    top: initial;
+    top: -3em;
+    gap: 0;
+    width: 100%;
+    justify-content: center;
+    gap: 1em
+    }
+    #mobilenav a {
+    font-size: 30pt
+    }
+    #container {
+    min-height: fit-content
+    }
+    #page_content {
+    margin-bottom: 2em;
+    margin-top: 2em
+    }
+    #petLookupContent {
+    width: 90dvw;
+    height: fit-content;
+    font-size: 24pt;
+    padding-top: 1em
+    }
+    #petStats, #bio, #testimonials {
+    font-size: 20pt
+    }
+    .pet--statsheader, #bio h2, #testimonials h2 {
+        font-size: 24pt
+    }
+    .pet--name {
+        font-size: 60pt;
+        display: block
+    }
+    .pet--header {
+        margin-top: -1em;
+        font-size: 24pt
+    }
+    #petImage {
+    margin-left: 50%
+    }
+    .pet--petpetimg {
+        margin-left: 20%
+    }
+    .pet--no-trade-alert {
+        bottom: -2em;
+        font-size: 24pt
+    }
+    .pet--petpetheader:before, .pet--petpetheader:after, .pet--petpetdesc {
+        font-size: 20pt
+    }
+    .pet--petpetname {
+        font-size: 24pt
+    }
+    #petTraits {
+    font-size: 16pt
+    }
+}

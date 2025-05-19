@@ -1,0 +1,183 @@
+@import url(https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap);
+/*nav positioning*/
+#nav {
+font-size: 12pt;
+position: absolute;
+top: -3em;
+height: fit-content;
+margin-top: 10px;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-self: center;
+gap: 1em
+}
+/*nav styling*/
+#nav a, #nav a:visited {
+background: #fff;
+padding-left: 4px;
+padding-right: 4px;
+border-radius: 3px;
+color: black;
+border: 3px solid white
+}
+#nav a:hover {
+background: #fff;
+padding-left: 4px;
+padding-right: 4px;
+border-radius: 3px;
+color: black;
+border: 3px solid #e1c132
+}
+/*hiding things*/
+#bio, #testimonials, hr, .pet--statsheader, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, .pet--image, .pet--petpetimg {
+display: none
+}
+/*background*/
+body {
+    background-color: #000
+}
+/*centering*/
+div#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column
+}
+div#page_content {
+    margin: auto;
+    width: 900px
+}
+/*link colors*/
+/*title*/
+.pet--header {
+    display: inline-block;
+    color: white;
+    width: max-content;
+    position: relative;
+    right: 250px;
+    top: -20px;
+    text-shadow: 2px 2px 2px black
+}
+.pet--name {
+    display: block;
+    font-family: neonderthaw;
+    font-size: 48pt;
+    color: beige;
+    text-shadow: 2px 2px 5px yellow
+}
+/*container*/
+#petLookupContent {
+background-image: url(https://i.postimg.cc/25TJ6b31/00141.png);
+background-size: cover;
+background-position: right;
+background-repeat: no-repeat;
+height: 900px;
+border-radius: 15px;
+border: 5px solid #3c0302;
+box-shadow: 0 0 35px 25px #3c0302
+}
+/*info*/
+#petInfo {
+display: flex;
+justify-content: right;
+width: 100%
+}
+#petImage {
+grid-area: image;
+width: 50%;
+position: absolute;
+top: 6em
+}
+#petStats {
+grid-area: stats;
+background: none;
+text-align: center;
+backdrop-filter: blur(5px);
+background-color: rgba(0, 0, 0, 0.45);
+color: white;
+width: 300px;
+margin-right: 70px;
+border: 3px solid #80fef8;
+border-radius: 15px;
+box-shadow: 0 0 10px 1px #80fef8
+}
+/*extras*/
+#petPetpet {
+position: relative;
+right: 335px;
+bottom: -75px;
+color: #ffe310;
+text-shadow: 2px 2px 5px orange
+}
+.pet--petpetname {
+    display: block;
+    font-family: neonderthaw;
+    font-size: 28pt
+}
+.pet--petpetheader, .pet--petpetage {
+    display: none
+}
+#petLinks {
+grid-area: links;
+padding-top: 1em;
+padding-bottom: 1em
+}
+#petTrophies {
+grid-area: trophies;
+padding-top: 1em;
+padding-bottom: 1em
+}
+.pet--no-trade-alert {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 1em;
+    position: relative;
+    width: 100%;
+    bottom: -380px
+}
+/*custom content*/
+#petDescription {
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas: "testimonials bio";
+grid-area: desc;
+color: white;
+border-radius: 5px;
+color: black;
+width: 100%
+}
+#testimonials {
+grid-area: testimonials;
+border-style: solid;
+border-color: #e1c132;
+border-radius: 5px;
+width: 95%;
+justify-self: center;
+padding-bottom: 10px
+}
+#bio {
+grid-area: bio;
+border-style: solid;
+border-color: #e1c132;
+border-radius: 5px;
+width: 95%;
+justify-self: center;
+padding-bottom: 10px
+}
+/*HTML
+ d iv i*d="nav">
+ a href="/userlookup/?user=Hawkeye0021">BACK/a>
+ a href="/neomessages/sendmessage/?username=Hawkeye0021">CONTACT/a>
+ a href="/~PETNAME">PAGE/a>
+ a href="/explore/">EXIT/a>
+ /div>
+
+ div id="testimonials">
+ h2 style="text-align: center;">strong>-TESTIMONIALS-/strong>/h2>
+ /div>
+ div id="bio">
+ h2 style="text-align: center;">strong>-BIO-/strong>/h2>
+ /div>
+ */
+#aio_sidebar {
+display: none
+}

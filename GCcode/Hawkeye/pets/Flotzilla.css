@@ -1,0 +1,225 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap);
+/*nav positioning*/
+#nav {
+font-family: chiller;
+font-size: 14pt;
+letter-spacing: 0.1em;
+position: absolute;
+top: -3.5em;
+height: fit-content;
+margin-top: 10px;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-self: right;
+gap: 1em
+}
+/*nav styling*/
+#nav a, #nav a:visited {
+padding: 10px;
+background-image: url(https://i.postimg.cc/631D7Tjh/rippedBG.png);
+background-position: center;
+background-size: 100% 100%;
+color: white
+}
+#nav a:hover {
+padding: 10px;
+background-image: url(https://i.postimg.cc/631D7Tjh/rippedBG.png);
+background-position: center;
+background-size: 100% 100%;
+color: #20cb00
+}
+/*hiding things*/
+hr, .pet--statsheader, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks {
+    display: none
+}
+/*background*/
+body {
+    background-image: url(https://i.postimg.cc/c4bkFk3H/Flotzilla.png);
+    background-size: cover
+}
+/*centering*/
+#page_content {
+display: block;
+margin: auto;
+min-width: fit-content;
+height: fit-content
+}
+#container {
+margin: auto
+}
+/*link colors*/
+/*title*/
+.pet--header {
+    position: relative;
+    left: 65px;
+    top: -35px;
+    font-family: chiller;
+    font-size: 24pt;
+    margin-bottom: -5px
+}
+.pet--name {
+    display: block;
+    position: absolute;
+    left: -210px;
+    top: -45px;
+    font-family: rubik wet paint;
+    font-size: 60pt;
+    color: #20cb00;
+    background-image: url(https://i.postimg.cc/631D7Tjh/rippedBG.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transform: rotate(-11deg)
+}
+.pet--color {
+    color: #20cb00
+}
+.pet--color:hover {
+    color: #29528f
+}
+/*container*/
+#petLookupContent {
+position: relative;
+font-family: arial;
+color: black;
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas: "top top" "petpet placeholder" "trophies trophies" "trade trade" "desc desc";
+width: 100%;
+gap: unset;
+justify-items: center;
+align-items: center;
+background-color: #eee;
+border-radius: 5px;
+border-style: solid;
+border-color: black;
+border-width: 10px;
+padding: 10px;
+box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.75)
+}
+/*info*/
+.pet--image {
+    content: url(https://grundoscafe.b-cdn.net/pets/happy/flotsam_mutant.gif);
+    mix-blend-mode: multiply
+}
+#petTop {
+grid-area: top;
+width: 100%
+}
+#petInfo {
+display: grid;
+width: 100%;
+grid-template-columns: 50%;
+align-items: center
+}
+#petImage {
+grid-area: image;
+width: 50%;
+position: absolute;
+top: 6em
+}
+#petStats {
+grid-area: stats;
+background: none;
+text-align: left
+}
+.pet--gendercolor {
+    color: transparent
+}
+.pet--gendercolor::after {
+    content: "Chaos";
+    color: #29528f;
+    margin-left: -5ch
+}
+/*extras*/
+#petPetpet {
+width: 49%;
+position: absolute;
+left: 0%;
+top: 23em;
+padding-left: 10px;
+font-size: 8pt
+}
+.pet--petpetimg {
+    mix-blend-mode: multiply
+}
+#petLinks {
+grid-area: links;
+padding-top: 1em;
+padding-bottom: 1em
+}
+#petTrophies {
+grid-area: trophies;
+padding-top: 1em;
+padding-bottom: 1em
+}
+.pet--no-trade-alert {
+    grid-area: trade;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 1em
+}
+/*custom content*/
+#petDescription {
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas: "testimonials bio";
+grid-area: desc;
+color: white;
+border-radius: 5px;
+width: 100%;
+font-size: 12pt;
+padding-bottom: 8px
+}
+#testimonials h2, #bio h2 {
+display: flex;
+justify-items: center;
+font-family: chiller;
+font-size: 20pt;
+letter-spacing: 0.1em;
+width: fit-content;
+background-image: url(https://i.postimg.cc/631D7Tjh/rippedBG.png);
+background-size: 100% 100%;
+background-position: center;
+padding: 15px;
+padding-bottom: 10px;
+padding-top: 10px;
+margin-top: 0;
+color: #20cb00;
+box-shadow: 0 0 25px px black
+}
+#testimonials h2 {
+transform: rotate(-2deg)
+}
+#bio h2 {
+transform: rotate(3deg)
+}
+.redacted {
+    background-color: black;
+    color: black;
+    padding-left: 2px;
+    padding-right: 2px
+}
+#testimonials {
+display: flex;
+flex-direction: column;
+align-items: center;
+grid-area: testimonials;
+color: black;
+width: 95%;
+justify-self: center;
+padding-bottom: 10px
+}
+#bio {
+display: flex;
+flex-direction: column;
+align-items: center;
+grid-area: bio;
+color: black;
+width: 95%;
+justify-self: center;
+padding-bottom: 10px
+}

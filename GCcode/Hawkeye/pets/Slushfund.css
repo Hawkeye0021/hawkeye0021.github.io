@@ -1,0 +1,280 @@
+@import url(https://db.onlinewebfonts.com/c/ecf8b6daaa72c686ad13dd7612d764d6?family=Engravers%27+Gothic);
+@import url(https://db.onlinewebfonts.com/c/4784beb8aa418f3149a1621b898000a7?family=DollarBill);
+@import url(https://db.onlinewebfonts.com/c/406ab8eaf1739db4a2cb9d03fd147d36?family=Dollar);
+/*nav positioning*/
+#nav, #mobilenav {
+font-size: 12pt;
+position: absolute;
+top: -8em;
+height: fit-content;
+margin-top: 0.75em;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-self: center;
+gap: 1em;
+font-family: "engravers' gothic"
+}
+/*nav styling*/
+#nav a, #nav a:visited, #mobilenav a, #mobilenav a:visited {
+background: #3772b3;
+padding-left: 0.25em;
+padding-right: 0.25em;
+color: #e3f1ff;
+border: 5px solid #3772b3;
+letter-spacing: 0.1em
+}
+#nav a:hover, #mobilenav a:hover {
+transform: scale(1.15)
+}
+/*BREAK SHIT*/
+#petDescription, div#desc, main, #petTop, #petInfo, #petPetpet, .pet_all_petpets, .pet_petpet {
+display: contents
+}
+/*hiding things*/
+#petTraits, hr, .pet--statsheader, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav {
+display: none
+}
+/*background*/
+body {
+    background-image: url(https://i.postimg.cc/43RGN29K/mafia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black
+}
+/*centering*/
+#page_event {
+margin: 0
+}
+#container {
+margin: auto;
+display: flex;
+flex-direction: column;
+width: 100dvw;
+min-height: 100dvh;
+height: fit-content
+}
+#page_content {
+display: flex;
+margin: auto;
+width: fit-content;
+min-height: 100%;
+justify-content: center;
+align-items: center;
+height: fit-content;
+background-image: url(https://i.postimg.cc/ncGr4TRy/guilloche.png);
+border: 1.5em solid #f0f5ff
+}
+/*title*/
+.pet--name {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 30pt;
+    font-family: dollar;
+    font-weight: lighter;
+    color: #e3f1ff;
+    text-shadow: 4px 3px 0 #3772b3;
+    letter-spacing: initial;
+    position: relative;
+    top: -7.75em;
+    line-height: 0
+}
+.pet--header {
+    grid-area: header;
+    font-family: dollar;
+    font-size: 14pt;
+    letter-spacing: 0.25em;
+    text-shadow: 4px 2px 0 #3772b3;
+    color: #e3f1ff;
+    margin: 0;
+    line-height: 0;
+    position: relative;
+    bottom: -15.5em
+}
+.pet--color {
+    text-shadow: 3px 2px 0 #e3f1ff
+}
+.pet--color:hover {
+    text-shadow: 4px 2px 0 #3772b3;
+    color: #e3f1ff
+}
+/*container*/
+#petLookupContent {
+display: grid;
+grid-template-areas: "header header header" "pet p2img stats" "p2header p2header stats" "p2desc p2desc stats" "bio bio stats";
+grid-template-columns: 31% 19% 50%;
+gap: 0;
+width: fit-content;
+max-width: 44em;
+position: relative;
+margin: 3.5em;
+color: #3772b3;
+background: #f0f5ff;
+font-family: "Engravers' Gothic"
+}
+#petImage {
+grid-area: pet;
+justify-self: right;
+align-self: end
+}
+.pet--image {
+    content: url(https://i.postimg.cc/MZRPhSPN/Snow-Flotsam.png)
+}
+#petStats {
+background-color: transparent;
+font-size: 14pt;
+line-height: 1.05em;
+padding: 0;
+grid-area: stats;
+align-self: center;
+justify-self: center
+}
+#petStats a, #petStats a:visited {
+color: #3772b3;
+font-style: italic
+}
+#petStats a:hover {
+color: #e3f1ff;
+text-shadow: 0 0 2px #3772b3
+}
+.pet--hpcolor {
+    color: #3772b3
+}
+.pet--gendercolor {
+    color: #3772b3
+}
+/*extras*/
+.pet--petpetimg {
+    grid-area: p2img;
+    align-self: end;
+    mix-blend-mode: multiply
+}
+.pet--petpetheader {
+    grid-area: p2header;
+    font-size: 0
+}
+.pet--petpetheader:after {
+    content: "and their petpet,";
+    font-size: 10pt
+}
+.pet--petpetdesc {
+    grid-area: p2desc
+}
+.pet--petpetage {
+    display: none
+}
+.pet--no-trade-alert {
+    position: absolute;
+    background-color: transparent;
+    color: #e3f1ff;
+    bottom: -6em;
+    font-weight: bold;
+    text-shadow: -1px 1px 2px black;
+    left: 0;
+    width: 100%;
+    font-size: 14pt
+}
+.pet--no-trade-text {
+    background-color: #3772b3;
+    padding: 0.25em
+}
+.pet--no-trade-icon {
+    display: none
+}
+/*custom content*/
+#petDescription h2 {
+line-height: 0
+}
+#testimonials {
+display: none
+}
+#bio {
+grid-area: bio;
+font-size: 12pt
+}
+#bio p {
+margin-bottom: 0
+}
+@media screen and (max-width: 959px) {
+    #nav {
+    display: none
+    }
+    #sb_top, #sb_side {
+    display: initial
+    }
+    #mobilenav {
+    display: flex;
+    top: initial;
+    top: -13.5em;
+    gap: 0;
+    width: 100%;
+    justify-content: center;
+    gap: 1em
+    }
+    #mobilenav a {
+    font-size: 30pt
+    }
+    #container {
+    min-height: fit-content
+    }
+    #page_content {
+    margin-bottom: 2em;
+    margin-top: 2em;
+    width: 90vw;
+    background-size: 100%
+    }
+    #petLookupContent {
+    display: grid;
+    grid-template-areas: "header header" "pet p2img" "p2header p2header" "p2desc p2desc" "bio bio" "stats stats";
+    grid-template-columns: 50%;
+    gap: 0;
+    width: fit-content;
+    max-width: 44em;
+    position: relative;
+    margin: 3.5em;
+    color: #3772b3;
+    background: #f0f5ff;
+    font-family: "Engravers' Gothic"
+    }
+    #petStats, #bio, #testimonials {
+    font-size: 24pt
+    }
+    #petStats {
+    margin-top: 1.5em
+    }
+    #bio {
+    margin-top: 1em
+    }
+    .pet--statsheader, #bio h2, #testimonials h2 {
+        font-size: 24pt
+    }
+    .pet--name {
+        font-size: 48pt;
+        top: -17.25em
+    }
+    .pet--header {
+        top: 33.25em;
+        font-size: 24pt
+    }
+    #petImage {
+    margin-right: -25%
+    }
+    .pet--petpetimg {
+        margin-left: 20%
+    }
+    .pet--no-trade-alert {
+        bottom: -6.5em;
+        font-size: 22pt
+    }
+    .pet--petpetheader:before, .pet--petpetheader:after, .pet--petpetdesc {
+        font-size: 20pt
+    }
+    .pet--petpetname {
+        font-size: 24pt
+    }
+    #petTraits {
+    font-size: 16pt
+    }
+}

@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Iceberg&family=Tulpen+One&display=swap);
+/*nav positioning*/
+#nav, #mobilenav {
+font-size: 16pt;
+position: absolute;
+top: -3.5em;
+height: fit-content;
+margin-top: 0.75em;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-self: center;
+gap: 1em
+}
+/*nav styling*/
+#nav a, #nav a:visited, #mobilenav a, #mobilenav a:visited {
+padding-left: 0.25em;
+padding-right: 0.25em;
+border-radius: 0.25em;
+color: #3ff;
+font-weight: lighter;
+text-shadow: 0 0 4px #3ff
+}
+#nav a:hover, #mobilenav a:hover {
+transform: scale(1.15)
+}
+/*hiding things*/
+hr, .pet--statsheader, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav {
+    display: none
+}
+/*background*/
+body {
+    background-image: url(https://i.postimg.cc/4ykBPjC6/storms.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black
+}
+/*centering*/
+#page_event {
+margin: 0
+}
+#container {
+margin: auto;
+display: flex;
+flex-direction: column;
+width: 100dvw;
+min-height: 100dvh;
+height: fit-content
+}
+#page_content {
+display: flex;
+margin: auto;
+width: 100vw;
+min-height: 100%;
+justify-content: center;
+align-items: center;
+height: fit-content
+}
+/*title*/
+.pet--name {
+    display: block;
+    font-size: 64pt;
+    font-family: iceberg;
+    color: #3ff;
+    text-shadow: 0 0 5px #3ff;
+    font-weight: lighter;
+    line-height: 0.75em;
+    margin-top: 0.15em;
+    letter-spacing: 0.03em
+}
+.pet--header {
+    font-size: 12pt;
+    margin-top: 0
+}
+.pet--color {
+    color: #3ff;
+    text-shadow: 0 0 4px #3ff
+}
+.pet--color:hover {
+    color: #003ae8
+}
+/*container*/
+#petLookupContent {
+max-width: 44em;
+min-width: 40em;
+margin: auto;
+position: relative;
+background-image: url(https://i.postimg.cc/3Rrgx9Fj/storm-dark.jpg);
+backdrop-filter: brightness(0.4);
+border-radius: 0.75em;
+padding-bottom: 1em;
+padding-left: 1.5em;
+padding-right: 1.5em;
+box-shadow: 0 0 10px 3px #3ff;
+color: #eee;
+font-family: roboto;
+font-weight: 100;
+letter-spacing: 0.05em;
+font-style: italic;
+border: 2px solid #3ff
+}
+#petStats a, .pet--gendercolor, .pet--hpcolor {
+color: #3ff;
+text-shadow: 0 0 4px #3ff
+}
+#petStats a:hover {
+color: #003ae8
+}
+/*info*/
+#petImage {
+width: 100%
+}
+.pet--image {
+    content: url(https://i.postimg.cc/kX3Vgfc0/Flotsam-Electric.png)
+}
+#petInfo {
+grid-template-columns: 50% 50%;
+width: 100%;
+gap: 1em;
+justify-content: center
+}
+#petStats {
+background-color: transparent;
+font-size: 14pt;
+padding: 0
+}
+#petTraits {
+font-size: 8pt
+}
+/*extras*/
+#petPetpet {
+position: absolute;
+width: 45%;
+top: 20em
+}
+.pet--petpetimg {
+    content: url(https://i.postimg.cc/ZKXhSMxN/Soreen.png)
+}
+.pet--petpetheader, .pet--petpetdesc {
+    font-size: 12pt
+}
+.pet--petpetage {
+    display: none
+}
+.pet--petpetname {
+    display: block;
+    font-size: 24pt;
+    font-family: iceberg;
+    color: #3ff;
+    text-shadow: 0 0 4px #3ff
+}
+.pet--petpetzapped {
+    color: transparent;
+    position: relative;
+    bottom: 12em;
+    right: 3em;
+    transform: rotatey(180deg)
+}
+.pet--no-trade-alert {
+    position: absolute;
+    background-color: transparent;
+    color: #3ff;
+    bottom: -3em;
+    font-weight: 100;
+    font-size: 12pt;
+    text-shadow: -1px 1px 2px black;
+    left: 0;
+    width: 100%
+}
+.pet--no-trade-text {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 0.25em;
+    border-radius: 0.5em
+}
+.pet--no-trade-icon {
+    display: none
+}
+/*custom content*/
+#petDescription {
+display: grid;
+grid-template-columns: 50% 50%;
+width: 100%;
+margin-top: 15px;
+gap: 1em;
+justify-content: center
+}
+#petDescription h2 {
+line-height: 0.5em
+}
+#testimonials, #bio {
+display: none;
+border-style: solid;
+border-width: 2px;
+border-color: #000;
+border-radius: 0.35em;
+padding-left: 0.35em;
+padding-right: 0.35em
+}
+@media screen and (max-width: 959px) {
+    #nav {
+    display: none
+    }
+    #sb_top, #sb_side {
+    display: initial
+    }
+    #mobilenav {
+    display: flex;
+    top: initial;
+    bottom: -1.75em;
+    font-size: 36pt;
+    gap: 0;
+    width: 100%;
+    justify-content: space-around
+    }
+    #page_content {
+    margin-bottom: 2em;
+    margin-top: 1.25em
+    }
+    #petLookupContent {
+    width: 90dvw;
+    height: fit-content;
+    font-size: 24pt;
+    padding: 1em
+    }
+    #petDescription {
+    grid-template-columns: initial;
+    grid-template-areas: "bio" "testimonials"
+    }
+    #bio {
+    grid-area: bio
+    }
+    #petStats {
+    font-size: 24pt
+    }
+    .pet--name {
+        font-size: 72pt
+    }
+    .pet--header {
+        margin-top: -1em;
+        font-size: 24pt;
+        padding-bottom: 1em
+    }
+    .pet--image {
+        width: 40dvw
+    }
+    .pet--no-trade-alert {
+        top: -2em
+    }
+    .pet--petpetheader, .pet--petpetdesc {
+        font-size: 20pt
+    }
+    .pet--petpetname {
+        font-size: 36pt
+    }
+    #petTraits {
+    font-size: 20pt
+    }
+}

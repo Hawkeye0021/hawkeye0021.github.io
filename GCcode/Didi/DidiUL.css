@@ -1,0 +1,457 @@
+
+hr, #page_footer, #sb_top, #sb_side, #page_banner, #aio_sidebar {
+  display: none
+}
+#userLookupContent img {
+mix-blend-mode: multiply
+}
+body {
+  background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Didi/ULbg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #22597e
+}
+#container {
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column
+}
+#page_content {
+margin: auto;
+width: 48em
+}
+#nav {
+position: absolute;
+display: flex;
+width: 75%;
+flex-direction: row;
+top: 0;
+font-size: 14pt;
+padding: 0.25em;
+justify-content: space-evenly;
+justify-self: center;
+background: #d4dff3;
+border-radius: 0 0 0.5em 0.5em;
+border-width: 0 0.3em 0.3em 0.3em;
+border-style: solid;
+border-color: #7b93b9;
+box-shadow: 0 0 5px 0 #596a85
+}
+#nav a, #nav a:visited {
+display: flex;
+flex-direction: row;
+color: white;
+justify-content: center;
+padding-top: 0.25em;
+padding-bottom: 0.25em;
+padding-left: 0.65em;
+padding-right: 0.65em;
+border-radius: 0.35em;
+background: #7b93b9;
+box-shadow: 0 0 5px 0 #596a85
+}
+#nav a:hover {
+transform: scale(0.9)
+}
+.ul--headerlabel {
+  display: none
+}
+.ul--username {
+  display: block;
+  font-size: 36pt;
+  margin-bottom: -0.5em;
+  margin-top: 0.25em;
+  text-shadow: 1px 2px 3px #596a85
+}
+#userLookupDesc {
+margin-top: 1.5em;
+display: contents
+}
+#about h2 {
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin: 0 30% 0 30%;
+color: white;
+background: #7b93b9;
+border-radius: 5em;
+font-size: 12pt
+}
+#about {
+background-color: #fafbfd;
+padding: 1em;
+border-radius: 2.5em;
+border: 0.3em solid #b2c2dc;
+box-shadow: 0 0 5px 1px #596a85;
+margin: 1em 0 -1em 0
+}
+#userLookupContent {
+background-color: #d4dff3;
+box-shadow: 0 0 8px 4px #596a85;
+border: 0.4em solid #7b93b9;
+padding: 0 1em;
+border-radius: 5em;
+display: grid;
+margin-top: 4em
+}
+#userLookupInfo {
+background-color: #fafbfd;
+padding: 1em;
+padding-bottom: 1.5em;
+border-radius: 2.5em 2.5em 0 0;
+border-width: 0.3em 0.3em 0 0.3em;
+border-style: solid;
+border-color: #b2c2dc;
+box-shadow: 0 -3px 8px -4px #596a85;
+grid-template-areas: "text shield" "text collections";
+grid-template-columns: 65%
+}
+#userLookupShield {
+display: flex;
+justify-content: center
+}
+.ul--shield {
+  content: url(https://sunnyneo.com/shield/shield_snowbunny.png)
+}
+#userLookupCollections {
+display: flex;
+flex-direction: row;
+height: 100%;
+align-content: center
+}
+.ul--stampsimg {
+  content: url(https://grundoscafe.b-cdn.net/items/stamp_snowy_bruce.gif)
+}
+#userLookupLinks {
+margin-top: -1.5em;
+background-color: #fafbfd;
+padding: 0 1em 1em 1em;
+border-radius: 0 0 2.5em 2.5em;
+border-width: 0 0.3em 0.3em 0.3em;
+border-style: solid;
+border-color: #b2c2dc;
+box-shadow: 0 5px 10px -6px #596a85
+}
+.ul--tradesimg {
+  content: url(https://grundoscafe.b-cdn.net/items/bd_snowflake_exploding.gif)
+}
+.ul--auctionsimg {
+  content: url(https://grundoscafe.b-cdn.net/items/bd_snowflake_yellow.gif)
+}
+.ul--wishlistimg {
+  content: url(https://grundoscafe.b-cdn.net/items/bd_snowflake_peach.gif)
+}
+.ul--scoresimg {
+  content: url(https://grundoscafe.b-cdn.net/items/bd_snowflake_sticky.gif)
+}
+.ul--neomailimg {
+  content: url(https://grundoscafe.b-cdn.net/items/bd_snowflake_wet.gif)
+}
+.ul--neofriendimg {
+  background: no-repeat center/contain url(https://grundoscafe.b-cdn.net/items/bd_snowflake_poison.gif);
+  object-position: -99999px
+}
+input.small-image {
+  mix-blend-mode: darken
+}
+div.ul__link:nth-child(6) {
+  align-content: flex-start
+}
+a {
+  color: #004599
+}
+a:hover {
+  color: #1E9AC4
+}
+.ul--linkimg:hover {
+  transform: scale(0.9)
+}
+#userPetList {
+background-color: #fafbfd;
+padding: 1em;
+border-radius: 2.5em;
+border: 0.3em solid #b2c2dc;
+box-shadow: 0 0 5px 1px #596a85;
+margin: 0;
+max-height: 1610px;
+overflow: auto
+}
+div.ul--petsheader:nth-child(1) {
+  font-size: 14pt;
+  margin: 0 20% 1em 20%
+}
+div.ul--petsheader:nth-child(2) {
+  margin-top: 0
+}
+.ul--petsheader.ul--sectionheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 30% 0 30%;
+  color: white;
+  background: #7b93b9;
+  border-radius: 5em;
+  font-size: 12pt;
+  margin-top: 2em
+}
+.ul--sectionheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 30% 0 30%;
+  color: white;
+  background: #7b93b9;
+  border-radius: 5em;
+  font-size: 12pt;
+  margin-bottom: 1em
+}
+.userPetList {
+  gap: 1em
+}
+.ul__pet a, .ul__pet a:hover, .ul__pet a:visited {
+  color: #22597e
+}
+.ul__pet {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center
+}
+.ul--petimg {
+  width: 7em;
+  box-shadow: 0 0 6px 0 grey;
+  border-radius: 10em;
+  background: white
+}
+.ul--petimg:hover {
+  transform: scale(1.1)
+}
+#userLookupSiteTrophies {
+background-color: #fafbfd;
+padding: 1em;
+border-radius: 2.5em;
+border: 0.3em solid #b2c2dc;
+box-shadow: 0 0 5px 1px #596a85
+}
+#userLookupGameTrophies {
+background-color: #fafbfd;
+padding: 1em;
+border-radius: 2.5em;
+border: 0.3em solid #b2c2dc;
+box-shadow: 0 0 5px 1px #596a85
+}
+.ul--sitetrophyname, .ul--gametrophyname, .ul--sitetrophycap, a.gamelink {
+  font-weight: bold
+}
+#userReportBlock {
+margin: 0
+}
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000
+}
+.snowflake, .snowflake .inner {
+  animation-iteration-count: infinite;
+  animation-play-state: running
+}
+@keyframes snowflakes-fall {
+  0% {
+    transform: translateY(0)
+  } 100% {
+    transform: translateY(110vh)
+  }
+}
+@keyframes snowflakes-shake {
+  0%, 100% {
+    transform: translateX(0)
+  } 50% {
+    transform: translateX(80px)
+  }
+}
+.snowflake {
+  position: fixed;
+  top: -10%;
+  z-index: 9999;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+  animation-name: snowflakes-shake;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out
+}
+.snowflake .inner {
+  animation-duration: 10s;
+  animation-name: snowflakes-fall;
+  animation-timing-function: linear
+}
+.snowflake:nth-of-type(0) {
+  left: 1%;
+  animation-delay: 0s
+}
+.snowflake:nth-of-type(0) .inner {
+  animation-delay: 0s
+}
+.snowflake:first-of-type {
+  left: 10%;
+  animation-delay: 1s
+}
+.snowflake:first-of-type .inner, .snowflake:nth-of-type(8) .inner {
+  animation-delay: 1s
+}
+.snowflake:nth-of-type(2) {
+  left: 20%;
+  animation-delay: 0.5s
+}
+.snowflake:nth-of-type(2) .inner, .snowflake:nth-of-type(6) .inner {
+  animation-delay: 6s
+}
+.snowflake:nth-of-type(3) {
+  left: 30%;
+  animation-delay: 2s
+}
+.snowflake:nth-of-type(11) .inner, .snowflake:nth-of-type(3) .inner {
+  animation-delay: 4s
+}
+.snowflake:nth-of-type(4) {
+  left: 40%;
+  animation-delay: 2s
+}
+.snowflake:nth-of-type(10) .inner, .snowflake:nth-of-type(4) .inner {
+  animation-delay: 2s
+}
+.snowflake:nth-of-type(5) {
+  left: 50%;
+  animation-delay: 3s
+}
+.snowflake:nth-of-type(5) .inner {
+  animation-delay: 8s
+}
+.snowflake:nth-of-type(6) {
+  left: 60%;
+  animation-delay: 2s
+}
+.snowflake:nth-of-type(7) {
+  left: 70%;
+  animation-delay: 1s
+}
+.snowflake:nth-of-type(7) .inner {
+  animation-delay: 2.5s
+}
+.snowflake:nth-of-type(8) {
+  left: 80%;
+  animation-delay: 0s
+}
+.snowflake:nth-of-type(9) {
+  left: 90%;
+  animation-delay: 1.5s
+}
+.snowflake:nth-of-type(9) .inner {
+  animation-delay: 3s
+}
+.snowflake:nth-of-type(10) {
+  left: 25%;
+  animation-delay: 0s
+}
+.snowflake:nth-of-type(11) {
+  left: 65%;
+  animation-delay: 2.5s
+}
+.ul--petname {
+  display: block;
+  word-break: normal;
+  overflow-wrap: normal
+}
+.ul__pet {
+  max-width: 15%
+}
+.userPetList {
+  gap: 1.5em
+}
+@media screen and (max-width: 959px) {
+  #nav {
+  display: none
+  }
+  #sb_top, #sb_side {
+  display: initial
+  }
+  #sb_bottom, #sb_top {
+  color: initial;
+  width: 100vw
+  }
+  #userLookupContent {
+  background: none;
+  border: none;
+  box-shadow: none;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 8em;
+  width: 85vw
+  }
+  #userLookupInfo {
+  grid-template-columns: 70%
+  }
+  #userLookupText {
+  line-height: 1.5em
+  }
+  .ul--username {
+    font-size: 54pt
+  }
+  #page_content {
+  width: 100vw
+  }
+  #userLookupInfo {
+  font-size: 20pt
+  }
+  #userPetList {
+  padding-left: 0;
+  padding-right: 0
+  }
+  .smallfont {
+    font-size: 14
+  }
+  .ul--petsheader.ul--sectionheader, .ul--sectionheader, #about h2 {
+    font-size: 20pt;
+    margin: 0 20%
+  }
+  div.ul--petsheader:nth-child(1) {
+    font-size: 24pt
+  }
+  .ul__pet {
+    box-shadow: initial;
+    border-radius: 0;
+    padding: 0;
+    background: transparent
+  }
+  .med-image, .ul__gametrophy, .ul__sitetrophy {
+    width: 14vw
+  }
+  #userLookupSiteTrophies, #userLookupGameTrophies {
+  padding-left: 0;
+  padding-right: 0
+  }
+  #gameTrophiesList, #siteTrophiesList {
+  gap: 1em
+  }
+  #userLookupCollections {
+  flex-direction: column
+  }
+  .ul--sitetrophyname, .ul--gametrophyname, .ul--sitetrophycap, a.gamelink {
+    font-size: 16pt
+  }
+  .ul--gametrophiesheader, .ul--sitetrophiesheader {
+    margin-bottom: 1em
+  }
+  .ul--linkimg {
+    width: 90%;
+  }
+  .ul--neofriendimg {
+    background-position-y: -.25em;
+  }
+  form {
+    height: 72px !important;
+  }
+}
