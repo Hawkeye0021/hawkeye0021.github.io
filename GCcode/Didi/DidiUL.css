@@ -1,4 +1,4 @@
-hr, #page_footer, #sb_top, #sb_side, #page_banner, #aio_sidebar {
+hr, #page_footer, #sb_top, #sb_side, #page_banner, #aio_sidebar, #mobilenav {
   display: none
 }
 #userLookupContent img {
@@ -372,19 +372,34 @@ margin: 0
 }
 @media screen and (max-width: 959px) {
   #nav {
-  border-width: 0 0 .5em 0;
-  box-shadow: none;
-  width: 100vw;
-  padding: .5em 0;
-  border-radius: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1em;
-  justify-content: center;
+  display: none;
   }
-  #nav a {
-  font-size: 18pt;
+  #mobilenav {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  top: 0;
+  font-size: 22pt;
+  padding: 0.25em;
+  justify-content: space-evenly;
+  justify-self: center;
+  background: #d4dff3;
+  border-radius: 0;
+  border-width: 0 0em 0.3em 0em;
+  border-style: solid;
+  border-color: #7b93b9;
+  box-shadow: 0 0 5px 0 #596a85
+  }
+  #mobilenav a, #mobilenav a:visited {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  padding-left: 0.65em;
+  padding-right: 0.65em;
+  border-radius: 0.35em;
+  background: #7b93b9;
+  box-shadow: 0 0 5px 0 #596a85;
+  color: white;
   }
   #sb_top, #sb_side, #sb_bottom {
   display: none
@@ -394,7 +409,7 @@ margin: 0
   border: none;
   box-shadow: none;
   margin: auto;
-  margin-top: 5em;
+  margin-top: 1.5em;
   margin-bottom: 8em;
   width: 85vw
   }
