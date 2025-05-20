@@ -205,6 +205,73 @@ display: none;
 .pet--no-trade-icon {
     display: none
 }
+/*STYLE*/
+body {
+    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/mountainsnow.png)
+}
+#nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
+color: white;
+padding-top: 0.25em;
+padding-bottom: 0.25em;
+padding-left: 0.65em;
+padding-right: 0.65em;
+border-radius: 0.35em;
+background: #7b93b9;
+box-shadow: 0 0 5px 0 #596a85;
+border: none;
+}
+#petLookupContent {
+border-radius: 2em;
+box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
+border: 5px solid #7b93b9;
+margin-top: 2em;
+margin-bottom: 2em;
+}
+.pet--name {
+    font-size: 36pt
+}
+.pet--header {
+    font-size: 18pt;
+    margin-top: 0;
+    padding-bottom: 0.25em;
+    background-color: #d4dff3;
+    color: #22597e;
+    text-shadow: 1px 1px 3px #596a85;
+    border-radius: 1em 1em 0 0;
+}
+.pet--statsheader {
+    font-size: 14pt;
+    color: #fff;
+    text-shadow: 1px 1px 3px #596a85;
+    background-color: #d4dff3
+}
+.pet--color {
+    color: #fff
+}
+.pet--color:hover {
+    color: #eee
+}
+#petStats a {
+color: #22597e
+}
+#petStats a:hover {
+color: #22597e
+}
+.pet--gendercolor, .pet--hpcolor {
+    color: #22597e
+}
+.pet--petpetname {
+    color: #22597e;
+    text-shadow: none;
+}
+.pet--no-trade-alert {
+    background: rgba(34, 89, 126,.5);
+    margin: 0 15% 0 15%;
+    bottom: -4.5em
+}
+.pet--no-trade-text {
+    color: white;
+}
 @media screen and (max-width: 959px) {
     #sb_bottom {
     display: none
@@ -252,14 +319,14 @@ display: none;
     margin-left: 15%
     }
     .pet--image {
-        width: 50dvw
+        width: 50vw
     }
     .pet--petpetimg {
         margin-left: 25%;
-        width: 25dvw
+        width: 25vw
     }
     .pet--no-trade-alert {
-        bottom: -2em;
+        bottom: -3.5em;
         font-size: 24pt
     }
     .pet--petpetheader:before, .pet--petpetheader:after, .pet--petpetdesc {
@@ -281,70 +348,4 @@ display: none;
     }
 }
 
-/*STYLE*/
-body {
-    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/mountainsnow.png)
-}
-#nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
-color: white;
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-    padding-left: 0.65em;
-    padding-right: 0.65em;
-    border-radius: 0.35em;
-    background: #7b93b9;
-    box-shadow: 0 0 5px 0 #596a85;
-    border: none;
-}
-#petLookupContent {
-border-radius: 2em;
-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
-border: 5px solid #7b93b9;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-.pet--name {
-    font-size: 36pt
-}
-.pet--header {
-    font-size: 18pt;
-    margin-top: 0;
-    padding-bottom: 0.25em;
-    background-color: #d4dff3;
-    color: #22597e;
-    text-shadow: 1px 1px 3px #596a85;
-    border-radius: 1em 1em 0 0;
-}
-.pet--statsheader {
-    font-size: 14pt;
-    color: #fff;
-    text-shadow: 1px 1px 3px #596a85;
-    background-color: #d4dff3
-}
-.pet--color {
-    color: #fff
-}
-.pet--color:hover {
-    color: #eee
-}
-#petStats a {
-color: #22597e
-}
-#petStats a:hover {
-color: #22597e
-}
-.pet--gendercolor, .pet--hpcolor {
-    color: #22597e
-}
-.pet--petpetname {
-    color: #22597e;
-    text-shadow: none;
-}
-.pet--no-trade-alert {
-  background: rgba(34, 89, 126,.5);
-  margin: 0 15% 0 15%;
-  bottom: -4.5em
-}
-.pet--no-trade-text {
-  color: white;
-}
+
