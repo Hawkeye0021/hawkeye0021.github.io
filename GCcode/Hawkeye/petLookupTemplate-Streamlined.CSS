@@ -1,22 +1,22 @@
 
-            /*STYLE*/
+/*STYLE*/
 body {
     background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/starry.jpg)
-    }
+}
 #nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
-    background: #f2df66;
-    color: #0033af;
-    border: 3px solid #f2df66;
-    font-size: 12pt;
-    box-shadow: 1px 1px 4px 0 gold
-    }
+background: #f2df66;
+color: #0033af;
+border: 3px solid #f2df66;
+font-size: 12pt;
+box-shadow: 1px 1px 4px 0 gold
+}
 #petLookupContent {
-    border-radius: 0.75em;
-    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
-    }
+border-radius: 0.75em;
+box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
+}
 .pet--name {
     font-size: 36pt
-    }
+}
 .pet--header {
     font-size: 18pt;
     margin-top: 0;
@@ -24,192 +24,174 @@ body {
     background-color: #0033af;
     color: #f2df66;
     text-shadow: 1px 1px 1px #000
-    }
+}
 .pet--petpetheader, .pet--petpetdesc {
     font-size: 10pt
-    }
+}
 .pet--statsheader, #bio h2, #testimonials h2 {
     font-size: 14pt;
     color: #f2df66;
     text-shadow: 1px 1px 1px #000;
     background-color: #0033af
-    }
+}
 .pet--petpetname {
     font-size: 16pt
-    }
+}
 #petStats, #testimonials, #bio {
-    font-size: 11pt
-    }
+font-size: 11pt
+}
 #petTraits {
-    display: none
-    }
+display: none
+}
 .pet--color {
     color: #f2df66
-    }
+}
 .pet--color:hover {
     color: #f2df66
-    }
+}
 #petStats a {
-    color: #0137b4
-    }
+color: #0137b4
+}
 #petStats a:hover {
-    color: #1232f7
-    }
+color: #1232f7
+}
 .pet--gendercolor, .pet--hpcolor {
     color: #0137b4
-    }
+}
 .pet--petpetname {
     color: #c99700;
     text-shadow: 1px 1px 1px black
-    }
+}
 /*HIDE SHIT*/
 hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge {
     display: none
-    }
+}
 .pet--no-trade-text {
     color: #c99700
-    }
+}
 /*BREAK SHIT*/
 #petDescription, div#desc, main, #petTop, #petInfo, #petPetpet, .pet_all_petpets, .pet_petpet {
-    display: contents
-    }
+display: contents
+}
 /*CENTERING*/
 #container {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    width: 100dvw;
-    min-height: 100dvh;
-    height: fit-content;
-    justify-content: center;
-    align-items: center
-    }
+margin: auto;
+display: flex;
+flex-direction: column;
+width: 100dvw;
+min-height: 100dvh;
+height: fit-content;
+justify-content: center;
+align-items: center
+}
 /*NAVIGATION*/
 /*FORMATTING*/
 body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed
-    }
+}
 #petLookupContent {
-    display: grid;
-    grid-template-areas: "header header" "pet p2img" "p2header p2header" "p2desc p2desc" "stats  stats" "testimonials testimonials";
-    grid-template-columns: 50%;
-    grid-template-rows: auto auto auto auto auto auto auto;
-    width: 26em;
-    max-width: 44em;
-    margin: auto;
-    position: relative;
-    border-radius: 0.75em;
-    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
-    color: black;
-    gap: 0;
-    background: white;
-    padding-bottom: 1em
-    }
+display: grid;
+grid-template-areas: "header header" "pet p2img" "p2header p2header" "p2desc p2desc" "stats  stats" "testimonials testimonials";
+grid-template-columns: 50%;
+grid-template-rows: auto auto auto auto auto auto auto;
+width: 26em;
+max-width: 44em;
+margin: auto;
+position: relative;
+border-radius: 0.75em;
+box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
+color: black;
+gap: 0;
+background: white;
+padding-bottom: 1em
+}
 #nav, #mobilenav {
-    position: absolute;
-    top: -3.5em;
-    height: fit-content;
-    margin-top: 0.75em;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-self: center;
-    gap: 1em
-    }
+position: absolute;
+top: -3.5em;
+height: fit-content;
+margin-top: 0.75em;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-self: center;
+gap: 1em
+}
 #nav a, #nav a:visited, #mobilenav a, #mobilenav a:visited {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    border-radius: 0.25em
-    }
+padding-left: 0.25em;
+padding-right: 0.25em;
+border-radius: 0.25em
+}
 #nav a:hover, #mobilenav a:hover {
-    scale: 0.9
-    }
+scale: 0.9
+}
 .pet--header {
     grid-area: header;
     border-radius: 0.35em 0.35em 0 0;
     margin-top: 0;
     margin-bottom: 0.25em
-    }
+}
 .pet--name {
     display: block
-    }
+}
 #petImage {
-    grid-area: pet;
-    margin-left: 30%
-    }
+grid-area: pet;
+margin-left: 30%
+}
 .pet--petpetimg {
     grid-area: p2img;
     align-self: end;
     margin-left: 18%;
     padding-right: auto;
     background: white
-    }
+}
 .pet--petpetheader {
     grid-area: p2header;
     font-size: 0
-    }
+}
 .pet--petpetheader:after {
     content: "and their petpet,";
     font-size: 10pt
-    }
+}
 .pet--petpetdesc {
     grid-area: p2desc;
-    margin-bottom: 0.25em
-    }
+    margin-bottom: 0.25em;
+}
+.pet--petpetzapped {
+    color: transparent;
+    grid-area: p2img;
+    justify-self: left;
+    margin-top: 35%;
+    margin-left: 60%;
+    font-size: 0pt;
+}
 .pet--statsheader {
     width: 100%;
     margin: 0;
     margin-bottom: 0.8em;
     border-radius: 0.5em 0.5em 0 0;
     box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75)
-    }
+}
 #petStats {
-    display: details;
-    grid-area: stats;
-    background: none;
-    border-radius: 0.35em;
-    margin: 0.25em 0.25em 0.25em 0.5em;
-    padding: 0 0.35em 0 0.35em
-    }
+display: details;
+grid-area: stats;
+background: none;
+border-radius: 0.35em;
+margin: 0.25em 0.25em 0.25em 0.5em;
+padding: 0 0.35em 0 0.35em
+}
 #desc {
-    grid-area: desc;
-    display: grid;
-    grid-template-areas: "testimonials bio";
-    grid-template-columns: 50% 50%;
-    justify-content: center;
-    margin-top: 1em
-    }
-#bio {
-    display: none;
-    grid-area: bio;
-    margin: 0.25em 0.5em 0.25em 0.25em;
-    justify-content: center
-    }
-#testimonials {
-    grid-area: testimonials;
-    margin: 0.25em 0.5em 0.5em 0.5em;
-    display: none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 1em;
-    justify-content: center
-    }
-#testimonials h2, #bio h2 {
-    width: 100%;
-    border-radius: 0.5em 0.5em 0 0;
-    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75);
-    margin: 0
-    }
-#testimonials p {
-    width: 30%
-    }
+grid-area: desc;
+display: grid;
+grid-template-areas: "testimonials";
+grid-template-columns: 50% 50%;
+justify-content: center;
+margin-top: 1em
+}
 #testimonials, #bio {
-    border-radius: 0.35em;
-    padding-left: 0.35em;
-    padding-right: 0.35em
-    }
+display: none;
+}
 .pet--no-trade-alert {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.75);
@@ -219,77 +201,82 @@ body {
     left: 0;
     width: fit-content;
     border-radius: 0.5em
-    }
+}
 .pet--no-trade-icon {
     display: none
-    }
+}
 @media screen and (max-width: 959px) {
+    #sb_bottom {
+    display: none
+    }
     #nav {
-        display: none
-        }
-    #sb_top, #sb_side {
-        display: initial
-        }
-    #mobilenav {
-        display: flex;
-        top: initial;
-        top: -3em;
-        gap: 0;
-        width: 100%;
-        justify-content: center;
-        gap: 1em
-        }
-    #mobilenav a {
-        font-size: 30pt
-        }
+    display: flex;
+    top: initial;
+    top: -4em;
+    gap: 0;
+    width: 100%;
+    justify-content: center;
+    gap: 1em
+    }
+    #nav a {
+    font-size: 30pt
+    }
     #container {
-        min-height: fit-content
-        }
-    #page_content {
-        margin-bottom: 2em;
-        margin-top: 2em
-        }
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    max-height: 100vh;
+    }
     #petLookupContent {
-        width: 90dvw;
-        height: fit-content;
-        font-size: 24pt;
-        padding-top: 1em
-        }
-    #petStats, #bio, #testimonials {
-        font-size: 26pt
-        }
-    .pet--statsheader, #bio h2, #testimonials h2 {
+    width: 90dvw;
+    height: fit-content;
+    font-size: 24pt;
+    padding-top: 1em;
+    margin-top: 5em;
+    }
+    #petStats {
+    font-size: 26pt
+    }
+    .pet--statsheader {
         font-size: 36pt
-        }
+    }
     .pet--name {
         font-size: 72pt;
         display: block
-        }
+    }
     .pet--header {
         margin-top: -1em;
         font-size: 32pt
-        }
+    }
     #petImage {
-        margin-left: 15%
-        }
+    margin-left: 15%
+    }
     .pet--image {
         width: 50dvw
-        }
+    }
     .pet--petpetimg {
         margin-left: 25%;
         width: 25dvw
-        }
+    }
     .pet--no-trade-alert {
         bottom: -2em;
         font-size: 24pt
-        }
+    }
     .pet--petpetheader:before, .pet--petpetheader:after, .pet--petpetdesc {
         font-size: 24pt
-        }
+    }
     .pet--petpetname {
         font-size: 36pt
-        }
-    #petTraits {
-        font-size: 16pt
-        }
     }
+    .pet--petpetzapped img {
+        width: 24pt;
+    }
+    .pet--petpetzapped {
+        justify-self: right;
+        margin-top: 50%;
+        margin-right: 15%;
+    }
+    #petTraits {
+    font-size: 16pt
+    }
+}
