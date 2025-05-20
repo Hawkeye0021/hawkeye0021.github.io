@@ -66,7 +66,7 @@ transform: scale(0.9)
 }
 #userLookupDesc {
 margin-top: 1.5em;
-display: contents
+display: contents;
 }
 #about h2 {
 display: flex;
@@ -84,7 +84,7 @@ padding: 1em;
 border-radius: 2.5em;
 border: 0.3em solid #b2c2dc;
 box-shadow: 0 0 5px 1px #596a85;
-margin: 1em 0 -1em 0
+margin: 1em 0 -.5em 0
 }
 #userLookupContent {
 background-color: #d4dff3;
@@ -372,21 +372,29 @@ margin: 0
 }
 @media screen and (max-width: 959px) {
   #nav {
+  border-width: 0 0 .5em 0;
+  box-shadow: none;
+  width: 100vw;
+  padding: .5em 0;
+  border-radius: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  }
+  #nav a {
+  font-size: 24pt;
+  }
+  #sb_top, #sb_side, #sb_bottom {
   display: none
-  }
-  #sb_top, #sb_side {
-  display: initial
-  }
-  #sb_bottom, #sb_top {
-  color: initial;
-  width: 100vw
   }
   #userLookupContent {
   background: none;
   border: none;
   box-shadow: none;
   margin: auto;
-  margin-top: 0;
+  margin-top: 5em;
   margin-bottom: 8em;
   width: 85vw
   }
