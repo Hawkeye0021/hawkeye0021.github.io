@@ -131,7 +131,7 @@ main {
 }
 @media screen and (max-width: 959px) {
     #sb_top, #sb_bottom {
-    display: initial;
+    display: none;
     }
     #nav {
     font-size: 32pt;
