@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+hr, #page_footer, #sb_top, #sb_side, #page_banner, .block, #shopBar {
+    display: none
+}
+body {
+    background-image: url(https://i.postimg.cc/SQ7jZkWf/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center
+}
+div#container {
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+div#page_content {
+    margin: auto;
+}
+#shopContent {
+display: grid;
+justify-items: center;
+}
+#shopInfo {
+color: white;
+text-shadow: -1px 1px 2px black;
+}
+#shopInfo a, #shopInfo a:visited {
+color: red
+}
+#shopInfo a:hover {
+color: black
+}
+#shopPage a{
+color: white;
+text-shadow: -1px 1px 2px black;
+}
+.shopkeeper-img {
+    content: url(https://i.postimg.cc/XqQFGC3Q/signArt2.png);
+    width: 75%;
+}
+#shopkeeper {
+margin-bottom: -60px
+}
+#petpets {
+position: fixed;
+bottom: 0px;
+z-index: 2;
+left: 50px;
+width: 400px
+}
+#bg {
+position: fixed;
+background-image: url(https://i.postimg.cc/0QK74QYN/163-parquet-medium-color-texture-seamless2.png);
+background-size: 30%;
+width: 100%;
+height: 60px;
+z-index: 1;
+bottom: 0px;
+left: 0px;
+box-shadow: -2px -2px 10px 3px black;
+}
+#shopInventory {
+background-image: url(https://i.postimg.cc/VsStsdbs/163-parquet-medium-color-texture-seamless.jpg);
+background-position: center;
+display: flex;
+flex-wrap: wrap;
+border-radius: 4px;
+padding: 10px;
+background-color: rgba(123, 120, 175,.75);
+box-shadow: 0px 0px 15px 5px black;
+}
+.shop-item {
+    width: min-content;
+    height: 220px;
+    background-image: url(https://i.postimg.cc/4NGPM6mH/852966dfa4faec4bbc01ec838dadea.png);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.shop-item-info {
+    background-image: url(https://i.postimg.cc/CMt5J28c/9-Blackboard-texture-seamless.jpg);
+    background-size: 150%;
+    font-family: "schoolbell";
+    font-weight: lighter;
+    font-size: 11pt;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 10px 0px black;
+}
+.shop-item-info strong {
+    font-weight: bold;
+}
+form {
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 10px;
+    margin-top: 5px;
+    mix-blend-mode: multiply;
+}
+form:hover {
+    transform: scale(.75);
+}
+
+.shop-item-info:nth-of-type(3n+1):hover {
+    transform: rotate(-2deg)
+}
+.shop-item-info:nth-of-type(3n+2):hover {
+    transform: rotate(3deg)
+}
+.shop-item-inf0:nth-of-type(3n+3):hover {
+    transform: rotate(2deg)
+}
+#shopPage {
+z-index: 3;
+}
+#aio_sidebar {
+display: none;
+}

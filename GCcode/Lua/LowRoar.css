@@ -1,0 +1,331 @@
+@import url(https://fonts.googleapis.com/css2?family=Caveat+Brush);
+@import url(https://fonts.googleapis.com/css2?family=Cutive+Mono);
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Delius&family=Playwrite+US+Trad:wght@100..400&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Limelight&display=swap);
+/*STYLE*/
+body {
+    background-image: url(https://i.imgur.com/Wq5xJx3.jpeg)
+}
+.pet--image {
+    content: url(https://i.imgur.com/vihU5HV.png);
+    width: 275px;
+}
+#nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
+background: pink;
+color: white;
+text-shadow: 1px 1px 1px black;
+padding: 3px;
+font-size: 12pt
+}
+#petLookupContent {
+border-radius: 0.75em;
+font-family: comic neue;
+}
+.pet--name {
+    font-size: 60pt;
+    display: block;
+    font-family: caveat brush;
+}
+.pet--header {
+    font-size: 18pt;
+    margin-top: 0;
+    background-color: none;
+    color: pink;
+    text-shadow: 1px 1px 1px #000;
+}
+.pet--petpetheader, .pet--petpetdesc {
+    font-size: 12pt;
+}
+.pet--petpetname {
+    font-size: 18pt;
+    color: pink;
+    font-family: caveat brush;
+    text-shadow: 1px 1px 1px #000;
+}
+#petStats, #desc, #art{
+font-size: 12pt
+}
+#petTraits {
+display: none
+}
+/*HIDE SHIT*/
+.pet--height, .pet--weight, hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge {
+    display: none
+}
+.pet--no-trade-text {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: red
+}
+/*BREAK SHIT*/
+#petDescription, div#desc, main, #petTop, #petInfo, #petPetpet, .pet_all_petpets, .pet_petpet {
+display: contents
+}
+/*CENTERING*/
+#page_content {
+width: 100dvw;
+}
+#container {
+margin: auto;
+display: flex;
+flex-direction: column;
+width: 100dvw;
+min-height: 100dvh;
+height: fit-content;
+justify-content: center;
+align-items: center
+}
+/*NAVIGATION*/
+/*FORMATTING*/
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+#petLookupContent {
+display: grid;
+grid-template-areas:
+"header header"
+"pet p2img"
+"p2header p2header"
+"p2desc p2desc"
+"br br"
+"stats  trophies"
+"br2 br2"
+"music desc"
+"artwork artwork";
+grid-template-columns: 50%;
+grid-template-rows: auto auto auto auto auto auto auto;
+width: 43em;
+margin: auto;
+position: relative;
+border-radius: 3em;
+box-shadow: -3px 3px 10px 3px pink;
+color: black;
+gap: 0;
+background-color: rgba(255, 255, 255, 0.8);
+padding: 2em;
+margin-top: 2.5em;
+}
+#nav, #mobilenav {
+position: absolute;
+top: -3.5em;
+height: fit-content;
+margin-top: 0.75em;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-self: center;
+gap: 1em
+}
+#nav a, #nav a:visited, #mobilenav a, #mobilenav a:visited {
+padding-left: 6px;
+padding-right: 6px;
+border-radius: 0.25em
+}
+#nav a:hover, #mobilenav a:hover {
+scale: .9
+}
+.pet--header {
+    grid-area: header;
+    border-radius: 0.35em 0.35em 0 0;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+}
+#petImage {
+grid-area: pet;
+margin-left: 35%
+}
+.pet--petpetimg {
+    grid-area: p2img;
+    align-self: end;
+    margin-left: 11%;
+    padding-right: auto;
+    background: white;
+    width: 100px;
+    mix-blend-mode: multiply;
+}
+.pet--petpetheader {
+    grid-area: p2header;
+    font-size: 0
+}
+.pet--petpetheader:after {
+    content: "and her petpet,";
+    font-size: 12pt
+}
+.pet--petpetdesc {
+    grid-area: p2desc;
+    margin-bottom: 0.25em
+}
+#br {
+grid-area: br;
+border-bottom: 8px double #8f87db;
+width: 95%;
+margin: 1em auto 1em auto
+}
+#br2 {
+grid-area: br2;
+border-bottom: 8px double #8f87db;
+width: 95%;
+margin: 1em auto 1em auto
+}
+.pet--statsheader {
+    display: none;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0.8em;
+    border-radius: 0.5em 0.5em 0 0;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75)
+}
+#petStats {
+grid-area: stats;
+background: none;
+border-radius: 0.35em;
+margin: 0.25em 0.25em 0.25em 0.5em;
+padding: 0 0.35em 0 0.35em
+
+}
+#petTrophies {
+grid-area: trophies;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-content: center;
+background: none;
+border-radius: 0.35em;
+margin: 0.25em 0.25em 0.25em 0.5em;
+padding: 0 0.35em 0 0.35em;
+row-gap: 2em;
+}
+.pet-trophy-link {
+    width: fit-content;
+    height: fit-content;
+    border-bottom: 3px
+}
+.pet--trophyimg {
+    filter: brightness(110%);
+    mix-blend-mode: multiply
+}
+.pet--no-trade-alert {
+    position: absolute;
+    background-color: transparent;
+    bottom: -2.25em;
+    font-weight: bold;
+    text-shadow: -1px 1px 2px black;
+    left: 0;
+    width: 100%
+}
+#music {
+grid-area: music;
+width: 100%;
+}
+#desc {
+grid-area: desc;
+}
+#art {
+grid-area: artwork;
+}
+#music summary, #desc summary, #art summary {
+background-color: pink;
+width: 90%;
+margin: auto;
+font-size: 20pt;
+color: white;
+text-shadow: 1px 1px 1px black;
+padding-bottom: .2em;
+border-radius: .5em;
+box-shadow: 1px 1px 3px 0px grey;
+font-family: caveat brush;
+margin-bottom: .5em;
+}
+#music > audio {
+border-radius: 1em;
+background: pink;
+width: 90%;
+}
+.pet--no-trade-text {
+    padding: 0.25em;
+    border-radius: 0.5em
+}
+.pet--no-trade-icon {
+    display: none
+}
+@media screen and (max-width: 959px) {
+    #nav {
+    display: none
+    }
+    #sb_top {
+    display: initial
+    }
+    #mobilenav {
+    display: flex;
+    top: initial;
+    top: -3em;
+    gap: 0;
+    width: 100%;
+    justify-content: center;
+    gap: 1em;
+    }
+    #mobilenav a {
+    font-size: 30pt;
+    display: initial;
+    background: pink;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 3px;
+    }
+    #container {
+    min-height: fit-content;
+    }
+    #page_content {
+    margin-bottom: 2em;
+    margin-top: 2em
+    }
+    #petLookupContent {
+    width: 90dvw;
+    height: fit-content;
+    font-size: 24pt;
+    padding-top: 1em;
+    padding: 1em;
+    }
+    #petStats, #desc, #art {
+    font-size: 22pt
+    }
+    #music summary, #desc summary, #art summary {
+    font-size: 30pt;
+    }
+    .pet--statsheader, #bio h2, #testimonials h2 {
+        font-size: 24pt;
+    }
+    .pet--name {
+        font-size: 72pt;
+        display: block;
+    }
+    .pet--header {
+        margin-top: -1em;
+        font-size: 24pt
+    }
+    #petImage {
+    margin-left: 40%;
+    }
+    .pet--image {
+        width: 350px;
+    }
+    .pet--petpetimg {
+        margin-left: 15%;
+        width: 150px
+    }
+    .pet--no-trade-alert {
+        bottom: -2em;
+        font-size: 24pt
+    }
+    .pet--petpetheader:before, .pet--petpetheader:after, .pet--petpetdesc {
+        font-size: 20pt;
+    }
+    .pet--petpetname {
+        font-size: 24pt
+    }
+    #petTraits {
+    font-size: 16pt
+    }
+}

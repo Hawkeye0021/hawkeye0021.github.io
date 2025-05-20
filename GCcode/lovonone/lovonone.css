@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Lacquer&display=swap');
+                   .ul__Reigen_Arataka .ul--petimg {
+    content: url(https://file.garden/ZSI-5XwuzXqvqdnn/Reigenwocky.png)
+    }
+.ul__Reigen_Arataka {
+    order: 1
+    }
+.body {
+    background-color: pink
+    }
+/*hiding things*/
+hr, #page_footer, #sb_top, #sb_side, #page_banner {
+    display: none
+    }
+body {
+    background-attachment: fixed;
+    background-image: url(https://i.postimg.cc/4xjTtBTB/hauntedpark.png);
+    background-size: cover;
+    background-position: center;
+    font-family: germania one;
+    color: #ddd !important;
+    font-size: 16pt;
+    }
+div#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column
+    }
+div#page_content {
+    margin: auto;
+    width: 775px
+    }
+#userLookupDesc {
+    display: contents;
+    }
+#userLookupContent {
+    display: grid;
+    margin-top: 75px;
+    background-image: url(https://i.postimg.cc/vHZ2mbfs/16-dark-wood-fine-texture-seamless.jpg);
+    padding: 55px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 2px orange;
+    margin-bottom: 25px;
+    }
+#page_event {
+    position: absolute;
+    top: 50px;
+    left: 10px
+    }
+#nav {
+    width: 800px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    background-image: url(https://i.postimg.cc/vHZ2mbfs/16-dark-wood-fine-texture-seamless.jpg);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 0 5px 2px orange;
+    padding: 5px;
+    justify-content: space-evenly;
+    justify-self: center;
+    padding-bottom: 8px;
+    }
+#nav a, #nav a:visited {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: rgb(45, 35, 65);
+    box-shadow: 0 0 3px 1px orange;
+    font-size: 14pt;
+    font-weight: lighter;
+    }
+#nav a:hover {
+    transform: scale(1.1)
+    }
+#arrow {
+    position: fixed;
+    right: 15px;
+    bottom: 15px
+    }
+#arrow img {
+    width: 50px
+    }
+a, a:visited {
+    color: white;
+    font-size: 10pt;
+    }
+a:hover {
+    color: orange
+    }
+.ul--header span {
+    display: none
+    }
+.ul--header:after {
+    font-family: "lacquer";
+    content: "Lovonone";
+    font-size: 64pt;
+    color: orange;
+    }
+.ul--header {
+    margin-top: -25px
+    }
+#userLookupInfo {
+    display: grid;
+    grid-template-areas: "info shield" "info collections";
+    grid-template-columns: 60% 40%;
+    font-family: germania one;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(45, 35, 65);
+    background-size: 100%;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px 0 rgba(1, 1, 1, 0.95);
+    color: #ddd;
+    font-size: 14pt;
+    font-weight: lighter;
+    }
+#userLookupInfo a {
+    font-style: italic;
+    font-weight: lighter;
+    }
+#userLookupInfo a:hover {
+    font-style: italic
+    }
+#userLookupText {
+    grid-area: info
+    }
+#userLookupShield {
+    grid-area: shield;
+    justify-self: center;
+    display: flex;
+    }
+#userLookupCollections {
+    grid-area: collections;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+    }
+#userLookupLinks {
+    padding-top: 10px;
+    padding-bottom: 10px
+    }
+#userLookupPets {
+    display: flex;
+    flex-direction: column
+    }
+#userPetList {
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgba(1, 1, 1, 0.95);
+    background-color: rgb(45, 35, 65);
+    background-size: 175%;
+    color: black
+    }
+#userPetList a, #userPetList a:visited {
+    color: white
+    }
+#userPetList a:hover {
+    color: orange
+    }
+div.ul__pet {
+    width: 100px;
+    }
+.ul--petname {
+    font-weight: lighter;
+    font-size: 12pt;
+}
+.ul--petimg {
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    width: 100px
+    }
+img.ul--petimg {
+    width: 100px
+    }
+.ul--petimg:hover {
+    border-style: double;
+    border-color: orange
+    }
+#siteTrophiesList, #gameTrophiesList {
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0 rgba(1, 1, 1, 0.95);
+    background-color: rgb(45, 35, 65);
+    background-size: 175%;
+    color: white;
+    font-family: arial;
+    }
+.ul--sitetrophyimg, .ul--gametrophyimg {
+    border-radius: 5px
+    }
+.ul--sitetrophyname, .ul--gametrophyname, .ul--sitetrophycap, a.gamelink {
+    font-size: 9pt;
+    font-weight: bold
+    }
+.ul--linktext {
+    font-size: 10pt;
+    }
+.ul__link {
+    height: 75px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between
+    }
+.ul__neofriend .ul--linktext, .ul__neomail .ul--linktext {
+    visibility: hidden;
+    font-size: 0
+    }
+.ul__neomail .ul--linktext::after {
+    content: "Neomail";
+    visibility: visible;
+    font-size: 10pt
+    }
+.ul__neofriend .ul--linktext::after {
+    content: "Neofriend";
+    visibility: visible;
+    font-size: 10pt
+    }
+.ul--sectionheader {
+    font-size: 16pt;
+    letter-spacing: 0.15em
+    }
+.ul--petsheader {
+    text-transform: capitalize;
+}
+.ul__pet {
+    padding: 10px
+    }
+.ul--gendercolor {
+    color: black !important
+    }

@@ -1,0 +1,172 @@
+
+            hr, .pet--statsheader, .pet--smallname, .petJobs, #petChallenge, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks {
+    display: none
+    }
+body {
+    background-image: url(https://i.postimg.cc/pLz1Tf7S/20240428172333-IMG-3084-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed
+    }
+.pet--image {
+    content: url(https://i.postimg.cc/ZK1M47f3/NEOPETS-Sketches-1735236107490-v1.png)
+}
+#flower {
+    position: absolute;
+    right: -40px;
+    top: 130px
+    }
+#flower img {
+    height: 200px
+    }
+h2 {
+    font-style: normal !important
+    }
+#page_content {
+    display: block;
+    margin: auto;
+    min-width: fit-content;
+    height: fit-content
+    }
+#container {
+    margin: auto
+    }
+#petLookupContent {
+    position: relative;
+    color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "top top" "petpet placeholder" "trophies trophies" "trade trade" "desc desc";
+    width: 100%;
+    gap: unset;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border: 6px solid #ec8350;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.75)
+    }
+#petTop {
+    grid-area: top;
+    width: 100%
+    }
+#petInfo {
+    text-transform: lowercase;
+    display: grid;
+    grid-area: info;
+    width: 100%;
+    grid-template-columns: 50%;
+    align-items: center
+    }
+#petImage {
+    grid-area: image;
+    margin-top: -125px
+    }
+#petStats {
+    grid-area: stats;
+    background: none;
+    text-align: left
+    }
+#petPetpet {
+    width: 49%;
+    position: absolute;
+    left: 0%;
+    top: 22em;
+    padding-left: 10px;
+    font-size: 8pt;
+    text-transform: lowercase
+    }
+#petLinks {
+    grid-area: links;
+    padding-top: 1em;
+    padding-bottom: 1em
+    }
+#petTrophies {
+    grid-area: trophies;
+    padding-top: 1em;
+    padding-bottom: 1em
+    }
+#petDescription {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "testimonials bio";
+    grid-area: desc;
+    color: white;
+    border-radius: 5px;
+    color: black;
+    width: 100%
+    }
+#Testimonials {
+    grid-area: testimonials;
+    background-color: #a4a830;
+    border-style: inset;
+    width: 95%;
+    border-radius: 5px;
+    justify-self: center;
+    padding-bottom: 10px;
+    border-color: #768766;
+    border-width: 3px
+    }
+#bio {
+    grid-area: bio;
+    background-color: #a4a830;
+    border-style: inset;
+    width: 95%;
+    border-radius: 5px;
+    justify-self: center;
+    padding-bottom: 10px;
+    border-color: #768766;
+    border-width: 3px
+    }
+.pet--no-trade-alert {
+    grid-area: trade;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 1em;
+    width: 100%
+    }
+.pet--header {
+    display: inline-block;
+    width: max-content
+    }
+a.pet--color {
+    color: #ec8350
+    }
+a.pet--color:hover {
+    color: #768766
+    }
+a {
+    color: #768766
+    }
+a:hover {
+    color: #ec8350
+    }
+.pet-traits-greeting, .pet-traits-interests {
+    font-size: 8pt
+    }
+#nav {
+    position: absolute;
+    top: -4em;
+    height: fit-content;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    gap: 1em
+    }
+#nav a, #nav a:visited {
+    color: black !important;
+    background: #a4a830;
+    padding: 4px;
+    border: solid 3px #a4a830;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.75)
+    }
+#nav a:hover {
+    background: #a4a830;
+    padding-left: 4px;
+    padding-right: 4px;
+    border: solid 3px #768766;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.75)
+    }

@@ -1,0 +1,407 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+/*CATEGORIES*/
+/*INSERTS FIRST CATEGORY*/
+.petlist__before {
+    display: inline-flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px
+}
+/*CATEGORY TITLE*/
+.petlist__before::after {
+    content: "- lil petals -";
+    font-size: 18pt;
+    color: black
+}
+/*INSERTS TEXT AREA*/
+.cheezio__after {
+    display: inline-flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black
+}
+/*CATEGORY TITLE*/
+.cheezio__after::after {
+    content: "- to the moon and back -";
+    font-size: 18pt
+}
+/*INSERTS TEXT AREA*/
+.yop5__after {
+    display: inline-flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black
+}
+/*CATEGORY TITLE*/
+.yop5__after::after {
+    content: "- uni stable -";
+    font-size: 18pt
+}
+/*INSERTS TEXT AREA*/
+.Phaion__after {
+    display: inline-flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black
+}
+/*CATEGORY TITLE*/
+.Phaion__after::after {
+    content: "- fabulously pink -";
+    font-size: 18pt
+}
+/*INSERTS TEXT AREA*/
+.Stamper__after {
+    display: inline-flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black
+}
+/*CATEGORY TITLE*/
+.Stamper__after::after {
+    content: "- grundos -";
+    font-size: 18pt
+}
+/*INSERTS TEXT AREA*/
+.SallyRose__after {
+    display: inline-flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black
+}
+/*CATEGORY TITLE*/
+.SallyRose__after::after {
+    content: "- hopping bunbuns -";
+    font-size: 18pt
+}
+/*INSERTS TEXT AREA*/
+.Funkyfin__after {
+    display: inline-flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black
+}
+/*CATEGORY TITLE*/
+.Funkyfin__after::after {
+    content: "- dragon collection -";
+    font-size: 18pt
+}
+/*INSERTS TEXT AREA*/
+.Merrigan__after {
+    display: inline-flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black
+}
+/*CATEGORY TITLE*/
+.Merrigan__after::after {
+    content: "- frogstomps -";
+    font-size: 18pt
+}
+/*INSERTS TEXT AREA*/
+.Prinsessia__after {
+    display: inline-flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black
+}
+/*CATEGORY TITLE*/
+.Prinsessia__after::after {
+    content: "- mah cuties -";
+    font-size: 18pt
+}
+/*INSERTS TEXT AREA*/
+.AndChocolateMilk__after {
+    display: inline-flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black
+}
+/*CATEGORY TITLE*/
+.AndChocolateMilk__after::after {
+    content: "- chias -";
+    font-size: 18pt
+}
+/*INSERTS TEXT AREA*/
+.BeepBloop__after {
+    display: inline-flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black
+}
+/*CATEGORY TITLE*/
+.BeepBloop__after::after {
+    content: "- variously beautiful -";
+    font-size: 18pt
+}
+/*HIDING*/
+hr, #page_footer, #sb_top, #sb_side, #page_banner {
+    display: none
+}
+/*NAVIGATION*/
+#userLookupDesc {
+display: contents
+}
+#nav {
+width: 650px;
+position: absolute;
+display: flex;
+flex-direction: row;
+top: 0;
+background-color: #a4d22a;
+font-size: 16pt;
+padding: 5px;
+justify-content: space-between;
+justify-self: center;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.75)
+}
+#nav a, #nav a:visited {
+display: flex;
+flex-direction: row;
+color: black;
+justify-content: center;
+padding-top: 4px;
+padding-bottom: 4px;
+padding-left: 5px;
+padding-right: 5px;
+border-radius: 5px;
+border-bottom: 3px solid #ffbcdd;
+background-color: #fff;
+box-shadow: 0 0 3px 0 black
+}
+#nav a:hover {
+scale: 1.1;
+background-color: #fff
+}
+/*BASE*/
+body {
+    background-image: url(https://i.postimg.cc/BQWT7S83/daisies.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white
+}
+div#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column
+}
+div#page_content {
+    margin: auto;
+    width: 645px
+}
+#userLookupContent {
+font-family: comic neue;
+margin-top: 270px;
+display: grid;
+background-color: #a4d22a;
+padding-left: 5px;
+padding-right: 5px;
+border-radius: 30px;
+box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1)
+}
+.ul--sectionheader {
+    font-family: Chilanka;
+    letter-spacing: 0.1em;
+    font-size: 24pt;
+    color: black
+}
+.ul--petsheader {
+    text-transform: capitalize
+}
+a, a:visited, .ul--button, .ul--button:visited {
+    color: green
+}
+a:hover, ul--button:hover {
+    color: #fbb811
+}
+/*USER INFO*/
+.ul--header {
+    display: flex;
+    position: absolute;
+    top: 55px;
+    width: 635px;
+    justify-content: center
+}
+.ul--headerlabel {
+    display: none
+}
+.ul--username {
+    content: url(https://i.postimg.cc/xdYY6zQm/Daisy.png)
+}
+#userLookupInfo {
+display: grid;
+grid-template-areas: "info shield" "info collections";
+grid-template-columns: 60% 40%;
+justify-items: center;
+font-size: 12pt;
+padding: 15px;
+color: black;
+background-color: #fff;
+border-radius: 25px;
+box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+margin-top: 5px;
+border-bottom: 5px solid #ffbcdd
+}
+#userLookupShield {
+grid-area: shield
+}
+.ul--shield {
+    content: url(https://i.postimg.cc/y82YBFd5/shield-1.png);
+    height: 200px
+}
+#userLookupText {
+grid-area: info
+}
+#userLookupCollections {
+grid-area: collections;
+display: flex;
+flex-direction: row
+}
+/*Trophies*/
+.ul--sitetrophyimg, .ul--gametrophyimg {
+    border-radius: 5px
+}
+.ul--sitetrophyname, .ul--gametrophyname, .ul--sitetrophycap, a.gamelink {
+    font-size: 9pt;
+    font-weight: bold
+}
+/*LINKS*/
+#userLookupLinks {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+background-color: #fff;
+border-radius: 25px;
+box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+padding-top: 5px;
+margin-top: -5px;
+border-bottom: 5px solid #ffbcdd
+}
+.ul--linktext {
+    font-size: 12pt;
+    color: black;
+    border-radius: 3px;
+    padding: 3px
+}
+.ul__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 86px
+}
+.ul--linkimg:hover {
+    scale: 1.05
+}
+.ul__neofriend .ul--linktext, .ul__neomail .ul--linktext, .ul__scores .ul--linktext {
+    visibility: hidden;
+    font-size: 0
+}
+.ul__neomail .ul--linktext::after {
+    content: "Neomail";
+    visibility: visible;
+    font-size: 12pt;
+    color: black;
+    border-radius: 3px;
+    padding: 3px
+}
+.ul__neofriend .ul--linktext::after {
+    content: "Neofriend";
+    visibility: visible;
+    font-size: 12pt;
+    color: black;
+    border-radius: 3px;
+    padding: 3px
+}
+.ul__scores .ul--linktext::after {
+    content: "Scores";
+    visibility: visible;
+    font-size: 12pt;
+    color: black;
+    border-radius: 3px;
+    padding: 3px
+}
+/*PETS*/
+#userLookupPets {
+padding: 5px;
+background-color: white;
+border-radius: 25px;
+box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+margin-top: -5px;
+font-size: 11pt;
+border-bottom: 5px solid #ffbcdd
+}
+.ul--petname, .ul--petname:visited, .ul--petname:hover {
+    color: #000;
+    margin-top: -5px
+}
+.ul--petimg {
+    margin-bottom: 5px;
+    border-width: 2px;
+    border-color: #fbb811;
+    border-style: solid;
+    border-radius: 15px;
+    width: 145px
+}
+.ul--petimg:hover {
+    border: solid 2px #ffbcdd;
+    scale: 1.05
+}
+/*OVERLAYS*/
+/*TROPHIES*/
+#userLookupSiteTrophies, #userLookupGameTrophies {
+padding: 10px;
+background-color: white;
+backdrop-filter: blur(3px);
+border-radius: 25px;
+border-color: rgba(137, 207, 240, 0.85);
+box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+color: #000;
+margin-top: -5px;
+border-bottom: 5px solid #ffbcdd
+}
+#siteTrophiesList a, #gameTrophiesList a, #siteTrophiesList a:visited, #gameTrophiesList a:visited, #siteTrophiesList a:hover, #gameTrophiesList a:hover {
+color: black
+}
+.ul--sitetrophyimg, .ul--gametrophyimg {
+    margin-bottom: 5px
+}
+/*EXTRAS*/
+#userReportBlock {
+margin-top: -10px
+}

@@ -1,0 +1,336 @@
+
+@import url(https://db.onlinewebfonts.com/c/a1b2c14287a243e38d6505c0c8808ac1?family=Subliminal+BF+W01+Regular);
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+#page_banner, #petLead {
+display: none;
+}
+#sb_top {
+background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Dockter/nonplace/topbar2.png);
+border: none;
+}
+#top-bar-info {
+color: black;
+}
+a.sb-custom-css, a.sb-custom-css:visited, a#user-info-username, a#user-info-username:visited, a#user-info-pet, a#user-info-pet:visited, a#on-hand-np, a#on-hand-np:visited {
+    color: blue !important;
+    font-family: times new roman;
+    font-size: 10pt;
+}
+.sb-custom-css:hover, a#user-info-pet:hover, a#user-info-username:hover, a#on-hand-np:hover {
+    color: purple !important;
+    text-shadow: none !important;
+}
+#sb_createpet, #sb_petcentral, #sb_explore, #sb_games, #sb_neomail, #sb_shops,
+#sb_boards, #sb_news, #sb_stuff, #sb_help, #sb_login, #sb_logout {
+background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Dockter/nonplace/sidenav2.png);
+width: 130px;
+}
+#sb_side {
+background-color: #0193a5;
+border-style: none;
+border-radius: 0;
+box-shadow: none;
+font-family: times new roman;
+}
+img#side-banner-img {
+    content: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Dockter/nonplace/istockphoto-1399588872-612x612.jpg);
+    border-radius: 0px;
+    border-width: 1px;
+}
+#sb_banner {
+border-radius: 0
+}
+span.nst {
+    border-radius: 0;
+    background: white;
+    color: black;
+}
+/*STYLE*/
+body {
+    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Dockter/nonplace/static.gif);
+    color: white;
+}
+a {
+    color: blue;
+}
+a:hover {
+    color: purple;
+}
+#petLookupContent {
+font-family: times new roman;
+}
+.pet--name {
+    font-size: 24pt;
+    font-family:  "Subliminal BF W01 Regular";
+}
+.pet--color {
+    color: blue;
+}
+.pet--color:hover {
+    color:purple;
+}
+.pet--header {
+    font-size: 18pt;
+    margin-top: 0;
+    color: white;
+}
+.pet--statsheader, #bio h2, #testimonials h2 {
+    font-size: 14pt;
+    color: white;
+}
+#petStats {
+font-size: 14pt;
+line-height: 1.45em;
+text-align: justify;
+}
+#petTraits {
+text-align: justify;
+}
+#testimonials, #bio {
+font-size: 14pt;
+text-align: justify;
+}
+/*HIDE SHIT*/
+hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #petBattle, #page_banner, #petLinks, #mobilenav, #aio_sidebar_placeholder, #petChallenge {
+    display: none
+}
+.pet--no-trade-text {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: red
+}
+/*BREAK SHIT*/
+#petDescription, div#desc, main, #petTop, #petInfo, #petPetpet, .pet_all_petpets, .pet_petpet {
+display: contents
+}
+/*FORMATTING*/
+#container {
+width: fit-content;
+display: grid;
+grid-template-areas: "atop atop" "top top" "side banner" "side event" "side content" "side footer";
+grid-template-columns: auto auto;
+}
+#petLookupContent {
+display: grid;
+grid-template-areas: "header header" "pet pet" "p2header p2header" "p2desc p2desc" "stats  bio" "testimonials testimonials";
+grid-template-columns: 50%;
+grid-template-rows: auto auto auto auto auto auto auto;
+width: fit-content;
+max-width: 44em;
+margin: auto;
+position: relative;
+border-radius: 0.75em;
+color: white;
+gap: 0;
+margin-top: -75px;
+}
+.pet--gendercolor, .pet--hpcolor {
+    color: white;
+}
+.pet--header {
+    grid-area: header;
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    border-bottom: 1px black;
+}
+#petImage {
+grid-area: pet;
+margin: 1em 0 1em 0;
+}
+.pet--petpetimg {
+    grid-area: p2img;
+    align-self: end;
+    margin-left: 10%;
+    padding-right: auto;
+    background: white
+}
+.pet--petpetheader {
+    grid-area: p2header;
+    font-size: 0
+}
+.pet--petpetheader:before {
+    content: "\"";
+    font-size: 10pt
+}
+.pet--petpetheader:after {
+    content: "I love my petpet,";
+    font-size: 10pt
+}
+.pet--petpetdesc {
+    grid-area: p2desc;
+    margin-bottom: 0.25em
+}
+.pet--petpetdesc:after {
+    content: "!\""
+}
+.pet--statsheader {
+    width: 100%;
+    margin: 0;
+    margin-bottom: .8em;
+    text-align: center;
+}
+#petStats {
+grid-area: stats;
+background: none;
+margin: 0.25em 0.25em 0.25em 0.5em;
+padding: 0 .35em 0 .35em;
+}
+#desc {
+grid-area: desc;
+display: grid;
+grid-template-areas: "testimonials bio";
+grid-template-columns: 50% 50%;
+justify-content: center;
+margin-top: 1em
+}
+#bio {
+grid-area: bio;
+margin: 0.25em 0.5em 0.25em 0.25em;
+justify-content: center;
+}
+#testimonials {
+grid-area: testimonials;
+margin: 0.25em 0.5em 0.5em 0.5em;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+column-gap: 1em;
+justify-content: center
+}
+#testimonials h2, #bio h2 {
+width: 100%;
+margin: 0;
+text-align: center;
+}
+#testimonials p {
+width: 30%
+}
+#testimonials, #bio {
+padding-left: 0.35em;
+padding-right: 0.35em
+}
+.pet--no-trade-alert {
+    position: absolute;
+    background-color: transparent;
+    bottom: -2.25em;
+    font-weight: bold;
+    text-shadow: -1px 1px 2px black;
+    left: 0;
+    width: 100%
+}
+.pet--no-trade-text {
+    padding: 0.25em;
+    border-radius: 0.5em
+}
+.pet--no-trade-icon {
+    display: none
+}
+body:after {
+    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Dockter/nonplace/static.gif);
+    background-size: cover;
+    background-position: top left;
+    content: "";
+    height: 100dvh;
+    width: 100dvw;
+    opacity: .25;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+#container:after {
+animation: grain 5s steps(10) infinite;
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png);
+background-size: 50%;
+content: "";
+height: 300%;
+left: -50%;
+opacity: 0.05;
+position: fixed;
+top: -110%;
+width: 300%;
+pointer-events: none
+}
+@keyframes grain {
+    0%, 100% {
+        transform: translate(0, 0)
+    } 10% {
+        transform: translate(-5%, -10%)
+    } 20% {
+        transform: translate(-15%, 5%)
+    } 30% {
+        transform: translate(7%, -25%)
+    } 40% {
+        transform: translate(-5%, 25%)
+    } 50% {
+        transform: translate(-15%, 10%)
+    } 60% {
+        transform: translate(15%, 0%)
+    } 70% {
+        transform: translate(0%, 15%)
+    } 80% {
+        transform: translate(3%, 35%)
+    } 90% {
+        transform: translate(-10%, 10%)
+    }
+}
+.pet--header {
+    animation: wiggle .15s steps(1) infinite;
+}
+#petStats {
+animation: wiggle .25s steps(1) infinite;
+}
+.pet--statsheader {
+    animation: wiggle2 .15s steps(1) infinite;
+}
+#bio {
+animation: wiggle2 .25s steps(1) infinite;
+}
+#bio h2, {
+animation: wiggle .15s steps(1) infinite;
+}
+@keyframes wiggle {
+    0%, 100% {
+        transform: translate(0%, 0%)
+    } 10% {
+        transform: translate(0%, 1px)
+    } 20% {
+        transform: translate(0%, 0%)
+    } 30% {
+        transform: translate(0%, 1px)
+    } 40% {
+        transform: translate(0%, 0%)
+    } 50% {
+        transform: translate(0%, 1px)
+    } 60% {
+        transform: translate(0%, 0%)
+    } 70% {
+        transform: translate(0%, 1px)
+    } 80% {
+        transform: translate(0%, 0%)
+    } 90% {
+        transform: translate(0%, 1px)
+    }
+}
+@keyframes wiggle2 {
+    0%, 100% {
+        transform: translate(0%, -1px)
+    } 10% {
+        transform: translate(0%, 0px)
+    } 20% {
+        transform: translate(0%, -1px)
+    } 30% {
+        transform: translate(0%, 0px)
+    } 40% {
+        transform: translate(0%, -1px)
+    } 50% {
+        transform: translate(0%, 0px)
+    } 60% {
+        transform: translate(0%, -1px)
+    } 70% {
+        transform: translate(0%, 0px)
+    } 80% {
+        transform: translate(0%, -1px)
+    } 90% {
+        transform: translate(0%, 0px)
+    }
+}

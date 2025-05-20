@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap');
+hr, #page_footer, #sb_top, #sb_side, #page_banner, .ul--header {
+    display: none
+}
+body {
+    background: url(https://i.imgur.com/9iEPQmQ.png);
+    background-position: center;
+    cursor: crosshair;
+    background-attachment: fixed;
+}
+.ul--stampsimg {
+    content: url(https://hotemoji.com/images/dl/u/herb-emoji-by-google.png)
+}
+#userLookupContent {
+background: #fff;
+padding: 1em 2.5em 0 2.5em;
+border-width: 0 .5em;
+border-style: solid;
+border-color: #d8c490;
+background-color: #e3e7cc;
+box-shadow: 0 0 5px 3px #baae88;
+font-family: solway;
+margin: auto;
+margin-top: -2em;
+}
+div#container {
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+}
+div#page_content {
+    margin: auto;
+    width: 725px;
+}
+#userLookupShield {
+display: flex;
+height: 100%;
+justify-content: center;
+}
+.ul--shield {
+    content: url(https://archives.bulbagarden.net/media/upload/3/34/Box_XD_286_s.png);
+}
+#userLookupShield:hover {
+transform: rotate(720deg);
+}
+#userLookupInfo {
+margin-top: 4em;
+grid-template-areas: "text shield" "text collections";
+grid-template-columns: 65% 35%;
+border-top: .25em solid #d8c490;
+padding: 1em 0 1em 0;
+}
+#userLookupText {
+border-width: .35em 0px .35em 0px;
+border-radius: 2em .5em 2em .5em;
+border-style: solid;
+border-color: #88ab34;
+background-color: rgba(255,255,255,.75);
+box-shadow: 0px 0px 5px 2px #88ab34;
+padding: 1em;
+font-size: 12pt;
+}
+#userLookupText a {
+color: #4a5e15;
+font-style: italic;
+}
+#userLookupText a:hover {
+color: #93b82d
+}
+#userLookupCollections {
+display: flex;
+flex-direction: row;
+justify-self: center;
+align-self: center;
+}
+.smallfont {
+    font-size: 8pt
+}
+#userLookupLinks {
+border-bottom: .25em solid #d8c490;
+padding-bottom: 1em;
+}
+.ul__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #88ab34;
+    border-radius: 1em .15em;
+    padding: .25em;
+    width: 6em;
+    box-shadow: 2px 2px 3px 0 grey;
+    color: white;
+}
+.ul--linktext {
+    font-size: 10pt;
+}
+.ul--linkimg:hover {
+    scale:90%;
+}
+.ul__neofriend .ul--linktext, .ul__neomail .ul--linktext {
+    visibility: hidden;
+    font-size: 0
+}
+.ul__neomail .ul--linktext::after {
+    content: "Neomail";
+    visibility: visible;
+    font-size: 10pt
+}
+.ul__neofriend .ul--linktext::after {
+    content: "Neofriend";
+    visibility: visible;
+    font-size: 10pt
+}
+.ul--tradesimg {
+    content: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Frebbo/trades.svg)
+}
+.ul--auctionsimg {
+    content: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Frebbo/auctions.svg)
+}
+.ul--wishlistimg {
+    content: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Frebbo/wishlist.svg)
+}
+.ul--scoresimg {
+    content: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Frebbo/scores.svg)
+}
+.ul--neomailimg {
+    content: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Frebbo/neomail.svg)
+}
+.ul--neofriendimg {
+    content: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Frebbo/neofriend.svg)
+}
+#top {
+width: 100%;
+height: 55px;
+top: 0;
+left: 0
+}
+#nav a {
+padding: 10px;
+color: #6f9954 !important;
+margin: 2px;
+letter-spacing: 1px;
+text-transform: uppercase;
+border: 0;
+display: inline-block;
+transition: letter-spacing 0.3s ease
+}
+#nav a:hover {
+scale: 110%;
+}
+#banner img {
+border-radius: 25px
+}
+#userLookupPets {
+border-width: .25em 0px 0 .25em;
+border-radius: .5em 2em .5em 2em;;
+border-style: solid;
+border-color: #93b82d;
+background-color: rgba(255,255,255,.75);
+box-shadow: 2px 2px 5px 0px #93b82d;
+}
+.ul--petimg {
+    mix-blend-mode: darken;
+    width: 7em;
+}
+.ul--petimg:hover {
+    transform: scale(1.1);
+}
+.ul__pet a, .ul__pet a:visited, .ul__pet a:hover {
+    color: #4a5e15;
+}
+.userPetList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1em;
+}
+.ul--sitetrophiesheader, .ul--gametrophiesheader {
+    flex-basis: 100%;
+    margin: 0 25%;
+    margin-bottom: 1em;
+    background-color: #93b82d;
+    color: #fff !important;
+    letter-spacing: 1px;
+}
+#userLookupSiteTrophies {
+border-width: .25em .25em 0 0;
+border-radius: 2em .5em 2em .5em;
+border-style: solid;
+border-color: #88ab34;
+background-color: rgba(255,255,255,.75);
+box-shadow: -2px 2px 5px 0px #88ab34;
+padding-bottom: 1em;
+}
+#userLookupGameTrophies {
+border-width: .25em 0px 0 .25em;
+border-radius: .5em 2em .5em 2em;;
+border-style: solid;
+border-color: #88ab34;
+background-color: rgba(255,255,255,.75);
+box-shadow: 2px 2px 5px 0px #88ab34;
+padding-bottom: 1em;
+}
+.ul--sitetrophyimg, .ul--gametrophyimg {
+    mix-blend-mode: darken;
+}
+.cat-header--Neopets {
+    display: none
+}
+.ul--petsheader {
+    flex-basis: 100%;
+    margin: 0 25%;
+    background-color: #88ab34;
+    color: #fff !important;
+    letter-spacing: 1px;
+    font: normal 12pt courier !important
+}
+.ul--petsheader strong {
+    color: #fff !important;
+}
+.ul__Lightfield img {
+    content: url(https://i.imgur.com/zdfnVyf.png);
+    height: auto
+}
+.ul__Zaff img {
+    content: url(https://grundoscafe.b-cdn.net/pets/happy/ogrin_darigan.gif)
+}
+.ul--sitetrophyname, .ul--gametrophyname, .ul--sitetrophycap, a.gamelink {
+    font-size: 9pt;
+    font-weight: bold;
+    color: black;
+}
+@media screen and (max-width: 959px) {
+    #sb_top {
+    display: initial;
+    position: fixed;
+    top: 0;
+    }
+    #sb_bottom {
+    position: fixed;
+    bottom: 0;
+    }
+    div#page_content {
+        width: 100dvw;
+        margin-top: 4em;
+    }
+    #banner img{
+    width: 85%;
+    }
+    #userLookupContent {
+    padding: 1em;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    }
+    #userLookupText {
+    font-size: 18pt;
+    }
+    .ul__link {
+        width: 5em;
+        padding: 0;
+    }
+    .smallfont {
+        font-size: 16pt;
+    }
+    div.ul--petsheader {
+        font-size: 24pt !important;
+    }
+    .ul__neomail .ul--linktext::after {
+        font-size: 16pt
+    }
+    .ul__neofriend .ul--linktext::after {
+        font-size: 16pt
+    }
+    .ul__pet {
+        width: 8em;
+        font-size: 18pt;
+    }
+    .ul--petimg {
+        width: 7.5em;
+    }
+    .ul--sitetrophyname, .ul--gametrophyname, .ul--sitetrophycap, a.gamelink {
+        font-size: 16pt;
+    }
+}

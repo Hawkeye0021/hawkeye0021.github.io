@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+body {
+    background-image: url(https://media.discordapp.net/attachments/1329496666037813368/1331429840762437735/Sonata23.png?ex=67923eea&is=6790ed6a&hm=1d811ef20d0b9abaa0e750279b05476e607d4b633d31c2b720fcf1c4b6ce9e24&=&format=webp&quality=lossless&width=705&height=878);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+    scrollbar-width: none
+    }
+html {
+    scrollbar-width: none
+    }
+#sb_side, #sb_top, #aio_sidebar_placeholder, #page_banner, #page_event, #page_footer, hr, .ul--sectionheader {
+    display: none
+    }
+#page_content {
+    width: 400px;
+    margin-top: -100px;
+    margin-left: 300px;
+    font-family: kalam;
+    }
+#nav {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    width: inherit;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 10;
+    border-radius: 10px;
+    font-family: kalam;
+    align-items: center;
+    height: 40px
+}
+#nav a, #nav a:visited {
+    color: #3e089b;
+    font-size: 24px;
+    font-weight: bold;
+}
+#nav a:hover {
+    color: #410cd4
+}
+.ul--header {
+    display: none;
+}
+.cent {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    }
+.cent img {
+    width: inherit;
+}
+#userLookupDesc {
+    width: 550px;
+    padding: 10px
+    }
+#userLookupInfo, #userLookupInfo a {
+    color: #2f158b;
+    font-size: 12px
+    }
+#userLookupInfo {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "info shield" "info collections";
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14pt;
+    margin-top: -30px;
+}
+#userLookupInfo a {
+    font-size: 12pt;
+}
+#userLookupInfo a:hover {
+    color: #410cd4
+}
+#userLookupText {
+    grid-area: info;
+}
+#userLookupShield {
+    grid-area: shield;
+    content: url(https://i.postimg.cc/P5CNMvs5/shield.png);
+    justify-self: center;
+}
+.galleries--list .nomargin {
+    height: 0
+    }
+#userLookupCollections {
+    grid-area: collections;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    }
+#userLookupLinks {
+    width: 550px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    }
+#userLookupLinks img, .ul--neofriendimg {
+    color: #A50035;
+    width: 80px;
+    height: 80px
+    }
+#userLookupLinks img:hover, .ul--neofriendimg:hover {
+    opacity: 0.4
+    }
+.ul--linktext {
+    color: #2f158b;
+    font-size: 10pt;
+    font-weight: bold;
+    }
+.ul--stampsimg {
+    content: url(https://i.imgur.com/2A5Ttf4.gif)
+    }
+.ul--tradesimg {
+    content: url(https://i.postimg.cc/15t5B10R/diffuser.gif)
+    }
+.ul--auctionsimg {
+    content: url(https://i.postimg.cc/g09zGwCr/protractor.gif)
+    }
+.ul--wishlistimg {
+    content: url(https://i.postimg.cc/7hBP4K4y/comb.gif)
+    }
+.ul--scoresimg {
+    content: url(https://i.postimg.cc/YCL2cNyJ/pencil.gif)
+    }
+.ul--neomailimg {
+    content: url(https://i.postimg.cc/44wxpx9F/crossword.gif)
+    }
+.ul--neofriendimg {
+    background-image: url(https://i.postimg.cc/gkTcBt4V/drink.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-position: -9999px
+    }
+.ul__neofriend .nomargin {
+    height: 80px !important
+    }
+#userPetList {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: none;
+    border-radius: 10px;
+    }
+.ul--petname {
+    font-family: "charm", cursive;
+    font-weight: bold;
+    font-size: 22px;
+    color: #2f158b;
+    padding-bottom: 5px;
+    }
+.ul--petname:hover {
+    color: #cd9be8
+    }
+.ul__pet {
+    border-radius: 10px;
+    background-color: white;
+    }
+.ul__pet img {
+    width: 133px;
+    height: 133px;
+    opacity: 1;
+    border-radius: 10px;
+    }
+.ul__pet img:hover {
+    opacity: 0.7;
+    filter: none
+    }
+#siteTrophiesList, #siteTrophiesList a, #gameTrophiesList {
+    color: #21377B
+    }
+#siteTrophiesList img, #gameTrophiesList img {
+    width: 60px
+    }
+#siteTrophiesList {
+    background-color: #fff;
+    color: #21377B;
+    border-radius: 10px;
+    width: 550px;
+    padding: 10px
+    }
+#gameTrophiesList {
+    background-color: #fff;
+    color: #21377B;
+    width: 570px;
+    border-radius: 10px;
+    width: 550px;
+    padding: 10px;
+    margin-bottom: -60px
+    }
+#userReportBlock {
+    bottom: 0;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 570px
+    }
+.ul--button {
+    color: #fff
+    }
+.cent {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    text-align: center
+    }
+.left {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    z-index: -1
+    }

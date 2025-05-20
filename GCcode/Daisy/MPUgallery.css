@@ -1,0 +1,22 @@
+.gallery_item {
+      background-image: url(https://i.postimg.cc/02fHkQ7m/stableframe.png);
+    background-size: 105px 112px;
+    background-repeat: no-repeat;
+  background-position: top center;
+  justify-content: center;
+}
+.med-image {
+  border: none;
+  margin-top: 15px;
+}
+.gallery-item-name {
+  margin-top: 8px;
+  background-image: url(https://i.postimg.cc/1RBmgL3G/sign.png);
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 8px;
+  color: white;
+}
+.gallery-item-qty {
+  display: none;
+}

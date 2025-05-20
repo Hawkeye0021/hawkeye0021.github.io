@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Chewy&display=swap');
+/*nav positioning*/
+#nav {
+font-size: 14pt;
+position: absolute;
+top: -3em;
+height: fit-content;
+margin-top: 10px;
+margin-right: -45px;
+display: flex;
+flex-direction: row;
+justify-self: right;
+gap: 12px;
+}
+/*nav styling*/
+#nav a, #nav a:visited {
+background: #c09fec;
+padding-left: 4px;
+padding-right: 4px;
+border-radius: 3px;
+color: white;
+border: 3px solid #c09fec;
+box-shadow: 0 0 5px 0px black;
+}
+#nav a:hover {
+background: #c09fec;
+padding-left: 4px;
+padding-right: 4px;
+border-radius: 3px;
+color: white;
+border: 3px solid #c09fec;
+scale: 1.15;
+}
+/*hiding things*/
+hr, .pet--statsheader, .pet--smallname, .petJobs, #petLead, #page_footer, #sb_top, #sb_side, #page_banner, #petLinks {
+  display: none
+}
+/*background*/
+body {
+  background-image: url(https://images2.imgbox.com/bb/50/CNOEXYRX_o.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*centering*/
+#page_content {
+display: block;
+margin: auto;
+min-width: fit-content;
+height: fit-content;
+
+}
+#container {
+margin: auto
+}
+/*link colors*/
+a.pet--color {
+  color:
+}
+a.pet--color:hover {
+  color:
+}
+a {
+  color: #3c2370
+}
+a:hover {
+  color: #c09fec
+}
+/*title*/
+.pet--header {
+  font-family: chewy;
+  font-size: 36pt;
+  background-color: #c09fec;
+  margin-top: 0px;
+  text-align: right;
+  padding-right: 55px;
+  padding-bottom: 5px;
+  color: white;
+  border-radius: 25px 25px 0 0;
+}
+.pet--name {
+  content: url(https://images2.imgbox.com/82/9b/t5YzS5CA_o.png);
+  scale: .75;
+  display: block;
+  position: absolute;
+  left: -115px;
+  top: -45px;
+  transform: rotate(-11deg)
+}
+.pet--color {
+  color: #fff
+}
+.pet--color:hover {
+  color: #462b7a
+}
+/*container*/
+#petLookupContent {
+position: relative;
+font-family: balsamiq sans;
+color: black;
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas: "top top" "petpet placeholder" "trade trade" "desc desc" "battledome battledome" "trophies trophies";
+width: 100%;
+gap: unset;
+justify-items: center;
+background-color: white;
+border-radius: 25px;
+box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.75);
+padding-bottom: 15px;
+}
+/*info*/
+.pet--image {
+  content: url(https://images2.imgbox.com/a8/75/AoMqWpXD_o.png);
+}
+#petTop {
+grid-area: top;
+width: 100%
+}
+#petInfo {
+display: grid;
+width: 100%;
+grid-template-columns: 50%;
+align-content: start;
+margin-top: -25px;
+font-size: 12pt;
+}
+#petImage {
+grid-area: image;
+width: 100%;
+margin-top: 5px;
+}
+#petStats {
+grid-area: stats;
+background: none;
+text-align: left
+}
+/*extras*/
+#petPetpet {
+width: 49%;
+position: absolute;
+left: 0%;
+top: 23em;
+padding-left: 10px;
+font-size: 8pt
+}
+.pet--petpetname {
+  display: block;
+  font-size: 18pt;
+}
+.pet--petpetage {
+  display: none;
+}
+#petLinks {
+grid-area: links;
+padding-top: 1em;
+padding-bottom: 1em
+}
+#petTrophies {
+grid-area: trophies;
+padding-top: 1em;
+padding-bottom: 1em;
+}
+#petBattle {
+grid-area: battledome;
+align-self: start;
+margin-bottom: 40px;
+margin-top: 75px;
+}
+#petBattle::after {
+content: url(https://images2.imgbox.com/d5/40/pNhZKmos_o.png);
+position: absolute;
+scale: .5;
+margin-bottom: 175px
+}
+#petChallenge {
+grid-area: battledome;
+align-self: end
+}
+.pet--no-trade-alert {
+  grid-area: trade;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 10px;
+}
+#petDescription {
+display: grid;
+margin-top: 15px;
+grid-area: desc;
+border-top: double #bfa1eb 3px;
+border-bottom: double #bfa1eb 3px;
+color: #c09fec;
+font-family: balsamiq sans;
+font-size: 18pt;
+text-align: center;
+width: 85%;
+padding: 10px 0px 10px 0px
+}
+#dude {
+position: fixed;
+bottom: 0;
+right: 0;
+width: 250px;
+}

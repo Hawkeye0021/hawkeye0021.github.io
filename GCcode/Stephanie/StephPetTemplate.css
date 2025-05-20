@@ -1,0 +1,324 @@
+/*OVERLAY*/
+.pet--image {
+    content: url(https://i.imgur.com/CvcHIHF.jpeg);
+    width: 250px;
+}
+/*BACKGROUND IMAGE - url must be a direct image link*/
+body {
+    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/CosyGamer.jpg)
+}
+/*DELETE TO SHOW PET TRAITS ([petname] likes gathering food)*/
+#petTraits {
+display: none
+}
+/*BORDERS*/
+#petLookupContent {
+border-radius: 0.75em;
+}
+#nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
+border-radius: .25em; /*using em instead of px makes it adapt to mobile*/
+}
+.pet--header {
+    border-radius: 0.35em 0.35em 0 0;/*numbers go clockwise starting at top-left*/
+}
+.pet--statsheader, #bio h2 {
+    border-radius: .5em .5em 0 0;
+}
+#petTrophies {
+border-color: gold;
+}
+.pet--no-trade-text {
+    border-radius: 0.5em
+}
+/*COLORS*/
+#nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
+background-color: white;
+}
+
+.pet--no-trade-text {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+/*TEXT*/
+body {
+    font-family: Helvetica;
+    letter-spacing: .5px;
+}
+#nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
+font-size: 12pt;
+font-family: unset;
+color: black;
+font-weight: lighter;
+}
+.pet--header {
+    font-size: 18pt;
+    font-family: unset;
+    color: black;
+    font-weight: lighter;
+}
+.pet--name {
+    font-size: 36pt;
+}
+a, .pet--color {
+    color: blueviolet;
+}
+a:hover, .pet--color:hover {
+    color: lightblue;
+}
+.pet--petpetheader {
+    font-size: 10pt;
+    font-family: unset;
+    color: black;
+}
+.pet--petpetdesc {
+    font-size: 10pt;
+    font-family: unset;
+    color: black;
+}
+.pet--petpetname {
+    font-size: 14pt;
+    font-family: unset;
+    color: black;
+}
+.pet--statsheader > strong:nth-child(1), .pet--statsheader, #bio h2{
+    font-size: 14pt !important;
+    font-family: unset;
+    color: black;
+    font-weight: lighter;
+    font-style: normal !important;
+    text-align: center;
+    text-transform: uppercase !important;
+}
+#petStats, #bio {
+font-size: 11pt;
+color: black;
+}
+#bio {
+text-align: justify;
+}
+#petStats strong {
+font-style: italic;
+font-size: 10pt;
+text-transform: capitalize;
+}
+#petStats {
+text-transform: lowercase;
+text-align: left;
+}
+.pet--no-trade-alert {
+    font-size: 12pt;
+    font-family: unset;
+    color: red;
+    font-weight: bold;
+    text-shadow: -1px 1px 2px black;
+}
+/*DON'T GO DOWN HERE, THIS IS THE BAD PLACE, PROCEED AT YOUR OWN RISK*/
+/*HIDE SHIT*/
+hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge {
+    display: none
+}
+/*BREAK SHIT*/
+#petDescription, div#desc, main, #petTop, #petInfo, #petPetpet, .pet_all_petpets, .pet_petpet {
+display: contents
+}
+/*CENTERING*/
+#container {
+margin: auto;
+display: flex;
+flex-direction: column;
+width: 100dvw;
+min-height: 100dvh;
+height: fit-content;
+justify-content: center;
+align-items: center
+}
+/*NAVIGATION*/
+/*FORMATTING*/
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+}
+#petLookupContent {
+display: grid;
+grid-template-areas:
+"header header"
+"pet p2img"
+"p2header p2header"
+"p2desc p2desc"
+"stats  bio"
+"desc desc";
+grid-template-columns: 50%;
+grid-template-rows: auto auto auto auto auto auto auto;
+max-width: 44em;
+margin: auto;
+position: relative;
+color: black;
+gap: 0;
+background: white;
+padding: 0 .5em
+}
+#nav, #mobilenav {
+position: absolute;
+top: -3.5em;
+height: fit-content;
+margin-top: 0.75em;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-self: center;
+gap: 1em
+}
+#nav a, #nav a:visited, #mobilenav a, #mobilenav a:visited {
+padding: .25em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+}
+#nav a:hover, #mobilenav a:hover {
+scale: .9
+}
+.pet--header {
+    grid-area: header;
+    margin-top: .5em;
+    margin-bottom: 0.25em;
+}
+#petImage {
+grid-area: pet;
+margin-left: 30%;
+margin-bottom: .5em
+}
+.pet--petpetimg {
+    grid-area: p2img;
+    align-self: end;
+    margin-left: 18%;
+    padding-right: auto;
+    background: white;
+    margin-bottom: .5em;
+}
+.pet--petpetheader {
+    grid-area: p2header;
+    font-size: 0;
+}
+.pet--petpetheader:after {
+    content: "and their petpet,";
+    font-size: 10pt;
+}
+.pet--petpetdesc {
+    grid-area: p2desc;
+    margin-bottom: 0.25em
+}
+.pet--statsheader {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0.8em;
+}
+#petStats {
+grid-area: stats;
+background: none;
+border-radius: 0.35em;
+margin: 0.5em 0.5em 0.5em 1em;
+padding:.5em .35em .5em .35em;
+}
+.pet--hpcolor, .pet--gendercolor {
+    color: black;
+}
+#bio {
+grid-area: bio;
+margin: 0.5em 1em 0.5em 0.5em;
+justify-content: center;
+border-radius: 0.35em;
+padding:.5em .35em .5em .35em;
+}
+#bio h2 {
+width: 100%;
+margin: 0;
+}
+#petTrophies {
+grid-area: trophies;
+margin: 0em 0 1em 0;
+width: 90%;
+justify-self: center;
+}
+#miscdesc {
+grid-area: desc;
+margin-bottom: 1.5em;
+}
+.pet--no-trade-alert {
+    position: absolute;
+    background-color: transparent;
+    bottom: -2.25em;
+    left: 0;
+    width: 100%
+}
+.pet--no-trade-text {
+    padding: 0.25em;
+}
+.pet--no-trade-icon {
+    display: none
+}
+#artwork {
+position: fixed;
+bottom: 0;
+right: 0;
+width: 200px;
+}
+@media screen and (max-width: 959px) {
+    #sb_top, #sb_side {
+    display: initial
+    }
+    #nav a {
+    font-size: 22pt;
+    margin-top: .5em;
+    }
+    #container {
+    min-height: fit-content;
+    }
+    #page_content {
+    margin-bottom: 2em;
+    margin-top: 2em
+    }
+    #petLookupContent {
+    width: 90dvw;
+    height: fit-content;
+    font-size: 24pt;
+    padding-top: 1em
+    }
+    #petStats {
+    font-size: 24pt
+    }
+    #bio {
+    font-size: 22pt
+    }
+    #petStats strong {
+    font-size: 22pt
+    }
+    .pet--statsheader > strong:nth-child(1), .pet--statsheader, #bio h2 {
+        font-size: 26pt !important;;
+    }
+    .pet--name {
+        font-size: 48pt;
+    }
+    .pet--header {
+        margin-top: -.5em;
+        font-size: 30pt
+    }
+    .pet--image {
+        width: 120%;
+    }
+    .pet--no-trade-alert {
+        bottom: -2em;
+        font-size: 24pt
+    }
+    .pet--petpetheader:after, .pet--petpetdesc {
+        font-size: 20pt;
+    }
+    .pet--petpetname {
+        font-size: 24pt
+    }
+    #petTraits {
+    font-size: 16pt
+    }
+    #artwork {
+    bottom: 5em;
+    z-index: 1;
+    }
+}

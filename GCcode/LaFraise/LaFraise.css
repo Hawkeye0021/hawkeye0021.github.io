@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+/*nav positioning*/
+#nav {
+font-size: 12pt;
+position: absolute;
+top: -3em;
+height: fit-content;
+margin-top: 10px;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-self: center;
+gap: 1em
+}
+/*nav styling*/
+#nav a, #nav a:visited {
+background: #c92301;
+padding: 4px;
+padding-left: 8px;
+padding-right: 8px;
+border-top-left-radius: 5px;
+border-bottom-right-radius: 5px;
+color: white;
+box-shadow: -2px 2px 0px black;
+}
+#nav a:hover {
+transform: scale(1.1)
+}
+/*hiding things*/
+hr, .pet--statsheader, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks {
+    display: none
+}
+/*background*/
+body {
+    background-image: url(https://impress-2020.openneo.net/api/assetImage?libraryUrl=https%3A%2F%2Fimages.neopets.com%2Fcp%2Fitems%2Fdata%2F000%2F000%2F365%2F365863_6c26752ed6%2F365863HTML5.js&size=600);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+/*centering*/
+#page_content {
+display: block;
+margin: auto;
+min-width: fit-content;
+height: fit-content
+}
+#container {
+margin: auto
+}
+/*link colors*/
+a.pet--color {
+    color:
+}
+a.pet--color:hover {
+    color:
+}
+a {
+    color:
+}
+a:hover {
+    color:
+}
+/*title*/
+.pet--name {
+    display: block;
+    font-family: pacifico;
+    font-weight: lighter;
+    font-size: 36pt;
+    margin-top: -25px;
+    color: #c92301;
+    text-shadow: -2px 2px #000
+}
+/*container*/
+#petLookupContent {
+position: relative;
+font-family: sour gummy;
+font-size: 12pt;
+color: black;
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas: "top top" "petpet placeholder" "trophies trophies" "trade trade" "desc desc";
+width: 100%;
+gap: unset;
+justify-items: center;
+align-items: center;
+background-color: white;
+border-radius: 10px;
+border-style: dotted;
+border-color: #d11e00;
+border-width: 5px;
+padding: 10px;
+box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.75)
+}
+/*info*/
+#petTop {
+grid-area: top;
+width: 100%
+}
+#petInfo {
+display: grid;
+width: 100%;
+grid-template-columns: 50%;
+align-items: center
+}
+#petImage {
+grid-area: image;
+width: 50%;
+position: absolute;
+top: 125px;
+}
+#petStats {
+grid-area: stats;
+background: none;
+text-align: left
+}
+/*extras*/
+#petPetpet {
+width: 49%;
+position: absolute;
+left: 0%;
+top: 285px;
+padding-left: 10px;
+font-size: 8pt
+}
+.pet--petpetname {
+    display: block;
+    font-size: 18pt;
+    font-family: pacifico;
+    font-weight: lighter;
+
+}
+.pet--petpetage {
+    display: none;
+}
+#petLinks {
+grid-area: links;
+padding-top: 1em;
+padding-bottom: 1em
+}
+#petTrophies {
+grid-area: trophies;
+padding-top: 1em;
+padding-bottom: 1em
+}
+.pet--no-trade-alert {
+    grid-area: trade;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 1em
+}
+/*custom content*/
+#petDescription {
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas: "testimonials bio";
+grid-area: desc;
+color: white;
+border-radius: 5px;
+color: black;
+width: 100%;
+padding-bottom: 8px
+}
+#testimonials, #bio {
+background-color: #c92301;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;
+width: 95%;
+justify-self: center;
+padding-bottom: 10px;
+box-shadow: -3px 3px 0px black;
+color: white;
+}
+#testimonials {
+grid-area: testimonials;
+}
+#bio {
+grid-area: bio;
+}
+
+/*HTML
+ * <div id="nav">
+ * <a href="/userlookup/?user=Hawkeye0021">BACK</a>
+ * <a href="/neomessages/sendmessage/?username=Hawkeye0021">CONTACT</a>
+ * <a href="/~PETNAME">PAGE</a>
+ * <a href="/userlookup/?user=Hawkeye0021">CSS</a>
+ * <a href="/explore/">EXIT</a>
+ * </div>
+ *
+ * <div id="testimonials">
+ * <h2 style="text-align: center;"><strong>-TESTIMONIALS-</strong></h2>
+ * </div>
+ * <div id="bio">
+ * <h2 style="text-align: center;"><strong>-BIO-</strong></h2>
+ * </div>
+ */

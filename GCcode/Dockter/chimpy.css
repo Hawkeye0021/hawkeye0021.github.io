@@ -1,0 +1,212 @@
+@import url(https://fonts.googleapis.com/css2?family=Pangolin&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Schoolbell&display=swap);
+/*hiding things*/
+hr, .pet--statsheader, .pet--smallname, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #petChallenge {
+    display: none
+}
+/*nav positioning*/
+#nav {
+font-size: 12pt;
+position: absolute;
+top: -3em;
+height: fit-content;
+margin-top: 10px;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-self: center;
+gap: 1em
+}
+/*nav styling*/
+#nav a, #nav a:visited {
+background-image: url(https://i.postimg.cc/qvgFb3DQ/ripped-BGwhite.png);
+    background-position: center;
+    background-size: 115% 115%;
+padding: 5px;
+    color: black
+}
+#nav a:hover {
+transform: scale(1.15)
+}
+/*background*/
+body {
+    background-image: url(https://i.postimg.cc/VsZsdjtW/bg.png);
+    background-size: cover;
+}
+/*centering*/
+#page_content {
+display: block;
+margin: auto;
+min-width: fit-content;
+height: fit-content
+}
+#container {
+margin: auto
+}
+/*link colors*/
+a.pet--color {
+    color:
+}
+a.pet--color:hover {
+    color:
+}
+a {
+    color:
+}
+a:hover {
+    color:
+}
+/*title*/
+.pet--name {
+    color: rgba(34, 12, 64, 0);
+    font: 100px "Pangolin", "didot";
+    display: block;
+    background-image: url(https://i.postimg.cc/3JWQyNQM/chimpy.png);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -10px
+    }
+.pet--header {
+    color: #555deb
+}
+.pet--color {
+    color: #eb5561
+}
+.pet--color:hover {
+    color: #eb9b55
+}
+/*container*/
+#petLookupContent {
+    background-image: url(https://i.postimg.cc/sDq3KNbZ/paper.png);
+    background-size:200%;
+position: relative;
+font-family: schoolbell;
+    font-size: 12pt;
+    letter-spacing: .1em;
+color: black;
+display: grid;
+grid-template-columns: 50% 50%;
+grid-template-areas: "top top" "petpet placeholder" "trophies trophies" "trade trade" "desc desc";
+gap: unset;
+justify-items: center;
+align-items: center;
+background-color: white;
+border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.75);
+    border-left: dotted 5px black;
+}
+/*info*/
+#petTop {
+grid-area: top;
+width: 100%
+}
+    #petInfo {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50%;
+    align-items: center
+    }
+        #petImage {
+        grid-area: image;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            align-content: flex-start
+        }
+        #petStats {
+        grid-area: stats;
+        background: none;
+        text-align: left;
+            color: #555deb;
+        }
+#petStats strong {
+    color: #9d3bee
+}
+/*extras*/
+#petPetpet {
+width: 50%;
+position: absolute;
+left: 0%;
+top: 420px;
+font-size: 10pt;
+    color: #eb5561;
+}
+.pet--petpetheader {
+    display: none;
+}
+.pet--petpetname {
+    display: block;
+    font-size: 24pt;
+    margin-top: -10px;
+    color: #eb9b55
+}
+.pet--petpetage {
+    display: none;
+}
+.pet--petpetimg {
+    mix-blend-mode: multiply;
+}
+#petLinks {
+grid-area: links;
+padding-top: 1em;
+padding-bottom: 1em
+}
+#petTrophies {
+grid-area: trophies;
+padding-top: 1em;
+padding-bottom: 1em
+}
+.pet--no-trade-alert {
+    grid-area: trade;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 15px;
+    letter-spacing: 0em;
+}
+/*custom content*/
+#petDescription {
+display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+grid-area: desc;
+}
+#wave {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/*HTML
+<div id="nav">
+<a href="/userlookup/?user=Hawkeye0021">BACK</a>
+<a href="/neomessages/sendmessage/?username=Hawkeye0021">CONTACT</a>
+<a href="/~PETNAME">PAGE</a>
+<a href="/explore/">EXIT</a>
+</div>
+
+<div id="testimonials">
+<h2 style="text-align: center;"><strong>-TESTIMONIALS-</strong></h2>
+</div>
+<div id="bio">
+<h2 style="text-align: center;"><strong>-BIO-</strong></h2>
+</div>
+*/
+
+.pet--image {
+    content: url(https://i.postimg.cc/yYsJj8s8/ezgif-6-40ebf0b23a.gif);
+    height: 250px;
+    width: 250px;
+    align-self: center;
+    }
+#petTraits {
+    display: none
+    }
+#chimpycomm {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto
+    }
+            #aio_sidebar { display: none; }

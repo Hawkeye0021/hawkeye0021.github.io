@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&family=Yellowtail&display=swap');
+hr, #page_footer, #sb_top, #sb_side, #page_banner {
+    display: none
+}
+body {
+    background-attachment: fixed;
+    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Angelic/UL/meadow.png);
+    background-size: cover;
+    background-position: center;
+}
+#foreground {
+position: fixed;
+bottom: 0;
+width: 100dvw;
+left:0;
+pointer-events: none;
+z-index: -1;
+}
+div#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+div#page_content {
+    margin: auto;
+    width: 52em;
+    max-width: 95dvw;
+}
+#userLookupContent {
+color: black;
+display: grid;
+margin-top: 5em;
+padding-bottom: 1.5em;
+background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Angelic/UL/dye2.png);
+background-size: cover;
+background-position: center;
+padding-top: 1em;
+border-radius: 2em;
+border-style: ridge;
+border-color: #e1c132;
+box-shadow: -5px 5px 10px 5px rgba(1, 1, 1, 0.55);
+justify-items: center;
+font-family: sniglet;
+font-weight: lighter;
+}
+#userLookupInfo {
+width: 95%;
+background: white;
+padding: 1.5em 0 1.5em 0;
+border-radius: 2em 2em 2em .5em;
+box-shadow: -2px 2px 8px 0px rgba(1, 1, 1, 0.55);
+border-width:0 0 5px 5px;
+border-style: solid;
+border-left-color: yellow;
+border-bottom-color: pink;
+display: flex;
+justify-content: space-between;
+font-size: 12pt;
+}
+#userLookupInfo a {
+font-weight: lighter;
+font-style: italic;
+}
+#userLookupText {
+margin-left: 1.5em;
+}
+#userLookupCollections{
+margin-right: 1.5em;
+}
+.ul--shield {
+    content: url(https://grundoscafe.b-cdn.net/pets/rangedattack/blumaroo_alien.gif);
+    width: 150px;
+}
+#userLookupLinks {
+width: 95%;
+background: white;
+padding: 1.5em 0 1.5em 0;
+justify-content: space-around;
+border-radius: 2em 2em .5em 2em;
+box-shadow: -2px 2px 8px 0px rgba(1, 1, 1, 0.55);
+border-width:0 5px 5px 0px;
+border-style: solid;
+border-right-color: yellow;
+border-bottom-color: pink;
+}
+.ul--tradesimg {
+    content: url(https://grundoscafe.b-cdn.net/items/petpetpet_flugbug.gif);
+}
+.ul--auctionsimg {
+    content: url(https://grundoscafe.b-cdn.net/items/petpetpet_vespa.gif)
+}
+.ul--wishlistimg {
+    content: url(https://grundoscafe.b-cdn.net/items/petpetpet_fire_ryte.gif)
+}
+.ul--scoresimg {
+    content: url(https://grundoscafe.b-cdn.net/items/petpetpet_mozzy.gif)
+}
+.ul--neomailimg {
+    content: url(https://grundoscafe.b-cdn.net/items/ppp_petpetpet8.gif)
+}
+.ul--neofriendimg {
+    content: url(https://grundoscafe.b-cdn.net/items/ppp_petpetpet7.gif)
+}
+.ul--linkimg {
+    width: 80px;
+    margin-top: -1em;
+    mix-blend-mode: multiply;
+}
+.ul--linkimg:hover {
+    -webkit-animation: shake-vertical 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: shake-vertical 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+.ul--linktext {
+    font-size: 10pt;
+}
+form.nomargin {
+    width: 80px;
+}
+.ul__link {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+input.ul--linkimg {
+    align-self: initial
+}
+.ul__neofriend .ul--linktext, .ul__neomail .ul--linktext {
+    visibility: hidden;
+    font-size: 0
+}
+.ul__neomail .ul--linktext::after {
+    content: "Neomail";
+    visibility: visible;
+    font-size: 10pt
+}
+.ul__neofriend .ul--linktext::after {
+    content: "Neofriend";
+    visibility: visible;
+    font-size: 10pt
+}
+.ul--petsheader {
+    display: ;
+}
+#userLookupPets {
+width: 95%;
+}
+#userPetList {
+background: white;
+padding: 1.5em;
+border-radius: 2em 2em 2em .5em;
+box-shadow: -2px 2px 8px 0px rgba(1, 1, 1, 0.55);
+border-width:0 0 5px 5px;
+border-style: solid;
+border-left-color: yellow;
+border-bottom-color: pink;
+}
+.userPetList {
+    justify-content: center;
+    column-gap: 1.15em;
+}
+.ul--sectionheader {
+    font-size: 20pt;
+}
+.ul__pet {
+    border-radius: 1em .25em 1em .25em;
+    border-style: solid;
+    border-width: 3px;
+    border-right-color: yellow;
+    border-bottom-color: yellow;
+    border-top-color: pink;
+    border-left-color: pink;
+    box-shadow: -2px 2px 3px 0px grey;
+    word-break: none;
+    word-wrap: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex: initial;
+    width: 10em;
+    padding-bottom: .5em;
+}
+.ul--petimg {
+    width: 100px;
+}
+.ul--petimg:hover {
+    transform: scale(.9)
+}
+.ul--petname, .ul--petname:hover, .ul--petname:visited {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 12pt;
+    color: black;
+    font-weight: lighter;
+}
+.ul__pet:nth-child(4n+1) {
+    border-radius: 1em .25em 1em .25em;
+    border-style: solid;
+    border-width:3px;
+    border-left-color: yellow;
+    border-top-color: yellow;
+    border-bottom-color: pink;
+    border-right-color: pink;
+}
+#siteTrophiesList {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: 0 3% 0 3%;
+background: white;
+padding: 1.5em;
+border-radius: 2em 2em .5em 2em;
+box-shadow: -2px 2px 8px 0px rgba(1, 1, 1, 0.55);
+border-width:0 5px 5px 0px;
+border-style: solid;
+border-right-color: yellow;
+border-bottom-color: pink
+}
+#gameTrophiesList {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: 0 3% 0 3%;
+background: white;
+padding: 1.5em;
+border-radius: 2em 2em 2em .5em;
+box-shadow: -2px 2px 8px 0px rgba(1, 1, 1, 0.55);
+border-width:0 0 5px 5px;
+border-style: solid;
+border-left-color: yellow;
+border-bottom-color: pink
+}
+.ul--gametrophyname, .ul--sitetrophyname {
+    font-size: 10pt;
+}
+.ul--headerlabel {
+    display: none
+}
+.ul--username {
+    display: block;
+    font-size: 72pt;
+    font-family: yellowtail;
+    font-weight: lighter;
+    color: white;
+    text-shadow: 2px 2px 3px black, -2px -2px 3px black, 2px -2px 3px black, -2px 2px 3px black;
+    line-height: 1em;
+}
+#sb1 {
+position: fixed;
+top: 2em;
+left: 2em;
+-webkit-animation: shake-vertical 5s ease-in-out infinite both;
+}
+#sb2 {
+position: fixed;
+bottom: 2em;
+right: 2em;
+-webkit-animation: shake-vertical 8s ease-in-out infinite both;
+}
+#rb {
+position: fixed;
+bottom: -5px;
+left: 0;
+-webkit-animation: rb 45s linear infinite both;
+}
+#vn {
+position: absolute;
+top: 60px;
+left: 45dvw;
+-webkit-animation: vn .25s linear infinite both;
+}
+#mt {
+position: absolute;
+top: 55px;
+-webkit-animation: mt 1s ease-in-out infinite both
+}
+@-webkit-keyframes rb {
+    0% {
+        transform: translateX(-80px) scaleX(1)
+    }
+    50% {
+        transform: translateX(100dvw)
+    }
+    51% {
+        transform: translateX(100dvw) scaleX(-1)
+    }
+    100% {
+        transform: translateX(-80px) scaleX(-1)
+    }
+}
+@keyframes rb {
+    0% {
+        transform: translateX(-80px) scaleX(1)
+    }
+    50% {
+        transform: translateX(100dvw)
+    }
+    51% {
+        transform: translateX(100dvw) scaleX(-1)
+    }
+    100% {
+        transform: translateX(-80px) scaleX(-1)
+    }
+}
+@-webkit-keyframes vn{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+@keyframes vn{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+@-webkit-keyframes mt{
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(4px)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+@keyframes mt{
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(4px)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2025-4-24 15:39:23
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation shake-vertical
+ * ----------------------------------------
+ */
+@-webkit-keyframes shake-vertical {
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    90% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+}
+@keyframes shake-vertical {
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    90% {
+        -webkit-transform: translateY(-2px);
+        transform: translateY(-2px);
+    }
+}
+@media screen and (max-width: 959px) {
+    #nav {
+    display: none;
+    }
+    #sb_top {
+    display: initial;
+    }
+    #sb_bottom {
+    color: initial;
+    }
+    .ul--username {
+        font-size: 84pt
+    }
+    #userLookupContent {
+    margin-top: .25em;
+    }
+    #userLookupInfo {
+    font-size: 21pt;
+    grid-template-columns: 80% 20%;
+    }
+    #userLookupCollections {
+    flex-direction: column;
+    }
+    .smallfont {
+        font-size: 18pt;
+    }
+    .ul__neomail .ul--linktext::after {
+        font-size: 18pt
+    }
+    .ul__neofriend .ul--linktext::after {
+        font-size: 18pt
+    }
+    .ul--sectionheader {
+        font-size: 30pt
+    }
+    .ul__pet {
+        width: 8em;
+        font-size: 18pt;
+        padding-bottom: .15em;
+        padding-top: .15em;
+    }
+    .ul--petname {
+        font-size: 18pt;
+    }
+    .ul--petimg {
+        width: 7em;
+    }
+    .ul__link {
+        width: 5.5em;
+    }
+    .ul--linkimg {
+        width: 4.5em;
+    }
+    input.ul--linkimg {
+        position: relative;
+        right: .75em
+    }
+    #userLookupCollections {
+    margin-right: 0;
+    grid-area: collections;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+    }
+    #userLookupShield {
+    display: flex;
+    justify-content: center;
+    }
+    .ul--shield {
+        width: 250px;
+        grid-area: shield;
+    }
+    #userLookupInfo {
+    display: grid;
+    grid-template-areas: "info shield" "info collections";
+    grid-template-columns: 65% 35%;;
+    gap: 0;
+    }
+    #userLookupText {
+    grid-area: info;
+    }
+    .ul--sitetrophyname, .ul--gametrophyname, .ul--sitetrophycap, a.gamelink {
+        font-size: 16pt;
+    }
+    #sb1 {
+    top: 5em;
+    width: 150px;
+    }
+    #sb2 {
+    bottom: 7em;
+    width:125px;
+    }
+    #rb {
+    bottom: 125px;
+    width: 125px;
+    }
+    #mt {
+    top: 5em;
+    }
+    #vn {
+    top: 5.5em;
+    }
+}

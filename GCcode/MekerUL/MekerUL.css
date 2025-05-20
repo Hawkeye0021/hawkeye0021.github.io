@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Gaegu&family=Grape+Nuts&family=Klee+One&family=Molle&family=Sriracha&family=Swanky+and+Moo+Moo&display=swap');
+
+
+hr, #page_footer, #sb_top, #sb_side, #page_banner, #aio_sidebar {
+    display: none
+}
+#container {
+background-image: url(https://i.postimg.cc/KjqJ64dm/00062.png);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+color: black;
+}
+a, a:visited {
+    color:white
+}
+a:hover {
+    color: black
+}
+#container {
+width:100%;
+display:flex;
+flex-direction:column
+}
+#page_content {
+margin:auto;
+font-family: 'averia libre';
+}
+.ul--sectionheader {
+    font-family: 'swanky and moo moo';
+    text-transform: uppercase;
+    font-size: 26pt;
+    letter-spacing: .1em;
+}
+.ul--header span{
+    display: none;
+}
+.ul--header:after{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    content: url(https://i.postimg.cc/15vb0jdk/BANNER.png);
+    margin-bottom: -75px;
+}
+#userLookupInfo {
+grid-template-columns: auto;
+grid-template-areas: 'text shield' 'text collections';
+background-color: #92291b;
+border-color: white;
+border-style: solid;
+border-width: 10px;
+border-radius: 3px;
+padding: 1em;
+}
+#userLookupInfo {
+background-color: #92291b;
+border-color: white;
+border-style: solid;
+border-width: 10px;
+border-radius: 3px;
+padding: 1em;
+}
+#userLookupInfo, #userPetList, #siteTrophiesList, #gameTrophiesList {
+background-size: 50%;
+background-color: rgba(55,55,55,.25);
+border-color: black;
+border-style: solid;
+border-width: 10px;
+border-radius: 45px;
+padding: 1em;
+backdrop-filter: blur(50px);
+}
+#userLookupLinks {
+justify-content: space-evenly;
+}
+#userPetList a, #userPetList a:visited{
+color:black;
+}
+#userPetList a:hover {
+color:white;
+}
+#kau {
+position: fixed;
+bottom: 0px;
+right: 10px;
+}
+#kau img {
+height: 250px;
+}
+#val img {
+height: 100px;
+}
+.ul--tradesimg {
+    content: url(https://i.postimg.cc/LX2Qcc06/Trades.png);
+    height:56px;
+    width:100px;
+}
+.ul--auctionsimg {
+    content: url(https://i.postimg.cc/Qtdkkhy5/Auctions.png);
+    height:56px;
+    width:100px;
+}
+.ul--wishlistimg {
+    content: url(https://i.postimg.cc/q7Lx3zj4/Wishlist.png);
+    height:56px;
+    width:100px;
+}
+.ul--scoresimg {
+    content: url(https://i.postimg.cc/CKj66h7Q/Scores.png);
+    height:56px;
+    width:100px;
+}
+.ul--neomailimg {
+    content: url(https://i.postimg.cc/2SLthFZm/Mail.png);
+    height:56px;
+    width:100px;
+}
+.ul--neofriendimg {
+    content: url(https://i.postimg.cc/VNyVRrqt/Friend.png);
+    height:56px;
+    width:100px;
+}
+.ul--linktext {
+    display: none;
+}
+#baby {
+position: absolute;
+top: 2230px
+}
+#val {
+position: absolute;
+top: 875px;
+}
+#plushie {
+position: absolute;
+top: 615px;
+margin-left: 266px
+}
+.Damara__after {
+    display: inline-flex;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: 600
+}
+.Damara__after::after {
+    content: "- GREYBIES -"
+}

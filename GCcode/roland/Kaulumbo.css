@@ -1,0 +1,183 @@
+@import url(https://db.onlinewebfonts.com/c/db45ee702a854035b7916efba3c2acbf?family=Folio+Bold+Extended);
+@import url(https://db.onlinewebfonts.com/c/e9cb22d81cf34f9b52a32f3538ca6004?family=Folio+Light);
+/*nav positioning*/
+#nav {
+  font-family: folio bold extended;
+    font-size: 12pt;
+    position: absolute;
+    top: -3em;
+    height: fit-content;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    gap: 1em
+}
+/*nav styling*/
+#nav a, #nav a:visited {
+    background: none;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+    color: #ffc800;;
+  text-shadow: 2px 2px 0px black;
+}
+#nav a:hover {
+    transform: scale(1.15)
+}
+/*hiding things*/
+hr, .pet--statsheader, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #petChallenge {
+    display: none
+}
+/*background*/
+#container {
+    background-image: url(https://i.postimg.cc/rwRVkV7F/00192.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+}
+/* credit to https://css-tricks.com/snippets/css/animated-grainy-texture/ for film grain effect*/
+#container:before {
+  animation: grain 8s steps(10) infinite;
+  background-image: url("https://i.postimg.cc/Y9DXxHRT/paper-1.png");
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity: 0.2;
+  position: fixed;
+  top: -110%;
+  width: 300%;
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
+/*centering*/
+#container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+    min-height: 100dvh;
+    height: fit-content
+}
+#page_content {
+    display: flex;
+    margin: auto;
+    width: 100vw;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    height: fit-content
+}
+/*title*/
+.pet--name {
+    display: block;
+    font-size: 36pt;
+  text-transform: uppercase;
+}
+.pet--name::after {
+  content: " is";
+  font-size: 18pt;
+}
+.pet--header {
+    font-size: 12pt;
+    position: absolute;
+  bottom: -160px;
+  text-align: right;
+  color: #ffc800;
+  font-family: folio bold extended;
+  text-shadow: 3px 3px 0px black;
+}
+/*container*/
+#petLookupContent {
+  font-family: folio light;
+    width: 500px;
+    margin: auto;
+    position: relative;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 0px 0px black;
+  border: 5px double #000;
+    color: black;
+}
+/*info*/
+#petImage {
+    width: 100%
+}
+.pet--image {
+    width: 200px;
+    height: 200px;
+  content: url(https://i.postimg.cc/d0f9pBMx/Roland-Kau300.png)
+}
+#petInfo {
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    gap: 0;
+}
+#petStats {
+    background-color: transparent;
+    text-align: right;
+    font-size: 12pt;
+}
+#petTraits {
+    font-size: 10pt;
+  text-align: right;
+}
+#pet-interest {
+  margin-left: 45px;
+}
+/*extras*/
+#petPetpet {
+    position: absolute;
+    width: 47%;
+    top: 220px
+}
+.pet--petpetimg {
+    width: 80px;
+    height: 80px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  content: url(https://grundoscafe.b-cdn.net/items/pets_doggy.gif);
+}
+.pet--petpetheader, .pet--petpetdesc {
+    font-size: 10pt
+}
+.pet--petpetage {
+    display: none
+}
+.pet--petpetname {
+    display: block;
+    font-size: 18pt
+}
+.pet--no-trade-alert {
+    position: absolute;
+    background-color: transparent;
+    color: red;
+    bottom: -35px;
+    font-weight: bold;
+    text-shadow: -1px 1px 2px black;
+}
+.pet--no-trade-icon {
+    display: none
+}
+/*custom content*/
+#petDescription {
+    display: grid;
+    font-size: 11pt;
+}
+#aio_sidebar {
+  display: none;
+}

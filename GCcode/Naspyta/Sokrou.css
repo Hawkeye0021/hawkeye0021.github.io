@@ -1,0 +1,213 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Chewy&display=swap");
+/*nav positioning*/
+#nav {
+font-size: 14pt;
+position: absolute;
+top: -3em;
+height: fit-content;
+margin-top: 10px;
+display: flex;
+flex-direction: row;
+justify-self: right;
+gap: 12px
+}
+/*nav styling*/
+#nav a, #nav a:visited {
+background: #3c6470;
+padding-left: 4px;
+padding-right: 4px;
+border-radius: 3px;
+color: white;
+border: 3px solid #3c6470;
+box-shadow: 0 0 5px 0 black
+}
+#nav a:hover {
+background: #3c6470;
+padding-left: 4px;
+padding-right: 4px;
+border-radius: 3px;
+color: white;
+border: 3px solid orange;
+scale: 1.15
+}
+/*hiding things*/
+hr, .pet--statsheader, .pet--smallname, .petJobs, #petLead, #page_footer, #sb_top, #sb_side, #page_banner, #petLinks {
+    display: none
+}
+/*background*/
+body {
+    background-image: url(https://images2.imgbox.com/4e/0b/lZXTywR4_o.jpeg);
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed
+}
+/*centering*/
+#page_event {
+margin: 0
+}
+#container {
+margin: auto;
+display: flex;
+flex-direction: column;
+width: 100dvw;
+min-height: 100dvh;
+height: fit-content
+}
+#page_content {
+display: flex;
+margin: auto;
+width: 100vw;
+min-height: 100%;
+justify-content: center;
+align-items: center;
+height: fit-content
+}
+/*link colors*/
+a.pet--color {
+    color: white
+}
+a.pet--color:hover {
+    color: orange
+}
+a {
+    color: #3c2370
+}
+a:hover {
+    color: orange
+}
+/*title*/
+.pet--header {
+    font-family: chewy;
+    font-size: 36pt;
+    background-color: #3c6470;
+    margin-top: 0;
+    text-align: right;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    color: white;
+    border-radius: 25px 25px 0 0
+}
+.pet--name {
+    content: url(https://images2.imgbox.com/65/4a/SqkOfsDL_o.png);
+    scale: 0.75;
+    display: block;
+    position: absolute;
+    left: -115px;
+    top: -45px;
+    transform: rotate(-18deg)
+}
+.pet--color {
+    color: #fff
+}
+.pet--color:hover {
+    color: #462b7a
+}
+/*container*/
+#petLookupContent {
+margin-top: 3em;
+position: relative;
+font-family: balsamiq sans;
+color: black;
+display: grid;
+grid-template-areas: "top top" "trade trade" "trophies trophies" "desc desc" "petpet petpet";
+row-gap: 15px;
+justify-items: center;
+background-color: white;
+border-radius: 25px;
+box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.75);
+margin-bottom: 25px;
+padding-bottom: 15px;
+align-items: center;
+max-width: 50em;
+}
+#petLookupContent strong {
+color: orange
+}
+/*info*/
+.pet--image {
+    content: url(https://images2.imgbox.com/44/b0/vWDxPpwu_o.png);
+    width: 200px
+}
+#petTop {
+grid-area: top;
+width: 100%
+}
+#petInfo {
+display: grid;
+width: 100%;
+grid-template-columns: 50%;
+align-content: start;
+margin-top: -25px;
+font-size: 12pt
+}
+#petImage {
+grid-area: image;
+width: 100%;
+align-content: center;
+padding-bottom: 35px
+}
+#petStats {
+grid-area: stats;
+background: none;
+text-align: left
+}
+#petTraits {
+    font-size: 11pt;
+}
+/*extras*/
+#petPetpet {
+grid-area: petpet;
+width: 90%
+}
+.pet--petpetage {
+    display: none
+}
+.flex-2col {
+    flex: 1
+}
+.pet--petpetdesc {
+    font-size: 9pt
+}
+.pet--petpetname {
+    display: block;
+    font-size: 18pt;
+    font-weight: normal
+}
+#petTrophies {
+grid-area: trophies
+}
+#petBattle, #petChallenge {
+display: none
+}
+.pet--no-trade-alert {
+    grid-area: trade;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 10px
+}
+#petDescription {
+grid-area: desc;
+padding: 10px;
+display: grid;
+justify-items: center
+}
+#dude {
+position: fixed;
+bottom: 0;
+right: 0;
+width: 250px
+}
+@media screen and (max-width: 959px) {
+    #sb_top {
+    display: initial;
+    }
+    #petLookupContent {
+    margin-top: 1em;
+    }
+    .pet--name {
+        left: -5%
+    }
+    #dude {
+    margin-bottom: 5em
+    }
+}
