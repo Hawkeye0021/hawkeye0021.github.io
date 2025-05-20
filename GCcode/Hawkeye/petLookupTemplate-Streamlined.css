@@ -74,11 +74,14 @@ hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBatt
 display: contents
 }
 /*CENTERING*/
+#page_content {
+width: 100vw;
+}
 #container {
 margin: auto;
 display: flex;
 flex-direction: column;
-width: 100dvw;
+width: 100vw;
 min-height: 100dvh;
 height: fit-content;
 justify-content: center;
@@ -228,7 +231,7 @@ display: none;
     max-height: 100vh;
     }
     #petLookupContent {
-    width: 90dvw;
+    width: 90vw;
     height: fit-content;
     font-size: 24pt;
     padding-top: 1em;
@@ -252,11 +255,11 @@ display: none;
     margin-left: 15%
     }
     .pet--image {
-        width: 50dvw
+        width: 50vw
     }
     .pet--petpetimg {
         margin-left: 25%;
-        width: 25dvw
+        width: 25vw
     }
     .pet--no-trade-alert {
         bottom: -2em;
