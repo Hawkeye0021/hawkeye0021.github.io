@@ -9,8 +9,11 @@
   font-size: 0;
   width: 100%
   }
+  #page_event {
+  min-height: 0;
+  max-height: fit-content;
+  }
   #page_content {
-  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,7 +42,7 @@
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    overflow: auto;
+    overflow: hidden;
   }
   #galleryInfo {
   text-align: center;
