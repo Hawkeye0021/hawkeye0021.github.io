@@ -99,7 +99,7 @@
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
   overflow: auto;
   margin: auto;
-  max-height: 85vh;
+  height: 85vh;
   }
   #gallery_items {
   width: 100%;
