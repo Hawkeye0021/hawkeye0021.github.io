@@ -286,7 +286,7 @@ color: #22597e
     gap: 1em
     }
     #nav a {
-    font-size: 30pt
+    font-size: 24pt
     }
     #container {
     display: flex;
@@ -312,7 +312,6 @@ color: #22597e
         display: block
     }
     .pet--header {
-        margin-top: -1em;
         font-size: 32pt
     }
     #petImage {
