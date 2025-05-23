@@ -1,6 +1,6 @@
   @import url(https://fonts.googleapis.com/css2?family=Coiny&family=Dekko&family=Poetsen+One&display=swap);
-  .gallery-item-qty, hr, #page_footer, #sb_top, #sb_side, #page_banner, .category-divider, .links-flex {
-    display: none
+  #galCats, .gallery-item-qty, hr, #page_footer, #sb_top, #sb_side, #page_banner, .category-divider, .links-flex {
+  display: none
   }
   .gallerykeeper-img {
     content: url(https://images.neopets.com/games/betterthanyou/contestant229.gif)
@@ -9,19 +9,37 @@
   font-size: 0;
   width: 100%
   }
-  div#container {
-    width: 100%;
-    display: flex;
-    flex-direction: column
+  #page_content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   }
-  div#page_content {
-    margin: auto
+  #container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100dvh;
+  height: fit-content;
+  justify-content: center;
+  align-items: center
+  }
+  main {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  #shopBar {
+  margin: 0;
   }
   body {
     background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/Didi/neggadots.png);
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    overflow: auto;
   }
   #galleryInfo {
   text-align: center;
@@ -76,13 +94,16 @@
   font-family: dekko;
   font-size: 16pt;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.75);
-  height: 88dvh;
-  overflow: auto
+  overflow: auto;
+  margin: auto;
+  max-height: 85vh;
   }
   #gallery_items {
-  width: fit-content;
-  display: grid;
-  justify-items: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
   font-size: 12pt;
   font-weight: lighter
   }
@@ -137,11 +158,14 @@
     }
   }
   @media screen and (max-width: 959px) {
-    #sb_top {
-    display: initial
+    #container {
+    padding-bottom: 0;
+    }
+    #sb_bottom {
+    display: none
     }
     #shopToolBar {
-    display: none
+    display: initial
     }
     #galleryInfo {
     font-size: 20pt
@@ -164,7 +188,5 @@
     .gallery_item {
       margin: 0
     }
-    #galleryContent {
-    height: 83dvh
-    }
+
   }
