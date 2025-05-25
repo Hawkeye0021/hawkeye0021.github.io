@@ -70,3 +70,6 @@ font-size: 13pt
     color: #fff;
     text-shadow: 1px 1px 5px rgba(0,0,0,.5)
 }
+.pet--petpetheader::after {
+    content: "and his petpet";
+}
