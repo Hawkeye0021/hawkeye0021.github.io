@@ -1,0 +1,63 @@
+@media screen and (max-width: 959px) {
+    #sb_top, #sb_side, #sb_bottom {
+    display: none
+    }
+    #nav {
+    display: flex;
+    top: initial;
+    top: -3em;
+    gap: 0;
+    width: 100%;
+    justify-content: center;
+    gap: 1em;
+    }
+    #nav a {
+    font-size: 30pt;
+    }
+    #container {
+    min-height: fit-content;
+    }
+    #page_content {
+    margin-bottom: 2em;
+    margin-top: 2em
+    }
+    #petLookupContent {
+    width: 90vw;
+    height: fit-content;
+    font-size: 24pt;
+    padding-top: 1em
+    }
+    #petStats, #bio, #testimonials {
+    font-size: 20pt
+    }
+    .pet--statsheader, #bio h2, #testimonials h2 {
+        font-size: 24pt;
+    }
+    .pet--name {
+        font-size: 60pt;
+        display: block;
+    }
+    .pet--header {
+        margin-top: -1em;
+        font-size: 24pt
+    }
+    #petImage {
+    margin-left: 50%;
+    }
+    .pet--petpetimg {
+        margin-left: 20%;
+    }
+    .pet--no-trade-alert {
+        bottom: -2em;
+        font-size: 24pt
+    }
+    .pet--petpetheader:before, .pet--petpetheader:after, .pet--petpetdesc {
+        font-size: 20pt;
+    }
+    .pet--petpetname {
+        font-size: 24pt
+    }
+    #petTraits {
+    font-size: 16pt
+    }
+}
