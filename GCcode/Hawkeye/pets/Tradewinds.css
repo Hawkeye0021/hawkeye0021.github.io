@@ -73,3 +73,6 @@ font-size: 13pt
 .pet--petpetheader::after {
     content: "and his petpet";
 }
+.pet--petpetname {
+    font-family: nothing you could do;
+}
