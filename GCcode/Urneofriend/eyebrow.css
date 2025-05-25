@@ -1,0 +1,39 @@
+@import "https://hawkeye0021.github.io/GCcode/Hawkeye/petLookupTemplate-Streamlined-comm.css";
+#page_content {
+  background: none;
+  box-shadow: none;
+}
+Body {
+  background: #e2ae63
+}
+#petLookupContent {
+  box-shadow: 10px 10px 0px 0px #be7467
+}
+#nav a, #nav a:visited {
+transition: ease .25s;
+  box-shadow: 4px 4px 0px 0px #be7467;
+  color: #d59e01;
+  background: #71453d;
+  border-color: #71453d;
+}
+.pet--header, .pet--statsheader {
+  background: #71453d;
+  color: #d59e01
+}
+.pet--color, .pet--color:hover, .pet--color:visited {
+  font-style: italic;
+  color: #d59e01;
+}
+.pet--gendercolor, .pet--hpcolor, #petStats a, #petStats a:visited {
+  color: #71453d
+}
+#petStats a:hover {
+  color: #896601
+}
+.pet--petpetname {
+  color: #d59e01;
+  text-shadow: 1.5px 1.5px 1px #71453d
+}
+.pet--petpetheader::after {
+  content: "and her petpet";
+}

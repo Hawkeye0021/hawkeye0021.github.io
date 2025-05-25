@@ -210,13 +210,10 @@ padding-right: 0.35em
     display: none
 }
 @media screen and (max-width: 959px) {
-    #nav {
+    #sb_top, #sb_side, #sb_bottom {
     display: none
     }
-    #sb_top, #sb_side {
-    display: initial
-    }
-    #mobilenav {
+    #nav {
     display: flex;
     top: initial;
     top: -3em;
@@ -225,7 +222,7 @@ padding-right: 0.35em
     justify-content: center;
     gap: 1em;
     }
-    #mobilenav a {
+    #nav a {
     font-size: 30pt;
     }
     #container {
