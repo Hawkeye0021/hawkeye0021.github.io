@@ -1,67 +1,3 @@
-
-/*STYLE*/
-body {
-    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/starry.jpg)
-}
-#nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
-background: #f2df66;
-color: #0033af;
-border: 3px solid #f2df66;
-font-size: 12pt;
-box-shadow: 1px 1px 4px 0 gold
-}
-#petLookupContent {
-border-radius: 0.75em;
-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
-}
-.pet--name {
-    font-size: 36pt
-}
-.pet--header {
-    font-size: 18pt;
-    margin-top: 0;
-    padding-bottom: 0.25em;
-    background-color: #0033af;
-    color: #f2df66;
-    text-shadow: 1px 1px 1px #000
-}
-.pet--petpetheader, .pet--petpetdesc {
-    font-size: 10pt
-}
-.pet--statsheader, #bio h2, #testimonials h2 {
-    font-size: 14pt;
-    color: #f2df66;
-    text-shadow: 1px 1px 1px #000;
-    background-color: #0033af
-}
-.pet--petpetname {
-    font-size: 16pt
-}
-#petStats, #testimonials, #bio {
-font-size: 11pt
-}
-#petTraits {
-display: none
-}
-.pet--color {
-    color: #f2df66
-}
-.pet--color:hover {
-    color: #f2df66
-}
-#petStats a {
-color: #0137b4
-}
-#petStats a:hover {
-color: #1232f7
-}
-.pet--gendercolor, .pet--hpcolor {
-    color: #0137b4
-}
-.pet--petpetname {
-    color: #c99700;
-    text-shadow: 1px 1px 1px black
-}
 /*HIDE SHIT*/
 hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge {
     display: none
@@ -204,6 +140,69 @@ display: none;
 }
 .pet--no-trade-icon {
     display: none
+}
+/*STYLE*/
+body {
+    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/starry.jpg)
+}
+#nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
+background: #f2df66;
+color: #0033af;
+border: 3px solid #f2df66;
+font-size: 12pt;
+box-shadow: 1px 1px 4px 0 gold
+}
+#petLookupContent {
+border-radius: 0.75em;
+box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
+}
+.pet--name {
+    font-size: 36pt
+}
+.pet--header {
+    font-size: 18pt;
+    margin-top: 0;
+    padding-bottom: 0.25em;
+    background-color: #0033af;
+    color: #f2df66;
+    text-shadow: 1px 1px 1px #000
+}
+.pet--petpetheader, .pet--petpetdesc {
+    font-size: 10pt
+}
+.pet--statsheader, #bio h2, #testimonials h2 {
+    font-size: 14pt;
+    color: #f2df66;
+    text-shadow: 1px 1px 1px #000;
+    background-color: #0033af
+}
+.pet--petpetname {
+    font-size: 16pt
+}
+#petStats, #testimonials, #bio {
+font-size: 11pt
+}
+#petTraits {
+display: none
+}
+.pet--color {
+    color: #f2df66
+}
+.pet--color:hover {
+    color: #f2df66
+}
+#petStats a {
+color: #0137b4
+}
+#petStats a:hover {
+color: #1232f7
+}
+.pet--gendercolor, .pet--hpcolor {
+    color: #0137b4
+}
+.pet--petpetname {
+    color: #c99700;
+    text-shadow: 1px 1px 1px black
 }
 @media (orientation:portrait) and (hover:none) {
     #sb_bottom {
