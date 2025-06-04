@@ -272,7 +272,7 @@ color: #22597e
 .pet--no-trade-text {
     color: white;
 }
-@media screen and (max-width: 959px) {
+@media (orientation:portrait) and (hover:none) {
     #sb_bottom {
     display: none
     }
