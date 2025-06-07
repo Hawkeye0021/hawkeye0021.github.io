@@ -1,3 +1,66 @@
+/*STYLE*/
+body {
+    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/starry.jpg)
+}
+#nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
+background: #f2df66;
+color: #0033af;
+border: 3px solid #f2df66;
+font-size: 12pt;
+box-shadow: 1px 1px 4px 0 gold
+}
+#petLookupContent {
+border-radius: 0.75em;
+box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
+}
+.pet--name {
+    font-size: 36pt
+}
+.pet--header {
+    font-size: 18pt;
+    margin-top: 0;
+    padding-bottom: 0.25em;
+    background-color: #0033af;
+    color: #f2df66;
+    text-shadow: 1px 1px 1px #000
+}
+.pet--petpetheader, .pet--petpetdesc {
+    font-size: 10pt
+}
+.pet--statsheader, #bio h2, #testimonials h2 {
+    font-size: 14pt;
+    color: #f2df66;
+    text-shadow: 1px 1px 1px #000;
+    background-color: #0033af
+}
+.pet--petpetname {
+    font-size: 16pt
+}
+#petStats, #testimonials, #bio {
+font-size: 11pt
+}
+#petTraits {
+display: none
+}
+.pet--color {
+    color: #f2df66
+}
+.pet--color:hover {
+    color: #f2df66
+}
+#petStats a {
+color: #0137b4
+}
+#petStats a:hover {
+color: #1232f7
+}
+.pet--gendercolor, .pet--hpcolor {
+    color: #0137b4
+}
+.pet--petpetname {
+    color: #c99700;
+    text-shadow: 1px 1px 1px black
+}
 /*HIDE SHIT*/
 hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge {
     display: none
@@ -14,8 +77,8 @@ display: contents
 margin: auto;
 display: flex;
 flex-direction: column;
-width: 100vw;
-min-height: 100vh;
+width: 100dvw;
+min-height: 100dvh;
 height: fit-content;
 justify-content: center;
 align-items: center
@@ -64,7 +127,7 @@ scale: 0.9
 }
 .pet--header {
     grid-area: header;
-    border-radius: 13px 13px 0 0;
+    border-radius: 0.35em 0.35em 0 0;
     margin-top: 0;
     margin-bottom: 0.25em
 }
@@ -143,18 +206,8 @@ display: none;
 }
 /*STYLE*/
 body {
-background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/mountainsnow.png)
+    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/mountainsnow.png)
 }
-#nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
-background: #f2df66;
-color: #0033af;
-border: 3px solid #f2df66;
-font-size: 12pt;
-box-shadow: 1px 1px 4px 0 gold
-}
-#petLookupContent {
-border-radius: 0.75em;
-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
 #nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
 color: white;
 padding-top: 0.25em;
@@ -180,46 +233,6 @@ margin-bottom: 2em;
     font-size: 18pt;
     margin-top: 0;
     padding-bottom: 0.25em;
-    background-color: #0033af;
-    color: #f2df66;
-    text-shadow: 1px 1px 1px #000
-}
-.pet--petpetheader, .pet--petpetdesc {
-    font-size: 10pt
-}
-.pet--statsheader, #bio h2, #testimonials h2 {
-    font-size: 14pt;
-    color: #f2df66;
-    text-shadow: 1px 1px 1px #000;
-    background-color: #0033af
-}
-.pet--petpetname {
-    font-size: 16pt
-}
-#petStats, #testimonials, #bio {
-font-size: 11pt
-}
-#petTraits {
-display: none
-}
-.pet--color {
-    color: #f2df66
-}
-.pet--color:hover {
-    color: #f2df66
-}
-#petStats a {
-color: #0137b4
-}
-#petStats a:hover {
-color: #1232f7
-}
-.pet--gendercolor, .pet--hpcolor {
-    color: #0137b4
-}
-.pet--petpetname {
-    color: #c99700;
-    text-shadow: 1px 1px 1px black
     background-color: #d4dff3;
     color: #22597e;
     text-shadow: 1px 1px 3px #596a85;
@@ -258,7 +271,7 @@ color: #22597e
 .pet--no-trade-text {
     color: white;
 }
-@media (orientation:portrait) and (hover:none) {
+@media screen and (max-width: 959px) {
     #sb_bottom {
     display: none
     }
@@ -300,13 +313,13 @@ color: #22597e
         font-size: 32pt
     }
     #petImage {
-    margin-left: 5vw
+    margin-left: 15%
     }
     .pet--image {
         width: 50vw
     }
     .pet--petpetimg {
-        margin-left: 10vw;
+        margin-left: 25%;
         width: 25vw
     }
     .pet--no-trade-alert {
@@ -331,5 +344,3 @@ color: #22597e
     font-size: 16pt
     }
 }
-
-
