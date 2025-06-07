@@ -143,6 +143,7 @@ display: none;
 }
 /*STYLE*/
 body {
+<<<<<<< HEAD
     background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/starry.jpg)
 }
 #nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
@@ -155,6 +156,27 @@ box-shadow: 1px 1px 4px 0 gold
 #petLookupContent {
 border-radius: 0.75em;
 box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
+=======
+    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/mountainsnow.png)
+}
+#nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
+color: white;
+padding-top: 0.25em;
+padding-bottom: 0.25em;
+padding-left: 0.65em;
+padding-right: 0.65em;
+border-radius: 0.35em;
+background: #7b93b9;
+box-shadow: 0 0 5px 0 #596a85;
+border: none;
+}
+#petLookupContent {
+border-radius: 18px;
+box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
+border: 5px solid #7b93b9;
+margin-top: 2em;
+margin-bottom: 2em;
+>>>>>>> parent of 4149013 (Update didisnowpetul.css)
 }
 .pet--name {
     font-size: 36pt
@@ -163,6 +185,7 @@ box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
     font-size: 18pt;
     margin-top: 0;
     padding-bottom: 0.25em;
+<<<<<<< HEAD
     background-color: #0033af;
     color: #f2df66;
     text-shadow: 1px 1px 1px #000
@@ -203,6 +226,45 @@ color: #1232f7
 .pet--petpetname {
     color: #c99700;
     text-shadow: 1px 1px 1px black
+=======
+    background-color: #d4dff3;
+    color: #22597e;
+    text-shadow: 1px 1px 3px #596a85;
+    border-radius: 18px 18px 0 0;
+}
+.pet--statsheader {
+    font-size: 14pt;
+    color: #fff;
+    text-shadow: 1px 1px 3px #596a85;
+    background-color: #d4dff3
+}
+.pet--color {
+    color: #fff
+}
+.pet--color:hover {
+    color: #eee
+}
+#petStats a {
+color: #22597e
+}
+#petStats a:hover {
+color: #22597e
+}
+.pet--gendercolor, .pet--hpcolor {
+    color: #22597e
+}
+.pet--petpetname {
+    color: #22597e;
+    text-shadow: none;
+}
+.pet--no-trade-alert {
+    background: rgba(34, 89, 126,.5);
+    margin: 0 15% 0 15%;
+    bottom: -4.5em
+}
+.pet--no-trade-text {
+    color: white;
+>>>>>>> parent of 4149013 (Update didisnowpetul.css)
 }
 @media (orientation:portrait) and (hover:none) {
     #sb_bottom {
