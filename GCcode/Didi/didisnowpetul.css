@@ -143,8 +143,8 @@ display: none;
 }
 /*STYLE*/
 body {
-<<<<<<< HEAD
-    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/starry.jpg)
+background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/mountainsnow.png)
+}
 }
 #nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
 background: #f2df66;
@@ -156,9 +156,6 @@ box-shadow: 1px 1px 4px 0 gold
 #petLookupContent {
 border-radius: 0.75em;
 box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
-=======
-    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/mountainsnow.png)
-}
 #nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
 color: white;
 padding-top: 0.25em;
@@ -176,7 +173,6 @@ box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
 border: 5px solid #7b93b9;
 margin-top: 2em;
 margin-bottom: 2em;
->>>>>>> parent of 4149013 (Update didisnowpetul.css)
 }
 .pet--name {
     font-size: 36pt
@@ -185,7 +181,6 @@ margin-bottom: 2em;
     font-size: 18pt;
     margin-top: 0;
     padding-bottom: 0.25em;
-<<<<<<< HEAD
     background-color: #0033af;
     color: #f2df66;
     text-shadow: 1px 1px 1px #000
@@ -226,7 +221,6 @@ color: #1232f7
 .pet--petpetname {
     color: #c99700;
     text-shadow: 1px 1px 1px black
-=======
     background-color: #d4dff3;
     color: #22597e;
     text-shadow: 1px 1px 3px #596a85;
@@ -264,7 +258,6 @@ color: #22597e
 }
 .pet--no-trade-text {
     color: white;
->>>>>>> parent of 4149013 (Update didisnowpetul.css)
 }
 @media (orientation:portrait) and (hover:none) {
     #sb_bottom {
