@@ -1,0 +1,316 @@
+
+                   @import url("https://fonts.googleapis.com/css2?family=Chilanka&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+/*HORSE STABLES*/
+.ul__Lady_Violet, .ul__Grooni, .ul__Rocking, .ul__Neighbility, .ul__JollyJumper, .ul__Twinklepaws, .ul__Neighbel, .ul__SprinkleBiscuit, .ul__Theya, .ul__Phaion, .ul__PinkHorse, .ul__Scarletta, .ul__Auricomous, .ul__Regenboog, .ul__Caithlin, .ul__Roussillon {
+    background-image: url(https://i.postimg.cc/V645Jf4F/stableframerounded.png);
+    background-size: 100% 83%;
+    background-repeat: no-repeat;
+    width: 148px
+    }
+.ul__Lady_Violet img, .ul__Grooni img, .ul__Rocking img, .ul__Neighbility img, .ul__JollyJumper img, .ul__Twinklepaws img, .ul__Neighbel img, .ul__SprinkleBiscuit img, .ul__Theya img, .ul__Phaion img, .ul__PinkHorse img, .ul__Scarletta img, .ul__Auricomous img, .ul__Regenboog img, .ul__Caithlin img, .ul__Roussillon img {
+    margin-top: 16px;
+    border: none;
+    width: 110px
+    }
+.ul__Lady_Violet .ul--petname, .ul__Grooni .ul--petname, .ul__Rocking .ul--petname, .ul__Neighbility .ul--petname, .ul__JollyJumper .ul--petname, .ul__Twinklepaws .ul--petname, .ul__Neighbel .ul--petname, .ul__SprinkleBiscuit .ul--petname, .ul__Theya .ul--petname, .ul__Phaion .ul--petname, .ul__PinkHorse .ul--petname, .ul__Scarletta .ul--petname, .ul__Auricomous .ul--petname, .ul__Auricomous .ul--petname, .ul__Regenboog .ul--petname, .ul__Caithlin .ul--petname, .ul__Roussillon .ul--petname {
+    padding-top: 25px;
+    background-image: url(https://i.postimg.cc/1RBmgL3G/sign.png);
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white !important;
+    padding-bottom: 5px
+    }
+.ul__Lady_Violet img:hover, .ul__Grooni img:hover, .ul__Rocking img:hover, .ul__Neighbility img:hover, .ul__JollyJumper img:hover, .ul__Twinklepaws img:hover, .ul__Neighbel img:hover, .ul__SprinkleBiscuit img:hover, .ul__Theya img:hover, .ul__Phaion img:hover, .ul__PinkHorse img:hover, .ul__Scarletta img:hover, .ul__Regenboog img:hover, .ul__Caithlin img:hover, .ul__Roussillon img:hover {
+    border: none;
+    transform: scale(90%)
+    }
+.ul__pet {
+    display: flex;
+    flex-direction: column;
+    flex: initial
+    }
+/*CATEGORIES*/
+/*HIDING*/
+hr, #page_footer, #sb_top, #sb_side, #page_banner {
+    display: none
+    }
+/*NAVIGATION*/
+#userLookupDesc {
+    display: contents
+    }
+#nav {
+    width: 650px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    background-color: #a4d22a;
+    font-size: 16pt;
+    padding: 5px;
+    justify-content: space-between;
+    justify-self: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.75)
+    }
+#nav a, #nav a:visited {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    border-bottom: 3px solid #ffbcdd;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 black
+    }
+#nav a:hover {
+    scale: 1.1;
+    background-color: #fff
+    }
+/*BASE*/
+body {
+    background-image: url(https://i.postimg.cc/BQWT7S83/daisies.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white
+    }
+div#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column
+    }
+div#page_content {
+    margin: auto;
+    width: 645px
+    }
+#userLookupContent {
+    font-family: comic neue;
+    margin-top: 270px;
+    display: grid;
+    background-color: #a4d22a;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+    grid-template-columns: 65%;
+    grid-template-areas:'info shield' 'info collections' 'links links' 'pets pets' 'sitetrophies sitetrophies' 'gametrophies gametrophies'
+    }
+.ul--sectionheader {
+    font-family: Chilanka;
+    letter-spacing: 0.1em;
+    font-size: 24pt;
+    color: black
+    }
+.ul--petsheader {
+    text-transform: capitalize;
+    grid-area: header;
+    }
+a, a:visited, .ul--button, .ul--button:visited {
+    color: green
+    }
+a:hover, ul--button:hover {
+    color: #fbb811
+    }
+/*USER INFO*/
+.ul--header {
+    display: flex;
+    position: absolute;
+    top: 55px;
+    width: 635px;
+    justify-content: center
+    }
+.ul--headerlabel {
+    display: none
+    }
+.ul--username {
+    content: url(https://i.postimg.cc/xdYY6zQm/Daisy.png)
+    }
+#userLookupInfo {
+    display: contents;
+    justify-items: center;
+    font-size: 12pt;
+    padding: 15px;
+    color: black;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+    border-bottom: 5px solid #ffbcdd;
+    }
+#userLookupText {
+    grid-area: info;
+    padding: 1em;
+    background: white;
+    margin-top: .5em;
+    border-radius: 25px;
+}
+#userLookupShield {
+    grid-area: shield;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5em;
+    border-radius: 25px;
+    background: white;
+    border-bottom: 5px solid #ffbcdd;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+    }
+.ul--shield {
+    width: 90%;
+    height: 90%;
+    }
+#shield {
+    grid-area: shield;
+    z-index: 1;
+    background: white;
+    justify-self: center;
+    height: 78%;
+    align-self: top;
+    margin-top: .7em;
+    border-radius: 25px;
+}
+#userLookupText {
+    grid-area: info;
+    border-bottom: 5px solid #ffbcdd;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+    }
+#userLookupCollections {
+    grid-area: collections;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    border-radius: 25px;
+    justify-content: center;
+    border-bottom: 5px solid #ffbcdd;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+    }
+/*Trophies*/
+.ul--sitetrophyimg, .ul--gametrophyimg {
+    border-radius: 5px
+    }
+.ul--sitetrophyname, .ul--gametrophyname, .ul--sitetrophycap, a.gamelink {
+    font-size: 9pt;
+    font-weight: bold
+    }
+/*LINKS*/
+#userLookupLinks {
+    grid-area: links;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+    padding-top: 5px;
+    margin-top: -5px;
+    border-bottom: 5px solid #ffbcdd
+    }
+.ul--linktext {
+    font-size: 12pt;
+    color: black;
+    border-radius: 3px;
+    padding: 3px
+    }
+.ul__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 86px
+    }
+.ul--linkimg:hover {
+    scale: 1.05
+    }
+.ul__neofriend .ul--linktext, .ul__neomail .ul--linktext, .ul__scores .ul--linktext {
+    visibility: hidden;
+    font-size: 0
+    }
+.ul__neomail .ul--linktext::after {
+    content: "Neomail";
+    visibility: visible;
+    font-size: 12pt;
+    color: black;
+    border-radius: 3px;
+    padding: 3px
+    }
+.ul__neofriend .ul--linktext::after {
+    content: "Neofriend";
+    visibility: visible;
+    font-size: 12pt;
+    color: black;
+    border-radius: 3px;
+    padding: 3px
+    }
+.ul__scores .ul--linktext::after {
+    content: "Scores";
+    visibility: visible;
+    font-size: 12pt;
+    color: black;
+    border-radius: 3px;
+    padding: 3px
+    }
+/*PETS*/
+#userLookupPets {
+    grid-area: pets;
+    padding: 5px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+    margin-top: -5px;
+    font-size: 11pt;
+    border-bottom: 5px solid #ffbcdd
+    }
+.ul--petname, .ul--petname:visited, .ul--petname:hover {
+    color: #000;
+    margin-top: -5px
+    }
+.ul--petimg {
+    margin-bottom: 5px;
+    border-width: 2px;
+    border-color: #fbb811;
+    border-style: solid;
+    border-radius: 15px;
+    width: 145px
+    }
+.ul--petimg:hover {
+    border: solid 2px #ffbcdd;
+    scale: 1.05
+    }
+/*OVERLAYS*/
+/*TROPHIES*/
+#userLookupSiteTrophies {
+    grid-area: sitetrophies;
+}
+#userLookupGameTrophies {
+    grid-area: gametrophies;
+}
+#userLookupSiteTrophies, #userLookupGameTrophies {
+    padding: 10px;
+    background-color: white;
+    backdrop-filter: blur(3px);
+    border-radius: 25px;
+    border-color: rgba(137, 207, 240, 0.85);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+    color: #000;
+    margin-top: -5px;
+    border-bottom: 5px solid #ffbcdd
+    }
+#siteTrophiesList a, #gameTrophiesList a, #siteTrophiesList a:visited, #gameTrophiesList a:visited, #siteTrophiesList a:hover, #gameTrophiesList a:hover {
+    color: black
+    }
+.ul--sitetrophyimg, .ul--gametrophyimg {
+    margin-bottom: 5px
+    }
+/*EXTRAS*/
+#userReportBlock {
+    margin-top: -10px
+    }
