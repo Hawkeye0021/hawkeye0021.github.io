@@ -1,0 +1,160 @@
+@import url(https://db.onlinewebfonts.com/c/c0a6bae5ceb24bc074e7d44dae39e9a0?family=Smalle);
+/*HIDDEN SECTIONS*/
+/*TO DISPLAY, CHANGE 'NONE' TO 'DEFAULT' - TO HIDE, CHANGE 'DEFAULT' TO 'NONE''*/
+.petJobs {
+    display: none;
+}
+#petBattle {
+display: none;
+}
+#petTrophies {
+display: none;
+}
+/*COLORS*/
+.pet--gendercolor {
+    color: default;
+}
+.pet--hpcolor {
+    color: default;
+}
+/*CUSTOM IMAGES*/
+/*TO HIDE, CHANGE 'DEFAULT' TO 'NONE' - TO DISPLAY, CHANGE 'NONE' TO 'DEFAULT'
+ T *O MOVE, CHANGE VALUES OF TOP, BOTTOM, RIGHT, OR LEFT
+ REPLACE GRUNDO IMAGE LINK WITH CUSTOM DIRECT IMAGE LINK*/
+#doll {
+display: default;
+content: url(https://grundoscafe.b-cdn.net/pets/sad/grundo_green.gif);
+position: fixed;
+right: 0;
+bottom: 0;
+}
+#topleftimg {
+display: default;
+content: url(https://grundoscafe.b-cdn.net/pets/sad/grundo_green.gif);
+position: absolute;
+top: -10rem;
+left: -10rem;
+}
+#toprightimg {
+display: default;
+content: url(https://grundoscafe.b-cdn.net/pets/sad/grundo_green.gif);
+position: absolute;
+top: -10rem;
+right: -10rem;
+}
+/*HERE BE DRAGONS, STRUCTURAL CODE*/
+/*HIDE SHIT*/
+hr, .pet--height, .pet--weight, .pet--smallname, #petLead, #page_footer, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge, .pet--ownername {
+    display: none
+}
+#petInfo, #petTop {
+display: contents;
+}
+/*CENTERING*/
+#page_content {
+width: 100vw;
+}
+#container {
+margin: auto;
+display: flex;
+flex-direction: column;
+width: 100vw;
+min-height: 100dvh;
+height: fit-content;
+justify-content: center;
+align-items: center
+}
+/*STRUCTURE*/
+body {
+    background: #b6c7ff;
+}
+#nav {
+position: absolute;
+top: -2.5em;
+height: fit-content;
+margin-top: 0.75em;
+display: flex;
+flex-direction: row;
+gap: 1rem;
+width: 100%;
+left: 0;
+justify-content: center;
+font-size: 12pt;
+}
+#petLookupContent {
+display: grid;
+grid-template-areas: 'header header' 'pet pet' 'p2 p2' 'stats desc''troph troph' 'bd bd' 'trade trade';
+grid-template-columns: 50%;
+background: white;
+width: fit;
+max-width: 44rem;
+margin: auto;
+gap: 0;
+border: .35rem outset silver;
+font-family: Times New Roman;
+position: relative;
+font-size: 12pt;
+}
+#petLookupContent a, #petLookupContent a:visited {
+color: blue;
+text-decoration: underline;
+font-weight: lighter;
+}
+#petLookupContent a:hover {
+color: purple;
+}
+.pet--header {
+    grid-area: header;
+    background: linear-gradient(to right, #565dd9, #87a1fe);
+    margin: 0;
+    line-height: 1.25em;
+    padding-top: .3em;
+    color: #eee;
+    font-weight: lighter;
+    font-size: 18pt;
+    text-align: center;
+    padding-left: .5em;
+}
+.pet--name {
+    font-family: smalle;
+    font-size: 26pt;
+}
+.pet--color {
+    color: blue;
+    font-weight: lighter;
+}
+#petImage {
+grid-area: pet;
+}
+#petStats {
+grid-area: stats;
+background: #eee;
+}
+#petDescription {
+display: contents;
+}
+#desc {
+grid-area: desc;
+background: #eee;
+padding: 5px;
+}
+#petPetpet {
+grid-area: p2;
+margin: .5em 0 .5em 0;
+}
+#petBattle {
+grid-area: bd;
+}
+#petTrophies {
+grid-area: troph;
+}
+.pet--no-trade-alert {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin: auto;
+    bottom: -3em;
+    color: red;
+    font-weight: bold;
+    background: transparent;
+}
