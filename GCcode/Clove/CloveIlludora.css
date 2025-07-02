@@ -66,14 +66,14 @@ div.gallery_item:nth-child(1) img{
     margin: 0;
     justify-self: right;
     margin-right: 15px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 div.gallery_item:nth-child(2) img{
     grid-area: illu;
     margin: 0;
     justify-self: left;
     margin-left: 15px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .gallery_item {
     display: contents;
