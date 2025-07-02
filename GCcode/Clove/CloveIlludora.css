@@ -1,0 +1,90 @@
+.gallery-item-qty {
+    display: none;
+}
+#galleryContent {
+display: grid;
+grid-template-areas: 'info info' 'keeper keeper' 'desc desc' 'hr hr' 'cats cats' 'dora illu';
+grid-template-columns: 50%;
+}
+hr {
+    grid-area: hr;
+}
+#galleryInfo {
+grid-area: info;
+}
+#galleryKeeper {
+grid-area: keeper;
+}
+#galleryDesc {
+display: contents;
+}
+#desc {
+grid-area: desc;
+padding: 1em 0;
+justify-self: center;
+}
+#galleryCategories {
+grid-area: cats;
+}
+#illu {
+grid-area: illu;
+--c: red;
+width: 250px;
+aspect-ratio: 1;
+background:
+/* 1 */ radial-gradient(circle at 60% 65%,var(--c) 64%,#0000 65%) top left/50% 50%,
+/* 2 */ radial-gradient(circle at 40% 65%,var(--c) 64%,#0000 65%) top right/50% 50%,
+/* 3 */ conic-gradient(from -45deg at 50% 85.5%,var(--c) 90deg,#0000 0) bottom/100% 50%;
+background-repeat: no-repeat;
+clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+z-index: -1;
+justify-self: left;
+margin-left: -120px;
+}
+#dora {
+grid-area: dora;
+--c: red;
+width: 250px;
+aspect-ratio: 1;
+background:
+/* 1 */ radial-gradient(circle at 60% 65%,var(--c) 64%,#0000 65%) top left/50% 50%,
+/* 2 */ radial-gradient(circle at 40% 65%,var(--c) 64%,#0000 65%) top right/50% 50%,
+/* 3 */ conic-gradient(from -45deg at 50% 85.5%,var(--c) 90deg,#0000 0) bottom/100% 50%;
+background-repeat: no-repeat;
+clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+justify-self: right;
+margin-right: -120px;
+z-index: -1;
+}
+#gallery_items {
+display: contents;
+grid-template-areas: 'dora illu';
+grid-template-columns: 50%;
+}
+div.gallery_item:nth-child(1) img{
+    grid-area: dora;
+    margin: 0;
+    justify-self: right;
+    margin-right: 15px;
+    margin-top: 50px;
+}
+div.gallery_item:nth-child(2) img{
+    grid-area: illu;
+    margin: 0;
+    justify-self: left;
+    margin-left: 15px;
+    margin-top: 50px;
+}
+.gallery_item {
+    display: contents;
+}
+div.gallery_item:nth-child(1) > div:nth-child(2) {
+    transform: rotate(45deg);
+    grid-area: dora;
+    margin-top: 125px;
+}
+div.gallery_item:nth-child(2) > div:nth-child(2) {
+    transform: rotate(-45deg);
+    grid-area: illu;
+    margin-top: 125px;
+}
