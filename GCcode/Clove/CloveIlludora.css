@@ -28,7 +28,7 @@ grid-area: cats;
 }
 #illu {
 grid-area: illu;
---c: red;
+  --c: #518400;
 width: 250px;
 aspect-ratio: 1;
 background:
@@ -43,7 +43,7 @@ margin-left: -120px;
 }
 #dora {
 grid-area: dora;
---c: red;
+  --c: #7b50b4;
 width: 250px;
 aspect-ratio: 1;
 background:
