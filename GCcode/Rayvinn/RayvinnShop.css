@@ -1,0 +1,93 @@
+hr, #page_footer, #sb_top, #sb_side, #page_banner, .block {
+    display: none
+}
+body {
+    background-image: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Rayvinn/forest.jpg?raw=true
+    );
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center
+}
+div#container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#container {
+background-image: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Rayvinn/trunk.png?raw=true);
+background-position: top center;
+background-repeat: no-repeat;
+background-size: 955px;
+}
+#shopInfo {
+color: black
+}
+#shopInfo a, #shopInfo a:visited, #shopInfo {
+color: #a0a000;
+text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+}
+#shopInfo a:hover {
+color: #adbc17
+}
+#yourShop strong{
+color: white;
+text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+}
+#shopPage a{
+color: white;
+}
+#shopPage a:hover {
+color: #adbc17
+}
+#shopDesc a {
+color: white;
+font-weight: bold;
+font-size: 14pt;
+text-shadow: 2px 2px 1px black;
+}
+#shopDesc a:hover {
+color: #adbc17;
+}
+#shopDesc {
+margin: 0;
+padding: 0;
+}
+.shopkeeper-img {
+    content: url(https://raw.githubusercontent.com/Hawkeye0021/hawkeye0021.github.io/refs/heads/main/GCcode/Rayvinn/bloatedslorg2.png);
+    height: fit-content;
+    width: fit-content
+}
+#shopInventory {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+border-radius: 4px;
+padding-top: 25px;
+padding-bottom: 25px
+}
+.shop-item {
+    width: 9em;
+    background-image: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Rayvinn/sign2.png?raw=true);
+    background-size: 100% 100%;
+}
+.shop-item-info {
+    font-weight: lighter;
+    font-size: 10pt;
+    padding: 3px;
+    border-radius: 3px;
+    color: #eee;
+    text-shadow: 1px 2px 1px black
+}
+.med-image.border-1 {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: .25em;
+    margin: 5px;
+    margin-top: 15px;
+}
+#aio_sidebar {
+display: none
+}
