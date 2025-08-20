@@ -14,6 +14,7 @@ div#container {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    min-height: 100vh;
 }
 #container {
 background-image: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Rayvinn/trunk.png?raw=true);
