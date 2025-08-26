@@ -1,0 +1,77 @@
+hr, #page_footer, #sb_top, #sb_side, #page_banner, .block {
+    display: none
+}
+body {
+    background-image: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Shuckle/shopbg.jpg?raw=true);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center
+}
+div#container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+div#page_content {
+    margin: auto;
+    width: 620px;
+}
+.big-image {
+    content: url(https://i.imgur.com/ZqNfoQ1.gif);
+    height: auto;
+    width: auto
+}
+#shopInfo {
+color: #eae3c8;
+}
+#shopInfo a {
+color: #8cbcd8
+}
+#shopDesc {
+text-align: center;
+background: #625f52;
+margin: 0 0 1em 0;
+border-radius:.5em;
+padding: 1em;
+color: #8cbcd8;
+}
+#shopContent {
+
+}
+#shopInventory {
+background: #251f1d;
+outline: 1em solid #8f857b;
+border-radius: .25em;
+display: grid;
+margin-top: 1em;
+gap: 1em;
+padding: 1em 0;
+grid-template-columns: auto auto auto auto;
+}
+.shop-item {
+    background: #625f52;
+    width: 9em;
+    height: 13.5em;
+    border-radius: .35em;
+    color: #eae3c8;
+    padding: 6px;
+}
+.shop-item:hover {
+    outline: 2px solid #e67433
+}
+.med-image {
+    border-radius: .35em;
+    border:3px solid #eae3c8;
+}
+#searchedItem.shop-item {
+background: #8f857b;
+height: fit-content;
+border-radius: .5em .5em 0 0;
+}
+#searchedItem.shop-item:hover {
+outline: none;
+}
+div.shop-item span:nth-child(3) {
+    color: #75c32d;
+}
+#aio_sidebar { display: none; }
