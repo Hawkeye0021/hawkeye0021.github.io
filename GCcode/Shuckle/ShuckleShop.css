@@ -35,9 +35,6 @@ border-radius:.5em;
 padding: 1em;
 color: #8cbcd8;
 }
-#shopContent {
-
-}
 #shopInventory {
 background: #251f1d;
 outline: 1em solid #8f857b;
@@ -74,4 +71,3 @@ outline: none;
 div.shop-item span:nth-child(3) {
     color: #75c32d;
 }
-#aio_sidebar { display: none; }
