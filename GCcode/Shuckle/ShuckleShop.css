@@ -8,6 +8,7 @@ body {
     background-position: center
 }
 div#container {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     text-align: center;
