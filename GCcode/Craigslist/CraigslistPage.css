@@ -1,0 +1,117 @@
+
+        #gc_banner {
+        display: none
+        }
+        #page-content {
+        width: 1066px;
+        margin: auto;
+        display: grid;
+        padding: 16px 0;
+        grid-template-areas: "header header2" "nav content";
+        grid-template-columns: 175px auto;
+        grid-row-gap: 0;
+        color: black
+        }
+        #nav {
+        grid-area: nav;
+        text-align: center;
+        background: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        gap: 0.35em;
+        font-family: arial;
+        font-size: 10pt;
+        border-width: 0 1px;
+        border-style: solid;
+        border-color: #ccc
+        }
+        #nav a {
+        color: blue;
+        text-decoration: none
+        }
+        #nav a:hover {
+        color: purple;
+        text-decoration: underline
+        }
+        #nav h2 {
+        font-size: 16pt;
+        font-weight: lighter;
+        margin: 0;
+        padding-top: 1em;
+        color: black;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #ccc;
+        margin: 0 1em
+        }
+        #page-header {
+        background: #f4f4f4;
+        border-width: 0 1px;
+        border-style: solid;
+        border-color: #ccc
+        }
+        #page-header h1 {
+        text-align: center;
+        grid-area: header;
+        font-family: times;
+        font-weight: 500;
+        font-size: 24pt;
+        margin: 0;
+        color: #551a8b
+        }
+        #content-header {
+        grid-area: header2;
+        align-content: center;
+        margin: 0 17.5px;
+        background: #eee;
+        height: 42px;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: #ccc
+        }
+        #content-header a {
+        font-family: times new roman;
+        font-size: 18pt;
+        color: blue;
+        text-decoration: none;
+        padding-left: 1em
+        }
+        #un {
+        grid-area: header2;
+        text-align: right;
+        align-content: center;
+        margin-right: 17.5px;
+        padding-right: 1em
+        }
+        #sections {
+        grid-area: content;
+        margin: 17.5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+        .itembox {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 250px;
+            height: 250px;
+            box-shadow: 0 0 7px 0 #ddd;
+            display: flex;
+            flex-direction: column;
+            font-family: arial;
+            justify-content: flex-end;
+            font-size: 10pt;
+            padding: .5em;
+            margin: .75em
+        }
+        .itembox h3 {
+            color: blue;
+            font-weight: lighter;
+            font-size: 12pt
+        }
+        .itembox img {
+            width: 80px;
+            align-self: center;
+            margin-bottom: auto;
+            margin-top: 1em;
+        }
