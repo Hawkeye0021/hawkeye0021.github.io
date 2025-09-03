@@ -1,0 +1,201 @@
+
+        #gc_banner {
+        display: none
+        }
+        #page-content {
+        width: fit-content;
+        margin: auto;
+        display: grid;
+        padding: 16px 0 0 0;
+        grid-template-areas: "header header2 affiliates" "nav content affiliates";
+        grid-template-columns: 200px 605px 115px;
+        grid-template-rows: 42px auto;
+        grid-row-gap: 0;
+        grid-column-gap: 20px;
+        color: black;
+        height: 90vh
+        }
+        #nav {
+        grid-area: nav;
+        text-align: center;
+        background: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        gap: 0.35em;
+        font-family: arial;
+        font-size: 10pt;
+        border-width: 0 1px;
+        border-style: solid;
+        border-color: #ccc;
+        text-transform: lowercase;
+        padding-top: 10px;
+        }
+        #nav a {
+        color: blue;
+        text-decoration: none
+        }
+        #nav a:hover {
+        color: purple;
+        text-decoration: underline
+        }
+        #nav h2 {
+        font-size: 16pt;
+        font-weight: lighter;
+        margin: 0;
+        padding-top: 1em;
+        color: black;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #ccc;
+        margin: 0 1em
+        }
+        #page-header {
+        background: #f4f4f4;
+        border-width: 0 1px;
+        border-style: solid;
+        border-color: #ccc;
+        height: 42px
+        }
+        #page-header h1 {
+        text-align: center;
+        grid-area: header;
+        font-family: times;
+        font-weight: 500;
+        font-size: 24pt;
+        margin: 0;
+        color: #551a8b
+        }
+        #content-header {
+        grid-area: header2;
+        align-content: center;
+        background: #eee;
+        height: 42px;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: #ccc
+        }
+        #content-header a {
+        font-family: times new roman;
+        font-size: 18pt;
+        color: blue;
+        text-decoration: none;
+        padding-left: 1em
+        }
+        #content-header a:hover {
+        text-decoration: underline
+        }
+        #un {
+        grid-area: header2;
+        text-align: right;
+        align-content: center;
+        height: 42px;
+        margin-right: 17.5px;
+        padding-right: 1em;
+        pointer-events: none
+        }
+        #sections {
+        grid-area: content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: auto;
+        margin-top: 20px;
+        justify-content: center;
+        align-content: flex-start;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc
+        }
+        summary {
+            font-weight: bold;
+            color: blue
+        }
+        summary:hover {
+            text-decoration: underline
+        }
+        details {
+            max-height: fit-content
+        }
+        .itembox {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 125px;
+            height: fit-content;
+            min-height: 150px;
+            box-shadow: 0 0 7px 0 #ddd;
+            display: flex;
+            flex-direction: column;
+            font-family: arial;
+            justify-content: flex-end;
+            font-size: 10pt;
+            padding: 0.5em;
+            margin: 5px
+        }
+        .itembox img {
+            width: 80px;
+            align-self: center;
+            margin-bottom: auto;
+            margin-top: 1em
+        }
+        #affiliates {
+        grid-area: affiliates;
+        text-align: center;
+        background: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        gap: 0.35em;
+        font-family: arial;
+        font-size: 10pt;
+        border-width: 0 1px;
+        border-style: solid;
+        border-color: #ccc;
+        font-size: 8pt;
+        text-transform: lowercase
+        }
+        #affiliates a {
+        text-decoration: none
+        }
+        #affiliates a:visited {
+        color: blue
+        }
+        #affiliates a:hover {
+        text-decoration: underline
+        }
+        #affiliates h3 {
+        font-weight: bold;
+        color: blue;
+        background: white;
+        margin: 15px 5px 5px 5px;
+        padding: 3px;
+        border-width: 1px 0;
+        border-style: solid;
+        border-color: #ccc
+        }
+        #footer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        background: #f4f4f4;
+        border-top: 1px solid #ccc;
+        position: fixed;
+        bottom: 0;
+        height: 19px;
+        padding: 5px
+        }
+        li {
+            display: inline;
+            margin: 0 10px
+        }
+        li a {
+            text-decoration: none
+        }
+        li a:hover {
+            text-decoration: underline
+        }
+        li a:visited {
+            color: blue
+        }
+        #yugioh {
+        font-size: 8pt;
+        color: #aaa
+        }
