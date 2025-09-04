@@ -1,0 +1,171 @@
+<style>
+body {
+background: #e6c0aa url("http://i.imgur.com/3Rb0gPF.png") left top no-repeat;
+max-width: 100% !important;
+min-height: 1850px !important;
+}
+#header, #footer, .user, .user a, .sf a, #userneohome, #ncmall, #contentfooter, #superfooter, #ban, hr, #info #bxwrap, .sidebar, #nst, .user, .bb, .brand-mamabar, .contentModuleHeaderAlt, .contentModuleHeader, #userinfo img, #usershop img {
+display: none !important;
+}
+.content div a img, .content div b, #userinfo td.medText img, hr {
+visibility: hidden;
+}
+
+#userinfo .medText table table img, .contentModule div a img, .contentModule div b, #userinfo a img, .medText table, #info img, #info a img, #info b, .square a img {
+visibility: visible !important;
+}
+table, td, img, .contentModule, .contentModuleTable, .contentModuleContent, #main {
+background: transparent !important;
+border: none !important;
+}
+table, font, body, td, .medText, tr, .contentModuleContent {
+font-family: tahoma !important;
+font-size: 9px !important;
+}
+strong {
+color: #fff !important;
+background: #1f45ab;
+
+padding: 0px 5px;
+border-radius: 1em;
+font-weight: bold;
+font-style: normal;
+font-size: 12px !important;
+}
+b, #userinfo {
+color: #311800 !important;
+letter-spacing: 0px !important;
+}
+a:active, a:visited, a:link, a, a, a b {
+color: #2f9ea5 !important;
+}
+a:hover, a:hover b {
+color: #1f45ab !important;
+}
+#userneopets {
+left: 770px;
+top: 1390px;
+width: 750px !important;
+height: auto !important;
+
+overflow: hidden;
+}
+.bx-viewport {
+height: auto !important;
+width: 750px !important;
+}
+.bx-clone {
+display: none !important;
+margin-top: 0px !important;
+}
+.bx-controls {
+display: none;
+margin-top: 0px !important;
+}
+#userneopets li {
+margin-top: 0px !important;
+margin-right: 25px !important;
+}
+#userneopets li a img {
+margin-bottom: -10px !important;
+margin-top: 10px !important;
+
+height: auto !important;
+}
+#userneopets ul {
+width: 750px !important;
+padding: 0px !important;
+margin-top: 0px !important;
+}
+#userneopets img {
+border-radius: 100px;
+border: 6px solid #502104 !important;
+}
+#userneopets img:hover {
+border: 6px solid #964702 !important;
+}
+#usershop {
+top: 875px;
+left: 220px;
+position: absolute;
+width: 150px;
+}
+#content, #main {
+
+margin-left: 0px;
+margin-top: 0px;
+padding: 0px;
+}
+#userinfo, #usercollections, #userneopets, #usertrophies {
+position: absolute;
+}
+#userinfo {
+margin-left: 50px;
+top: 470px !important;
+width: 330px;
+height: 150px !important;
+}
+#userinfo img {
+height: 50px !important;
+width: auto !important;
+margin-top: 0px !important;
+}
+#userinfo table table td td a {
+width: 60px;
+
+height: 60px;
+display: block;
+margin-top: -10px;
+margin-bottom: -13px;
+background-image: url("http://i.imgur.com/W57PP3g.png");
+}
+#userinfo table table td td a:hover {
+background-image: url("http://i.imgur.com/OWLGTWT.png");
+}
+#usercollections img {
+visibility: hidden !important;
+margin-top: 4px;
+}
+#usercollections {
+left: 460px;
+top: 467px;
+width: 260px;
+z-index: 5;
+background: transparent !important;
+
+}
+#usertrophies {
+top: 1160px !important;
+left: 895px;
+width: 485px;
+height: 200px !important;
+overflow: hidden;
+padding-top: 0px !important;
+}
+#usertrophies:hover {
+overflow: auto;
+}
+#usertrophies img {
+height: 40px !important;
+margin-right: -5px;
+margin-left: -5px;
+width: auto !important;
+padding: 0px !important;
+border-radius: 100px;
+border: 2px solid #c88007 !important;
+}
+
+#av {
+top: 475px;
+left: 492px;
+width: 60px;
+position: absolute;
+z-index: 175;
+height: 60px;
+overflow: hidden;
+}
+</style><div id="av"><img src="http://images.neopets.com/neoboards/avatars/gnorbu.gif"></div>
+
+<div style="position: fixed; right: 10px; top: 10px; width: auto; height: auto;">
+<strong>Layout and coding by<a href="/~GroovyDoodle"><strong>groovy doodle</strong></a>
+</strong></div>
