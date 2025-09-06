@@ -1,23 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Chewy&display=swap');
-hr, #page_footer, #sb_top, #sb_side, #page_banner, .ul--headerlabel {
-    display: none
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Chewy&family=Dekko&display=swap');
+hr, #page_footer, #sb_top, #sb_side, #page_banner, .ul--headerlabel, div.ul--petsheader:nth-child(1) {
+  display: none
 }
 #aio_sidebar {
-  display: none;
+display: none;
+}
+a, a:visited, a:hover {
+  color: purple;
+}
+a:hover {
+  text-shadow: 1px 1px 4px white, -1px -1px 4px white
+}
+#userLookupDesc {
+order: -1;
+}
+#nav {
+display: flex;
+flex-direction: row;
+width: 100%;
+justify-content: space-between;
+text-transform: capitalize
+}
+#nav a, #nav a:visited {
+background: beige;
+padding: 5px;
+border-radius: 10px;
+border: 2px solid #985112;
+color: black;
+}
+#nav a:hover {
+text-shadow: none;
+scale: .85
 }
 body {
-    background-attachment: fixed;
-    background-image: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Waffles/wafflebg.jpg?raw=true);
-    background-size: cover;
-    background-position: center;
+  background-attachment: fixed;
+  background-image: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Waffles/wafflebg.jpg?raw=true);
+  background-size: cover;
+  background-position: center;
 }
 div#container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 div#page_content {
-    margin: auto;
+  margin: auto;
 }
 .ul--username {
   display: block;
@@ -25,14 +52,167 @@ div#page_content {
   font-family: chewy;
   font-weight:;
   color: #eac881;
-  text-shadow: 3px 3px 0px #7b3e00;
+  text-shadow: 3px 3px 0px #7b3e00, -3px -3px 0px pink;
 }
 #userLookupInfo, #userLookupPets, #userLookupSiteTrophies, #userLookupGameTrophies {
-  background: #dc9a61;
-  padding: .5em;
-  border-radius: 2em;
+background: #dc9a61;
+padding: .5em;
+border-radius: 2em;
+border: 4px solid #985112;
+outline: 12px solid #e6c27e;
+box-shadow: 0px 0px 0px 16px #985112;
+margin: 1em;
+font-family: dekko;
+font-size: 14pt
+}
+#userLookupInfo {
+padding: 11px;
+padding-bottom: 100px;
+display: grid;
+grid-template-areas: "info shield" "info collections";
+grid-template-columns: 60% 40%;
+}
+.ul--gendercolor {
+  color: purple;
+}
+#userLookupText {
+grid-area: info;
+}
+#userLookupShield {
+grid-area: shield;
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 100%;
+}
+.ul--shield {
+  border-radius: .5em;
+  content: url(https://images.neopets.com/template_images/artscrafts_gnorbu_macaroni.gif);
   border: 4px solid #985112;
-  outline: 12px solid #e6c27e;
-  box-shadow: 0px 0px 0px 16px #985112;
-    margin: 1em;
+}
+#userLookupCollections {
+grid-area: collections;
+align-self: center;
+}
+.ul--stampsimg {
+  content: url(https://images.neopets.com/items/sta_captain.gif)
+}
+.smallfont {
+  font-size: 12pt;
+  font-weight: lighter;
+}
+#userLookupShield {
+grid-area: shield;
+justify-self: center;
+display: flex;
+}
+#userLookupCollections {
+grid-area: collections;
+display: flex;
+flex-direction: row;
+justify-content: center
+}
+#userLookupLinks {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+margin-top: -120px;
+margin-bottom: 30px;
+}
+.ul--linktext {
+  font-size: 12pt;
+  font-family: dekko;
+}
+.ul__neofriend .ul--linktext, .ul__neomail .ul--linktext {
+  visibility: hidden;
+  font-size: 0
+}
+.ul__neomail .ul--linktext::after {
+  content: "Neomail";
+  visibility: visible;
+  font-size: 12pt
+}
+.ul__neofriend .ul--linktext::after {
+  content: "Neofriend";
+  visibility: visible;
+  font-size: 12pt
+}
+.ul--tradesimg {
+  content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Waffles/trades.png?raw=true)
+}
+.ul--auctionsimg {
+  content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Waffles/auctions.png?raw=true)
+}
+.ul--wishlistimg {
+  content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Waffles/wishlist.png?raw=true)
+}
+.ul--scoresimg {
+  content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Waffles/scores.png?raw=true)
+}
+.ul--neomailimg {
+  content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Waffles/neomail.png?raw=true)
+}
+.ul--neofriendimg {
+  background: no-repeat center/contain url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Waffles/neofriend.png?raw=true);
+  object-position: -99999px;
+}
+.ul--petsheader {
+  font-family: chewy;
+  font-weight: lighter;
+  font-size: 18pt;
+  background: beige;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: .5em;
+  border-width: 0px 4px 4px 0px;
+  border-style: solid;
+  border-color: pink;
+}
+.userPetList {
+  margin: 0;
+}
+.ul__pet {
+  display: flex;
+  flex-direction: column;
+  flex: 1 24%;
+  margin-bottom: .5em;
+}
+.ul--petname {
+  word-break: normal;
+  overflow-wrap: normal;
+  color: black;
+}
+a.ul--petname:hover, a.ul--petname:visited {
+  color: black;
+  text-shadow: none;
+}
+.ul--petimg {
+  border: 2px solid #985112;
+  border-radius: .75em;
+  border: 2px solid #985112;
+  outline: 5px solid #e6c27e;
+  box-shadow: 0px 0px 0px 7px #985112;
+  margin-bottom: .5em;
+}
+.ul--petimg:hover {
+  scale: 1.15
+}
+.ul--sitetrophyimg, .ul--gametrophyimg {
+  border: 2px solid #985112;
+  border-radius: .75em;
+  border: 2px solid #985112;
+  outline: 5px solid #e6c27e;
+  box-shadow: 0px 0px 0px 7px #985112;
+  margin-bottom: .5em;
+}
+.ul__gametrophy, .ul__sitetrophy {
+  margin-bottom: .5em;
+  font-weight: lighter;
+}
+.ul--gametrophyname, .ul--sitetrophyname, .ul--sitetrophycap, a.gamelink{
+  font-size: 11pt
+}
+#userReportBlock {
+margin: 0;
 }
