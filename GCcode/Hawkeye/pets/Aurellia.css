@@ -1,0 +1,38 @@
+@import "https://hawkeye0021.github.io/GCcode/Hawkeye/petLookupTemplate-Streamlined.css";
+#aio_sidebar { display: none; }
+body {
+  background-image: url(https://raw.githubusercontent.com/Hawkeye0021/hawkeye0021.github.io/refs/heads/main/GCcode/backgrounds/splashingbeach.jpg)
+}
+#nav a, #nav a:visited {
+  background: #fcdced;
+  box-shadow: 2px 2px 5px 0px gray;
+  border: none;
+  padding: 5px;
+  color: #6763a4;
+}
+.pet--header {
+  background: #f172b1;
+  color: white;
+}
+.pet--color {
+  color: #fcdced;
+}
+.pet--image {
+  content: url(https://grundoscafe.b-cdn.net/pets/happy/flotsam_pink.gif)
+}
+.pet--petpetname {
+  color: #e92186;
+}
+.pet--statsheader {
+  background: #f172b1;
+  color: white;
+}
+a.pet--ownerlink, .pet--gendercolor, .pet--hpcolor {
+  color: #e92186 !important;
+}
+a.pet--ownerlink:hover {
+  color: #aedbf8 !important;
+}
+.pet--no-trade-text {
+  color: #e92186;
+}

@@ -203,7 +203,7 @@ display: none;
     font-weight: bold;
     text-shadow: -1px 1px 2px black;
     left: 0;
-    width: fit-content;
+    width: 98%;
     border-radius: 0.5em
 }
 .pet--no-trade-icon {
