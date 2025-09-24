@@ -64,7 +64,7 @@ color: #1232f7
     text-shadow: 1px 1px 1px black
 }
 /*HIDE SHIT*/
-hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge {
+hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge, .pet--height, .pet--weight {
     display: none
 }
 .pet--no-trade-text {
