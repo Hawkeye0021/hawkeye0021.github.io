@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap");
 /*STYLE*/
 body {
     background-image: url(https://raw.githubusercontent.com/Hawkeye0021/GC-code/refs/heads/main/backgrounds/starry.jpg)
@@ -13,6 +13,7 @@ box-shadow: 1px 1px 4px 0 gold
 #petLookupContent {
 border-radius: 0.75em;
 box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
+font-family: nunito;
 }
 .pet--name {
     font-size: 36pt

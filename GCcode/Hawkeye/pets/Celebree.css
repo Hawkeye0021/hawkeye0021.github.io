@@ -1,45 +1,56 @@
- @import "https://hawkeye0021.github.io/GCcode/Hawkeye/petLookupTemplate.css";
+
+            @import "https://hawkeye0021.github.io/GCcode/Hawkeye/petLookupTemplate-Streamlined.css";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap");
 body {
-  background-image: url(https://raw.githubusercontent.com/Hawkeye0021/hawkeye0021.github.io/refs/heads/main/GCcode/backgrounds/00080.png);
-}
+    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/hawkeye0021.github.io/refs/heads/main/GCcode/backgrounds/biolum.jpg)
+    }
 #petLookupContent {
-  font-family: nunito;
-}
+    font-family: nunito
+    }
+.pet--name {
+    font-style: italic
+    }
 .pet--header, .pet--statsheader, #bio h2, #testimonials h2 {
-  background-color: #152e6b;
-}
+    background-color: #152e6b
+    }
 .pet--header {
-  text-shadow: 1px 1px 3px #66f7f8;
-  font-weight: normal;
-}
+    text-shadow: 1px 1px 3px #66f7f8;
+    font-weight: normal;
+    color: white;
+    }
 .pet--color {
-  color: #0787e7;
-  text-shadow: 1px 1px 1px #66f7f8;
-  font-weight: normal;
-}
+    color: #0787e7;
+    text-shadow: 1px 1px 1px #66f7f8;
+    font-weight: normal
+    }
 .pet--petpetheader::after {
-  content: "and her petpet,"
-}
+    content: "and her petpet,"
+    }
 .pet--petpetname {
-  color: #0787e7;
-  text-shadow: 1px 1px 1px #152e6b
-}
+    color: #0787e7;
+    text-shadow: 1px 1px 1px #152e6b
+    }
 .pet--statsheader strong, #bio h2, #testimonials h2 {
-  text-shadow: 1px 1px 1px #66f7f8;
-  font-weight: normal;
-  font-size: 16pt;
-}
+    text-shadow: 1px 1px 1px #66f7f8;
+    font-weight: normal;
+    font-size: 16pt
+    }
 #nav a {
-  background: #0787e7 !important;
-  border-color: #0787e7 !important;
-  color: white !important;
-  box-shadow: 2px 2px 5px 0px #152e6b;
-  font-weight: normal;
-}
+    background: #0787e7 !important;
+    border-color: #0787e7 !important;
+    color: white !important;
+    box-shadow: 2px 2px 5px 0 #152e6b;
+    font-weight: normal
+    }
 .pet--gendercolor, .pet--ownerlink, .pet--hpcolor {
-  color: #0787e7
-}
+    color: #0787e7
+    }
 #petStats, #bio p, #testimonials p {
-  font-size: 12pt
+    font-size: 12pt
+    }
+.pet--petpetimg {
+    margin-bottom: 5px;
+}
+.pet--no-trade-alert {
+    width: 98%;
 }
