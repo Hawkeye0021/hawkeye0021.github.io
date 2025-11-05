@@ -1,0 +1,35 @@
+@import "https://hawkeye0021.github.io/GCcode/Hawkeye/petLookupTemplate-Streamlined.css";
+body {
+    background-image: url(https://raw.githubusercontent.com/Hawkeye0021/hawkeye0021.github.io/refs/heads/main/GCcode/backgrounds/birthdaybash.jpg)
+}
+.pet--header {
+    background-color: #f9cf9f;
+    color: #eb5394
+}
+.pet--color {
+    color: #eb5394
+}
+.pet--statsheader {
+    background-color: #f9cf9f;
+    color: #eb5394;
+    font-size: 16pt
+}
+.pet--petpetname {
+    color: #aa6118
+}
+.pet--petpetheader::after {
+    content: "and his petpet"
+}
+.pet--ownerlink, .pet--gendercolor, .pet--hpcolor {
+    color: #eb5394 !important
+}
+#nav a, #nav a:visited {
+background-color: #428ff5;
+border-color: #f79a42;
+border-width: 2px;
+color: white;
+box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.75)
+}
+.pet--no-trade-text {
+    color: #ce4d98
+}
