@@ -1,54 +1,61 @@
 #petLead, .pet--smallname, hr, #petBattle, #petChallenge {
-    display: none;
+display: none
 }
 .pet--image {
-    content: url(https://i.imgur.com/7YvrgRU.png);
-    }
+    content: url(https://i.imgur.com/7YvrgRU.png)
+}
 #petLookupContent {
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column
 }
 #petTop, #petInfo {
-    display: contents;
+display: contents
 }
 #petStats {
-    width: fit-content;
-    margin: auto;
+width: fit-content;
+margin: auto
 }
 .pet--header {
     order: 1;
-    margin: 0;
+    margin: 0
 }
 #petImage {
-    order: 2;
+order: 2
 }
 #petPetpet {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    order: 3;
+display: flex;
+justify-content: center;
+flex-direction: column;
+order: 3
 }
 #petStats {
-    order: 4;
+order: 4
 }
 #petBattle {
-    order: 5;
+order: 5
 }
 #petChallenge {
-    order: 6;
+order: 6
 }
 #petDescription {
-    order: 8;
+order: 8
 }
 #petLinks {
-    order: 7;
+order: 7
 }
-#art {
+#images {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center
+}
+.art {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
     justify-content: center;
 }
-#art img {
-    width: 30%;
+.art img {
+    width: 150px;
 }
