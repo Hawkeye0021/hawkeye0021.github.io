@@ -116,7 +116,24 @@
             border-radius: 2em;
             border: 3px solid #244d65;
             }
-
+            #petTraits {
+            font-size: 12pt;
+            }
+            .pet-traits-interests {
+                padding-bottom: 1em;
+            }
+            #gcwiki {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            }
+            #Hawkeye {
+            font-size: 14pt
+            }
+            #flotsams {
+            font-size: 24pt;
+            font-weight: bold;
+            }
             /*SIDEBAR CODE*/
             #userinfo, .user-info, #sb_clock, #sb_search, #sb_banner, #sb_lang {
             color: white
