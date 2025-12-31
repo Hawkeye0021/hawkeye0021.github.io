@@ -62,22 +62,11 @@
             body {
                 background: #b6d3f6
             }
-            #sb_top, #sb_side, .banner, #petLead, .pet--smallname, #petLinks, #footer_content {
+            #petLead, .pet--smallname, #petLinks, #footer_content {
             display: none
             }
             hr {
                 visibility: hidden
-            }
-            /*CENTERING*/
-            #container {
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            width: 100vw;
-            min-height: 100dvh;
-            height: fit-content;
-            justify-content: center;
-            align-items: center
             }
             #petStats {
             background: none;
@@ -127,4 +116,90 @@
             border-radius: 2em;
             border: 3px solid #244d65;
             }
+
+            /*SIDEBAR CODE*/
+            #userinfo, .user-info, #sb_clock, #sb_search, #sb_banner, #sb_lang {
+            color: white
+            }
+            #userinfo a, #sb_lang a, .user-info a {
+            color: gold
+            }
+            #sb_top, .sb_top {
+            width: 731px;
+            background-size: 731px 44px
+            }
+            #sb_createpet, #sb_petcentral, #sb_explore, #sb_games, #sb_neomail, #sb_shops, #sb_boards, #sb_news, #sb_stuff, #sb_help, #sb_login, #sb_logout {
+            background-size: 202%
+            }
+            .sb-custom-css {
+                color: gold !important
+            }
+            #sb_top, .sb_top {
+            background-image: url(https://images2.imgbox.com/47/97/6CDQIsGv_o.png)
+            }
+            #sb_createpet, #sb_petcentral, #sb_explore, #sb_games, #sb_neomail, #sb_shops, #sb_boards, #sb_news, #sb_stuff, #sb_help, #sb_login, #sb_logout {
+            background-image: url(https://images2.imgbox.com/a6/5b/ROxV32oD_o.png);
+            width: 130px
+            }
+            #sb_nav, #sb_side {
+            background: url(https://images.neopets.com/brandhub/hPiU6O/images/product-banners/bg-06-mobile.png)
+            }
+            #sb_createpet:hover {
+            background-position: 132px 0
+            }
+            #sb_petcentral:hover {
+            background-position: 132px -53px
+            }
+            #sb_explore:hover {
+            background-position: 132px -106px
+            }
+            #sb_games:hover {
+            background-position: 132px -138px
+            }
+            #sb_neomail:hover {
+            background-position: 132px -170px
+            }
+            #sb_shops:hover {
+            background-position: 132px -202px
+            }
+            #sb_boards:hover {
+            background-position: 132px -234px
+            }
+            #sb_news:hover {
+            background-position: 132px -266px
+            }
+            #sb_stuff:hover {
+            background-position: 132px -300px
+            }
+            #sb_help:hover {
+            background-position: 132px -334px
+            }
+            #sb_login:hover {
+            background-position: 132px -369px
+            }
+            #sb_logout:hover {
+            background-position: 132px -399px
+            }
+            .nst {
+                background-color: black;
+                color: white;
+                padding: 2px;
+                margin: 0;
+                border-radius: 1px
+            }
+            #sb_side {
+            border-color: gold;
+            border-width: 0 2px 2px 0;
+            border-style: solid;
+            border-radius: 0 0 10px 0;
+            padding-bottom: 20px;
+            width: 130px
+            }
+            #sb_edge {
+            display: none
+            }
+            #sb_side::after {
+            display: none
+            }
+
             #aio_sidebar { display: none; }
