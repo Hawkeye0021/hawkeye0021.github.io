@@ -97,7 +97,7 @@ body {
 }
 #petLookupContent {
 display: grid;
-grid-template-areas: "header header" "pet p2img" "p2header p2header" "p2desc p2desc" "stats  stats" "testimonials testimonials";
+grid-template-areas: "header header" "pet p2img" "p2header p2header" "p2desc p2desc" "stats  stats" "testimonials testimonials" "trophies trophies";
 grid-template-columns: 50%;
 grid-template-rows: auto auto auto auto auto auto auto;
 width: 26em;
@@ -110,6 +110,11 @@ color: black;
 gap: 0;
 background: white;
 padding-bottom: 1em
+}
+#petTrophies {
+    grid-area: trophies;
+    display: flex;
+    flex-direction: row;
 }
 #nav, #mobilenav {
 position: absolute;
