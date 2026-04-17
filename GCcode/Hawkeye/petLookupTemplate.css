@@ -43,7 +43,7 @@ font-size: 12pt
 display: none
 }
 /*HIDE SHIT*/
-hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge, .pet--ownername {
+hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge, .pet--ownername, .pet--height, .pet--weight; {
     display: none
 }
 .pet--no-trade-text {
@@ -94,7 +94,8 @@ border-radius: 0.75em;
 box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
 color: black;
 gap: 0;
-background: white
+background: white;
+padding-bottom: .5em;
 }
 #nav, #mobilenav {
 position: absolute;
