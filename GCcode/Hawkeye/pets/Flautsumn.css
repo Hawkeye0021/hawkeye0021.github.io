@@ -1,0 +1,26 @@
+@import "https://hawkeye0021.github.io/GCcode/Hawkeye/petLookupTemplate.css";
+#testimonials {
+  display: none;
+}
+body {
+  background: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/backgrounds/autumnbridge.jpg?raw=true)
+}
+.pet--image {
+  content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/_Overlays/FlotsamAutumn.png?raw=true)
+}
+.pet--header, .pet--statsheader, #bio h2 {
+  background: #7a4b52;
+}
+.pet--color {
+  color: #de0c1f
+}
+.pet--petpetheader::after {
+  content: "and her petpet"
+}
+.pet--petpetname, .pet--ownerlink, .pet--gendercolor, .pet--hpcolor {
+  color: #ce3700;
+}
+#nav a, #nav a:visited, #mobilenav a, #mobilenav a:visited {
+  background: orange;
+  border-color: orange;
+}
