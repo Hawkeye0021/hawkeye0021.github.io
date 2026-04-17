@@ -1,0 +1,30 @@
+@import "https://hawkeye0021.github.io/GCcode/Hawkeye/petLookupTemplate-Streamlined.css";
+body {
+  background-image: url(https://raw.githubusercontent.com/Hawkeye0021/hawkeye0021.github.io/refs/heads/main/GCcode/backgrounds/splashingbeachblue.jpg);
+}
+.pet--image {
+  content: url(https://grundoscafe.b-cdn.net/pets/happy/flotsam_blue.gif)
+}
+.pet--petpetheader::after{
+  content: "and his petpet";
+}
+.pet--header, .pet--statsheader {
+  background-color: #598ada;
+  color: white;
+}
+.pet--color {
+  color: blue;
+  text-shadow:
+}
+#nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
+  background: #2863d0;
+  border: 3px solid #2863d0;
+  box-shadow: 1px 1px 4px 0 grey;
+  color: white;
+}
+.pet--petpetname {
+  color: blue;
+}
+.pet--no-trade-text {
+  color: white;
+}

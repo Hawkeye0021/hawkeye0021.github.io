@@ -1,7 +1,6 @@
 /*OVERLAY*/
 .pet--image {
     content: url();
-    width: 250px;
 }
 /*BACKGROUND IMAGE - url must be a direct image link*/
 body {
