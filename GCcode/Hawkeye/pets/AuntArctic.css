@@ -63,7 +63,7 @@ justify-items: center;
     pointer-events: none;
     box-shadow: 0px 0px 0px 4px rgba(255,255,255,.5);
     z-index: -1;
-    height: 541%;
+    height: 548%;
     width: 200.5%
 }
 .pet--name {
@@ -176,5 +176,38 @@ right: -6px;
 left: -6px;
 z-index: -1;
 border-radius: 0 1.75em 1.75em 0;
+}
+#nav {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-evenly
+}
+.button img{
+    width: 40px;
+}
+.button {
+    width: 40px;
+}
+#boards:hover {
+content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Hawkeye/pets/AuntArcticButtons/boardshover.png?raw=true)
+}
+#explore:hover {
+content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Hawkeye/pets/AuntArcticButtons/explorehover.png?raw=true)
+}
+#home:hover {
+content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Hawkeye/pets/AuntArcticButtons/homehover.png?raw=true)
+}
+#neomail:hover {
+content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Hawkeye/pets/AuntArcticButtons/neomailhover.png?raw=true)
+}
+#play:hover {
+content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Hawkeye/pets/AuntArcticButtons/playhover.png?raw=true)
+}
+#skull:hover {
+content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Hawkeye/pets/AuntArcticButtons/skullhover.png?raw=true)
+}
+#help:hover {
+content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Hawkeye/pets/AuntArcticButtons/helphover.png?raw=true)
 }
 #aio_sidebar { display: none; }
