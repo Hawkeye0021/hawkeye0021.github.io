@@ -1,0 +1,12 @@
+/*HIDE SHIT*/
+hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge, .pet--ownername, .pet--height, .pet--weight {
+    display: none
+}
+.pet--no-trade-text {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: red
+}
+/*BREAK SHIT*/
+#petDescription, div#desc, main, #petTop, #petInfo, #petPetpet, .pet_all_petpets, .pet_petpet {
+display: contents
+}
