@@ -35,12 +35,15 @@
   margin: .25em;
   }
   body {
-      background-image: url(https://raw.githubusercontent.com/Hawkeye0021/hawkeye0021.github.io/refs/heads/main/GCcode/backgrounds/winterscape.jpg);
+      background-image: url(https://raw.githubusercontent.com/Hawkeye0021/hawkeye0021.github.io/refs/heads/main/GCcode/backgrounds/winterscape.png);
       background-size: cover;
       background-attachment: fixed;
       background-repeat: no-repeat;
       overflow: hidden;
   }
+  .gallerykeeper-img {
+      content: url(https://images.neopets.com/art/faeries/taelia12.gif)
+}
   #galleryInfo {
   text-align: center;
   font-size: 12pt
