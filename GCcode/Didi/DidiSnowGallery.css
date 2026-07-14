@@ -1,5 +1,5 @@
   @import url(https://fonts.googleapis.com/css2?family=Coiny&family=Dekko&family=Poetsen+One&display=swap);
-  #galCats, hr, #page_footer, #sb_top, #sb_side, #page_banner, .category-divider, .links-flex {
+  #galCats, hr, #page_footer, #sb_top, #sb_side, #page_banner, .category-divider, .links-flex, .gallery-item-qty {
   display: none
   }
   #galleryCategories p {
