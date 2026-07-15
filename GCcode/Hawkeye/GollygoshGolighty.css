@@ -1,0 +1,286 @@
+
+            @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap");
+/*STYLE*/
+body {
+    background-image: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/backgrounds/HealingSprings.jpg?raw=true)
+    }
+#nav a, #nav a:visited, #mobilenav a5555, #mobilenav a:visited {
+    background: #99e6cd;
+    color: #0062c4;
+    border: 3px solid #99e6cd;
+    font-size: 12pt;
+    box-shadow: 1px 1px 4px 0 black
+    }
+#petLookupContent {
+    border-radius: 0.75em;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
+    font-family: Nunito;
+    }
+.pet--name {
+    font-size: 28pt
+    }
+.pet--header {
+    font-family: initial;
+    font-size: 18pt;
+    margin-top: 0;
+    padding-bottom: 0.25em;
+    background-color: #0062c4;
+    color: #99e6cd;
+    text-shadow: 1px 1px 1px #000
+    }
+.pet--petpetheader, .pet--petpetdesc {
+    font-size: 10pt
+    }
+.pet--statsheader, #bio h2, #testimonials h2 {
+    font-size: 14pt;
+    color: #99e6cd;
+    text-shadow: 1px 1px 1px #555;
+    background-color: #0062c4
+    }
+.pet--petpetname {
+    font-size: 16pt;
+    color: #0062c4;
+    text-shadow: 1px 1px 1px black
+    }
+#petStats, #testimonials, #bio {
+    font-size: 11pt
+    }
+#petTraits {
+    display: none
+    }
+.pet--color {
+    color: #fff
+    }
+.pet--color:hover {
+    color: #ddd
+    }
+#petStats a {
+    color: #0137b4
+    }
+#petStats a:hover {
+    color: #1232f7
+    }
+.pet--no-trade-alert {
+    background-color: rgba(0, 0, 0, 0.75);
+    text-shadow: -1px 1px 2px black;
+    color: white
+    }
+.pet--no-trade-text {
+    color: white
+    }
+/*HIDE SHIT*/
+hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge {
+    display: none
+    }
+/*BREAK SHIT*/
+#petDescription, div#desc, main, #petTop, #petInfo, #petPetpet, .pet_all_petpets, .pet_petpet {
+    display: contents
+    }
+/*CENTERING*/
+#page_content {
+    width: 100vw
+    }
+#container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100dvh;
+    height: fit-content;
+    justify-content: center;
+    align-items: center
+    }
+/*NAVIGATION*/
+/*FORMATTING*/
+body {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed
+    }
+#petLookupContent {
+    display: grid;
+    grid-template-areas: "header header" "pet p2img" "p2header p2header" "p2desc p2desc" "stats  stats" "testimonials testimonials";
+    grid-template-columns: 50%;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    width: 26em;
+    max-width: 44em;
+    margin: auto;
+    position: relative;
+    border-radius: 0.75em;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
+    color: black;
+    gap: 0;
+    background: white;
+    padding-bottom: 1em
+    }
+#nav, #mobilenav {
+    position: absolute;
+    top: -3.5em;
+    height: fit-content;
+    margin-top: 0.75em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    gap: 1em
+    }
+#nav a, #nav a:visited, #mobilenav a, #mobilenav a:visited {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    border-radius: 0.25em
+    }
+#nav a:hover, #mobilenav a:hover {
+    scale: 0.9
+    }
+.pet--header {
+    grid-area: header;
+    border-radius: 0.35em 0.35em 0 0;
+    margin-top: 0;
+    margin-bottom: 0.25em
+    }
+.pet--name {
+    display: block
+    }
+#petImage {
+    grid-area: pet;
+    margin-left: 30%
+    }
+.pet--petpetimg {
+    grid-area: p2img;
+    align-self: end;
+    margin-left: 18%;
+    padding-right: auto;
+    background: white
+    }
+.pet--petpetheader {
+    grid-area: p2header;
+    font-size: 0
+    }
+.pet--petpetheader:after {
+    content: "and their petpet,";
+    font-size: 10pt
+    }
+.pet--petpetdesc {
+    grid-area: p2desc;
+    margin-bottom: 0.25em
+    }
+.pet--petpetzapped {
+    color: transparent;
+    grid-area: p2img;
+    justify-self: left;
+    margin-top: 35%;
+    margin-left: 60%;
+    font-size: 0
+    }
+.pet--statsheader {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0.8em;
+    border-radius: 0.5em 0.5em 0 0;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.75)
+    }
+#petStats {
+    display: details;
+    grid-area: stats;
+    background: none;
+    border-radius: 0.35em;
+    margin: 0.25em 0.25em 0.25em 0.5em;
+    padding: 0 0.35em 0 0.35em
+    }
+#desc {
+    grid-area: desc;
+    display: grid;
+    grid-template-areas: "testimonials";
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    margin-top: 1em
+    }
+#testimonials, #bio {
+    display: none
+    }
+.pet--no-trade-alert {
+    position: absolute;
+    bottom: -4em;
+    left: 0;
+    width: -webkit-fill-available;
+    border-radius: 0.5em
+    }
+.pet--no-trade-icon {
+    display: none
+    }
+@media screen and (max-width: 959px) {
+    #sb_bottom {
+        display: none
+        }
+    #nav {
+        display: flex;
+        top: initial;
+        top: -4em;
+        gap: 0;
+        width: 100%;
+        justify-content: center;
+        gap: 1em
+        }
+    #nav a {
+        font-size: 30pt
+        }
+    #container {
+        display: flex;
+        flex-direction: column;
+        min-height: fit-content;
+        max-height: 100vh
+        }
+    #petLookupContent {
+        width: 90vw;
+        height: fit-content;
+        font-size: 24pt;
+        padding-top: 1em;
+        margin-top: 5em
+        }
+    #petStats {
+        font-size: 26pt
+        }
+    .pet--statsheader {
+        font-size: 36pt
+        }
+    .pet--name {
+        font-size: 72pt;
+        display: block
+        }
+    .pet--header {
+        margin-top: -1em;
+        font-size: 32pt
+        }
+    #petImage {
+        margin-left: 15%
+        }
+    .pet--image {
+        width: 50vw
+        }
+    .pet--petpetimg {
+        margin-left: 25%;
+        width: 25vw
+        }
+    .pet--no-trade-alert {
+        bottom: -2em;
+        font-size: 24pt
+        }
+    .pet--petpetheader:before, .pet--petpetheader:after, .pet--petpetdesc {
+        font-size: 24pt
+        }
+    .pet--petpetname {
+        font-size: 36pt
+        }
+    .pet--petpetzapped img {
+        width: 24pt
+        }
+    .pet--petpetzapped {
+        justify-self: right;
+        margin-top: 50%;
+        margin-right: 15%
+        }
+    #petTraits {
+        font-size: 16pt
+        }
+    }
+            #aio_sidebar { display: none; }
