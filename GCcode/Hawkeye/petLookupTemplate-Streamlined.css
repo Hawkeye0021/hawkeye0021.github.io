@@ -13,12 +13,13 @@ box-shadow: 1px 1px 4px 0 black
 #petLookupContent {
 border-radius: 0.75em;
 box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.75);
-font-family: Nunito;
+/*font-family: Nunito;*/
 }
 .pet--name {
     font-size: 36pt
 }
 .pet--header {
+    font-family: initial;
     font-size: 18pt;
     margin-top: 0;
     padding-bottom: 0.25em;
