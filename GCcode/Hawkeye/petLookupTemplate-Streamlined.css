@@ -72,7 +72,7 @@ a.pet--ownerlink, a.pet--ownerlink:visited {
     color: white;
 }
 .pet--no-trade-text {
-    color: red;
+    color: white;
 }
 /*HIDE SHIT*/
 hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge {
