@@ -1,5 +1,7 @@
+
 body {
-    background: tan;
+    background-image: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/backgrounds/AuntArcticIgloo.jpg?raw=true);
+    background-position: center
 }
 /*HIDE SHIT*/
 hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBattle, #sb_top, #sb_side, #page_banner, #petLinks, #mobilenav a, #aio_sidebar_placeholder, #petChallenge, .pet--ownername, .pet--height, .pet--weight {
@@ -9,20 +11,27 @@ hr, .pet--petpetage, .pet--smallname, .petJobs, #petLead, #page_footer, #petBatt
     background-color: rgba(0, 0, 0, 0.75);
     color: red
 }
+/*CENTERING*/
+#container {
+margin: auto;
+display: flex;
+flex-direction: column;
+width: 100vw;
+min-height: 100dvh;
+height: fit-content;
+justify-content: center;
+align-items: center
+}
 /*BREAK SHIT*/
 #petDescription, div#desc, main, #petTop, #petInfo, #petPetpet, .pet_all_petpets, .pet_petpet, .pet--no-trade-icon {
 display: contents
 }
 #petLookupContent {
 display: grid;
-grid-template-areas:
-"name stats"
-"image stats"
-"nav stats"
-"trade trade";
+grid-template-areas: "name stats" "image stats" "nav stats" "trade trade";
 grid-template-columns: 50%;
 grid-gap: 0;
-justify-items: center;
+justify-items: center
 }
 .pet--header {
     grid-area: name;
@@ -30,96 +39,95 @@ justify-items: center;
     padding: 0;
     background: #0280cd;
     width: 100%;
-    padding: .5em 0 .5em 0;
+    padding: 0.5em 0 0.5em 0;
     border-radius: 1em 1em 0 0;
     border-width: 3px 0 0 3px;
     border-style: solid;
-    border-color: #00ccff;
-    outline-color: #003366;
+    border-color: #0cf;
+    outline-color: #036;
     outline-style: solid;
-    position: relative;
+    position: relative
 }
 .pet--header::after {
     content: "";
-    border-width: 3px 3px 0px 3px;
+    border-width: 3px 3px 0 3px;
     border-style: solid;
     border-color: #fff;
     position: absolute;
     top: -9px;
-    bottom: 0px;
+    bottom: 0;
     left: -9px;
     right: -6px;
     border-radius: 1.25em 1.25em 0 0;
-    pointer-events: none;
+    pointer-events: none
 }
 .pet--header::before {
     content: "";
     position: absolute;
     top: -9px;
-    bottom: 0px;
+    bottom: 0;
     left: -9px;
     right: -6px;
     border-radius: 1.25em 1.25em 1.1em 1.1em;
     pointer-events: none;
-    box-shadow: 0px 0px 0px 4px rgba(255,255,255,.5);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
     z-index: -1;
     height: 548%;
     width: 200.5%
 }
 .pet--name {
-    display: block;
+    display: block
 }
 #petImage {
 grid-area: image;
 width: 100%;
 background: #0280cd;
-border-left: 3px solid #00ccff;
-position: relative;
+border-left: 3px solid #0cf;
+position: relative
 }
 .pet--image {
     content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/_Overlays/AuntArctic.jpg?raw=true);
     width: auto;
-    border-radius: 1.25em;
+    border-radius: 1.25em
 }
 #petImage::before {
 content: "";
 border-width: 0 3px 0 3px;
 border-style: solid;
-border-color: #003366;
+border-color: #036;
 position: absolute;
 top: 0;
 bottom: 0;
 left: -6px;
 right: -3px;
 outline: 3px solid white;
-z-index: -1;
+z-index: -1
 }
 #petImage::after {
 content: "";
-border-width: 0 0px 0 3px;
+border-width: 0 0 0 3px;
 border-style: solid;
-border-color: rgba(255,255,255,.5);
+border-color: rgba(255, 255, 255, 0.5);
 position: absolute;
 top: 0;
 bottom: 0;
 left: -9px;
-right: -6px;
-z-index: ;
+right: -6px
 }
 #nav {
 grid-area: nav;
 background: #0280cd;
 padding: 1em 0;
 border-radius: 0 0 1.25em 1.25em;
-border-left: 3px solid #00ccff;
+border-left: 3px solid #0cf;
 width: 100%;
-position: relative;
+position: relative
 }
 #nav::before {
 content: "";
 border-width: 0 3px 3px 3px;
 border-style: solid;
-border-color: #003366;
+border-color: #036;
 position: absolute;
 top: 0;
 bottom: -3px;
@@ -127,7 +135,7 @@ left: -6px;
 right: -3px;
 border-radius: 0 0 1.5em 1.5em;
 pointer-events: none;
-z-index: -1;
+z-index: -1
 }
 #nav::after {
 content: "";
@@ -140,23 +148,23 @@ bottom: -6px;
 left: -9px;
 right: -6px;
 border-radius: 0 0 1.65em 1.65em;
-pointer-events: none;
+pointer-events: none
 }
 .pet--no-trade-alert {
     grid-area: trade;
     background: none;
     width: 100%;
     padding: 0;
-    margin-top: 1em;
+    margin-top: 1em
 }
 .pet--no-trade-text {
     background: none;
-    color: black;
+    color: black
 }
 #petStats {
 grid-area: stats;
 position: relative;
-background: rgba(255,255,255,.5);
+background: rgba(255, 255, 255, 0.85);
 z-index: -2;
 margin-right: 9px;
 margin-left: -15px;
@@ -164,7 +172,7 @@ padding-left: 1.5em;
 border-radius: 0 1.5em 1.5em 0;
 border: 3px solid black;
 margin-top: -3px;
-margin-bottom: -3px;
+margin-bottom: -3px
 }
 #petStats::before {
 content: "";
@@ -175,7 +183,7 @@ bottom: -6px;
 right: -6px;
 left: -6px;
 z-index: -1;
-border-radius: 0 1.75em 1.75em 0;
+border-radius: 0 1.75em 1.75em 0
 }
 #nav {
 display: flex;
@@ -183,11 +191,11 @@ flex-direction: row;
 flex-wrap: nowrap;
 justify-content: space-evenly
 }
-.button img{
-    width: 40px;
+.button img {
+    width: 40px
 }
 .button {
-    width: 40px;
+    width: 40px
 }
 #boards:hover {
 content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Hawkeye/pets/AuntArcticButtons/boardshover.png?raw=true)
@@ -209,5 +217,14 @@ content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCco
 }
 #help:hover {
 content: url(https://github.com/Hawkeye0021/hawkeye0021.github.io/blob/main/GCcode/Hawkeye/pets/AuntArcticButtons/helphover.png?raw=true)
+}
+#aio_sidebar {
+display: none
+}
+#aio_sidebar {
+display: none
+}
+#aio_sidebar {
+display: none
 }
 #aio_sidebar { display: none; }
