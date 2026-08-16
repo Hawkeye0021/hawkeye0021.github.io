@@ -123,6 +123,9 @@ align-content: center
 .ul--stampsimg {
   content: url(https://grundoscafe.b-cdn.net/items/sta_winter_snowbunny.gif)
 }
+.ul--tcgsimg {
+  content: url(https://grundoscafe.b-cdn.net/items/tcg_ice_0108_CE10.gif)
+}
 #userLookupLinks {
 margin-top: -1.5em;
 background-color: #fafbfd;
